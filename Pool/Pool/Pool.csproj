@@ -66,22 +66,22 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ingelogd.cs">
+    <Compile Include="Usercontrols\Ingelogd.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Ingelogd.Designer.cs">
+    <Compile Include="Usercontrols\Ingelogd.Designer.cs">
       <DependentUpon>Ingelogd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Regels.cs">
+    <Compile Include="Usercontrols\Regels.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Regels.Designer.cs">
+    <Compile Include="Usercontrols\Regels.Designer.cs">
       <DependentUpon>Regels.cs</DependentUpon>
     </Compile>
-    <Compile Include="Register.cs">
+    <Compile Include="Usercontrols\Register.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Register.Designer.cs">
+    <Compile Include="Usercontrols\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
     <Compile Include="Usercontrols\Login.cs">
@@ -98,22 +98,22 @@
     <Compile Include="Usercontrols\Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
-    <Compile Include="WachtwoordVergeten.cs">
+    <Compile Include="Usercontrols\WachtwoordVergeten.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="WachtwoordVergeten.Designer.cs">
+    <Compile Include="Usercontrols\WachtwoordVergeten.Designer.cs">
       <DependentUpon>WachtwoordVergeten.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ingelogd.resx">
+    <EmbeddedResource Include="Usercontrols\Ingelogd.resx">
       <DependentUpon>Ingelogd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Regels.resx">
+    <EmbeddedResource Include="Usercontrols\Regels.resx">
       <DependentUpon>Regels.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Register.resx">
+    <EmbeddedResource Include="Usercontrols\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usercontrols\Login.resx">
@@ -132,7 +132,7 @@
     <EmbeddedResource Include="Usercontrols\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WachtwoordVergeten.resx">
+    <EmbeddedResource Include="Usercontrols\WachtwoordVergeten.resx">
       <DependentUpon>WachtwoordVergeten.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -149,13 +149,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="PoolDatabase.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="PoolDatabase_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>PoolDatabase.mdf</DependentUpon>
-    </Content>
     <Content Include="Resources\Gear.png" />
   </ItemGroup>
   <ItemGroup>
