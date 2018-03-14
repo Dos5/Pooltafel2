@@ -28,57 +28,68 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BtnLogin = new System.Windows.Forms.Button();
+            this.BtnRegistreren = new System.Windows.Forms.Button();
+            this.BtnAfsluiten = new System.Windows.Forms.Button();
+            this.BtnSettings = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // BtnLogin
             // 
-            this.button1.Location = new System.Drawing.Point(128, 80);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnLogin.Location = new System.Drawing.Point(96, 32);
+            this.BtnLogin.Name = "BtnLogin";
+            this.BtnLogin.Size = new System.Drawing.Size(95, 40);
+            this.BtnLogin.TabIndex = 0;
+            this.BtnLogin.Text = "Inloggen";
+            this.BtnLogin.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // BtnRegistreren
             // 
-            this.button2.Location = new System.Drawing.Point(144, 128);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnRegistreren.Location = new System.Drawing.Point(96, 80);
+            this.BtnRegistreren.Name = "BtnRegistreren";
+            this.BtnRegistreren.Size = new System.Drawing.Size(95, 40);
+            this.BtnRegistreren.TabIndex = 1;
+            this.BtnRegistreren.Text = "Registreren";
+            this.BtnRegistreren.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // BtnAfsluiten
             // 
-            this.button3.Location = new System.Drawing.Point(136, 160);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnAfsluiten.Location = new System.Drawing.Point(96, 128);
+            this.BtnAfsluiten.Name = "BtnAfsluiten";
+            this.BtnAfsluiten.Size = new System.Drawing.Size(95, 40);
+            this.BtnAfsluiten.TabIndex = 2;
+            this.BtnAfsluiten.Text = "Afsluiten";
+            this.BtnAfsluiten.UseVisualStyleBackColor = true;
+            // 
+            // BtnSettings
+            // 
+            this.BtnSettings.Location = new System.Drawing.Point(272, 0);
+            this.BtnSettings.Name = "BtnSettings";
+            this.BtnSettings.Size = new System.Drawing.Size(40, 32);
+            this.BtnSettings.TabIndex = 3;
+            this.BtnSettings.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(379, 243);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(314, 212);
+            this.Controls.Add(this.BtnSettings);
+            this.Controls.Add(this.BtnAfsluiten);
+            this.Controls.Add(this.BtnRegistreren);
+            this.Controls.Add(this.BtnLogin);
             this.Name = "Form1";
-            this.Text = "Pooltafel-Application";
+            this.Text = "                 Pooltafel-Application";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BtnLogin;
+        private System.Windows.Forms.Button BtnRegistreren;
+        private System.Windows.Forms.Button BtnAfsluiten;
+        private System.Windows.Forms.Button BtnSettings;
     }
 }
 
