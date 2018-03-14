@@ -122,13 +122,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="PooltafelDatabase.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="PooltafelDatabase_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>PooltafelDatabase.mdf</DependentUpon>
-    </Content>
     <Content Include="Resources\Gear.png" />
   </ItemGroup>
   <ItemGroup>
