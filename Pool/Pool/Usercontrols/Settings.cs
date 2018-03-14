@@ -16,5 +16,10 @@ namespace Pool
         {
             InitializeComponent();
         }
+
+        private void BtnTerug_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

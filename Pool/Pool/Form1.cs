@@ -10,21 +10,29 @@ using System.Windows.Forms;
 
 namespace Pool
 {
-    public partial class Form1 : Form
+    public partial class PooltafelMain : Form
     {
-        public Form1()
+        public PooltafelMain()
         {
             InitializeComponent();
         }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void BtnSettings_Click_1(object sender, EventArgs e)
         {
-
+            Settings settings = new Settings();
+            Controls.Add(settings);
+            settings.BringToFront();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BtnLogin_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("guppie is een *an*er jong");
+            Login login = new Login();
+            Controls.Add(login);
+            login.BringToFront();           
+        }
+
+        private void BtnAfsluiten_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
