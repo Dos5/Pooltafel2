@@ -32,6 +32,7 @@
             this.BtnRegistreren = new System.Windows.Forms.Button();
             this.BtnAfsluiten = new System.Windows.Forms.Button();
             this.BtnSettings = new System.Windows.Forms.PictureBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.BtnSettings)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,6 +101,7 @@
         private System.Windows.Forms.Button BtnRegistreren;
         private System.Windows.Forms.Button BtnAfsluiten;
         private System.Windows.Forms.PictureBox BtnSettings;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 
