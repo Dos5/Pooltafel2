@@ -73,6 +73,7 @@
             this.BtnLogin.TabIndex = 3;
             this.BtnLogin.Text = "Login";
             this.BtnLogin.UseVisualStyleBackColor = true;
+            this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
             // BtnWachtwoord
             // 
@@ -83,6 +84,7 @@
             this.BtnWachtwoord.TabIndex = 4;
             this.BtnWachtwoord.Text = "Wachtwoord vergeten";
             this.BtnWachtwoord.UseVisualStyleBackColor = true;
+            this.BtnWachtwoord.Click += new System.EventHandler(this.BtnWachtwoord_Click);
             // 
             // BtnExit
             // 

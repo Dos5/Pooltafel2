@@ -51,6 +51,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ingelogd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ingelogd.Designer.cs">
+      <DependentUpon>Ingelogd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Regels.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Regels.Designer.cs">
+      <DependentUpon>Regels.cs</DependentUpon>
+    </Compile>
     <Compile Include="Register.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -71,8 +83,20 @@
     <Compile Include="Usercontrols\Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
+    <Compile Include="WachtwoordVergeten.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WachtwoordVergeten.Designer.cs">
+      <DependentUpon>WachtwoordVergeten.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingelogd.resx">
+      <DependentUpon>Ingelogd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Regels.resx">
+      <DependentUpon>Regels.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
@@ -92,6 +116,9 @@
     </Compile>
     <EmbeddedResource Include="Usercontrols\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WachtwoordVergeten.resx">
+      <DependentUpon>WachtwoordVergeten.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
