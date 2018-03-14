@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.BoxTaal = new System.Windows.Forms.GroupBox();
-            this.RadiobtnEngels = new System.Windows.Forms.RadioButton();
-            this.RadiobtnDuits = new System.Windows.Forms.RadioButton();
             this.RadiobtnNl = new System.Windows.Forms.RadioButton();
+            this.RadiobtnDuits = new System.Windows.Forms.RadioButton();
+            this.RadiobtnEngels = new System.Windows.Forms.RadioButton();
             this.BtnTerug = new System.Windows.Forms.Button();
             this.BoxTaal.SuspendLayout();
             this.SuspendLayout();
@@ -48,16 +48,16 @@
             this.BoxTaal.TabStop = false;
             this.BoxTaal.Text = "Taal";
             // 
-            // RadiobtnEngels
+            // RadiobtnNl
             // 
-            this.RadiobtnEngels.AutoSize = true;
-            this.RadiobtnEngels.Location = new System.Drawing.Point(24, 24);
-            this.RadiobtnEngels.Name = "RadiobtnEngels";
-            this.RadiobtnEngels.Size = new System.Drawing.Size(57, 17);
-            this.RadiobtnEngels.TabIndex = 0;
-            this.RadiobtnEngels.TabStop = true;
-            this.RadiobtnEngels.Text = "Engels";
-            this.RadiobtnEngels.UseVisualStyleBackColor = true;
+            this.RadiobtnNl.AutoSize = true;
+            this.RadiobtnNl.Location = new System.Drawing.Point(24, 72);
+            this.RadiobtnNl.Name = "RadiobtnNl";
+            this.RadiobtnNl.Size = new System.Drawing.Size(79, 17);
+            this.RadiobtnNl.TabIndex = 2;
+            this.RadiobtnNl.TabStop = true;
+            this.RadiobtnNl.Text = "Nederlands";
+            this.RadiobtnNl.UseVisualStyleBackColor = true;
             // 
             // RadiobtnDuits
             // 
@@ -70,22 +70,22 @@
             this.RadiobtnDuits.Text = "Duits";
             this.RadiobtnDuits.UseVisualStyleBackColor = true;
             // 
-            // RadiobtnNl
+            // RadiobtnEngels
             // 
-            this.RadiobtnNl.AutoSize = true;
-            this.RadiobtnNl.Location = new System.Drawing.Point(24, 72);
-            this.RadiobtnNl.Name = "RadiobtnNl";
-            this.RadiobtnNl.Size = new System.Drawing.Size(79, 17);
-            this.RadiobtnNl.TabIndex = 2;
-            this.RadiobtnNl.TabStop = true;
-            this.RadiobtnNl.Text = "Nederlands";
-            this.RadiobtnNl.UseVisualStyleBackColor = true;
+            this.RadiobtnEngels.AutoSize = true;
+            this.RadiobtnEngels.Location = new System.Drawing.Point(24, 24);
+            this.RadiobtnEngels.Name = "RadiobtnEngels";
+            this.RadiobtnEngels.Size = new System.Drawing.Size(57, 17);
+            this.RadiobtnEngels.TabIndex = 0;
+            this.RadiobtnEngels.TabStop = true;
+            this.RadiobtnEngels.Text = "Engels";
+            this.RadiobtnEngels.UseVisualStyleBackColor = true;
             // 
             // BtnTerug
             // 
             this.BtnTerug.Location = new System.Drawing.Point(144, 136);
             this.BtnTerug.Name = "BtnTerug";
-            this.BtnTerug.Size = new System.Drawing.Size(75, 23);
+            this.BtnTerug.Size = new System.Drawing.Size(80, 32);
             this.BtnTerug.TabIndex = 1;
             this.BtnTerug.Text = "Terug";
             this.BtnTerug.UseVisualStyleBackColor = true;
@@ -99,7 +99,7 @@
             this.Controls.Add(this.BtnTerug);
             this.Controls.Add(this.BoxTaal);
             this.Name = "Settings";
-            this.Size = new System.Drawing.Size(226, 169);
+            this.Size = new System.Drawing.Size(252, 188);
             this.BoxTaal.ResumeLayout(false);
             this.BoxTaal.PerformLayout();
             this.ResumeLayout(false);

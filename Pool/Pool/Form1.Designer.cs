@@ -75,7 +75,7 @@
             this.BtnSettings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BtnSettings.TabIndex = 3;
             this.BtnSettings.TabStop = false;
-            this.BtnSettings.Click += new System.EventHandler(this.BtnSettings_Click_1);
+            this.BtnSettings.Click += new System.EventHandler(this.BtnSettings_Click_2);
             // 
             // PooltafelMain
             // 

@@ -18,9 +18,9 @@ namespace Pool
         }
         private void BtnSettings_Click_1(object sender, EventArgs e)
         {
-            Settings settings = new Settings();
-            Controls.Add(settings);
-            settings.BringToFront();
+            Register register = new Register();
+            Controls.Add(register);
+            register.BringToFront();
         }
 
         private void BtnLogin_Click(object sender, EventArgs e)
@@ -33,6 +33,13 @@ namespace Pool
         private void BtnAfsluiten_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void BtnSettings_Click_2(object sender, EventArgs e)
+        {
+            Settings settings = new Settings();
+            Controls.Add(settings);
+            settings.BringToFront();
         }
     }
 }
