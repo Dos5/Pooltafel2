@@ -24,18 +24,7 @@ namespace Pool
 
         private void BtnVerder_Click(object sender, EventArgs e)
         {
-            if (RadiobtnDuel.Checked)
-            {
-                if (Radiobtn9ball.Checked || Radiobtn8ball.Checked)
-                {
-                    MessageBox.Show("veel plezier! het duel is 'Emo' tegen 'Tuinkabouter'");
-                }
-                else
-                {
-                    MessageBox.Show("kies wel een speltype voor je verder kunt");
-                }
-            }
-            else if (RadiobtnToernooi.Checked)
+            if (RadiobtnToernooi.Checked || RadiobtnDuel.Checked)
             {
                 if (Radiobtn9ball.Checked || Radiobtn8ball.Checked)
                 {
@@ -52,7 +41,6 @@ namespace Pool
             {
                 MessageBox.Show("Selecteer ook of je toernooi of duel wil");
             }
-            
         }
 
         private void BtnRegels_Click(object sender, EventArgs e)
