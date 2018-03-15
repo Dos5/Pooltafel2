@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.BtnTerug = new System.Windows.Forms.Button();
-            this.ListboxRegels = new System.Windows.Forms.ListBox();
+            this.LbxRegels = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // BtnTerug
@@ -42,20 +42,20 @@
             this.BtnTerug.UseVisualStyleBackColor = true;
             this.BtnTerug.Click += new System.EventHandler(this.BtnTerug_Click);
             // 
-            // ListboxRegels
+            // LbxRegels
             // 
-            this.ListboxRegels.FormattingEnabled = true;
-            this.ListboxRegels.Location = new System.Drawing.Point(40, 16);
-            this.ListboxRegels.Name = "ListboxRegels";
-            this.ListboxRegels.ScrollAlwaysVisible = true;
-            this.ListboxRegels.Size = new System.Drawing.Size(160, 134);
-            this.ListboxRegels.TabIndex = 1;
+            this.LbxRegels.FormattingEnabled = true;
+            this.LbxRegels.Location = new System.Drawing.Point(40, 16);
+            this.LbxRegels.Name = "LbxRegels";
+            this.LbxRegels.ScrollAlwaysVisible = true;
+            this.LbxRegels.Size = new System.Drawing.Size(160, 134);
+            this.LbxRegels.TabIndex = 1;
             // 
             // Regels
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.ListboxRegels);
+            this.Controls.Add(this.LbxRegels);
             this.Controls.Add(this.BtnTerug);
             this.Name = "Regels";
             this.Size = new System.Drawing.Size(248, 203);
@@ -66,6 +66,6 @@
         #endregion
 
         private System.Windows.Forms.Button BtnTerug;
-        private System.Windows.Forms.ListBox ListboxRegels;
+        private System.Windows.Forms.ListBox LbxRegels;
     }
 }

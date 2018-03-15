@@ -24,7 +24,14 @@ namespace Pool
 
         private void BtnVerder_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Het toernooi wordt gestart, veel plezier!");
+            if(RbtnVierspelers.Checked ||RbtnZesspelers.Checked || RbtnAchtspelers.Checked || RbtnTienspelers.Checked)
+            {
+                MessageBox.Show("Het toernooi wordt gestart, veel plezier!");
+            }
+            else
+            {
+                MessageBox.Show("Selecteer hoeveel personen meedoen aan het toernooi");
+            }
         }
     }
 }

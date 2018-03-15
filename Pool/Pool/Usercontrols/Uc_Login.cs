@@ -31,9 +31,23 @@ namespace Pool
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            Ingelogd ingelogd = new Ingelogd();
-            Controls.Add(ingelogd);
-            ingelogd.BringToFront();
+            if (TbNaam.Text != "")
+            {
+                if (TbWw.Text != "")
+                {
+                    Ingelogd ingelogd = new Ingelogd();
+                    Controls.Add(ingelogd);
+                    ingelogd.BringToFront();
+                }
+                else
+                {
+                    MessageBox.Show("Vul een wachtwoord in");
+                }
+            }
+            else {
+                MessageBox.Show("Vul een naam in padoog");
+            }
+           
         }
     }
 }

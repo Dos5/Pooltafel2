@@ -66,64 +66,64 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usercontrols\Toernooi.cs">
+    <Compile Include="Usercontrols\Uc_Toernooi.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Usercontrols\Toernooi.Designer.cs">
-      <DependentUpon>Toernooi.cs</DependentUpon>
+    <Compile Include="Usercontrols\Uc_Toernooi.Designer.cs">
+      <DependentUpon>Uc_Toernooi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usercontrols\Ingelogd.cs">
+    <Compile Include="Usercontrols\Uc_Ingelogd.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Usercontrols\Ingelogd.Designer.cs">
-      <DependentUpon>Ingelogd.cs</DependentUpon>
+    <Compile Include="Usercontrols\Uc_Ingelogd.Designer.cs">
+      <DependentUpon>Uc_Ingelogd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usercontrols\Regels.cs">
+    <Compile Include="Usercontrols\Uc_Regels.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Usercontrols\Regels.Designer.cs">
-      <DependentUpon>Regels.cs</DependentUpon>
+    <Compile Include="Usercontrols\Uc_Regels.Designer.cs">
+      <DependentUpon>Uc_Regels.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usercontrols\Register.cs">
+    <Compile Include="Usercontrols\Uc_Register.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Usercontrols\Register.Designer.cs">
-      <DependentUpon>Register.cs</DependentUpon>
+    <Compile Include="Usercontrols\Uc_Register.Designer.cs">
+      <DependentUpon>Uc_Register.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usercontrols\Login.cs">
+    <Compile Include="Usercontrols\Uc_Login.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Usercontrols\Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="Usercontrols\Uc_Login.Designer.cs">
+      <DependentUpon>Uc_Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Usercontrols\Settings.cs">
+    <Compile Include="Usercontrols\Uc_Settings.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Usercontrols\Settings.Designer.cs">
-      <DependentUpon>Settings.cs</DependentUpon>
+    <Compile Include="Usercontrols\Uc_Settings.Designer.cs">
+      <DependentUpon>Uc_Settings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usercontrols\WachtwoordVergeten.cs">
+    <Compile Include="Usercontrols\Uc_WachtwoordVergeten.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Usercontrols\WachtwoordVergeten.Designer.cs">
-      <DependentUpon>WachtwoordVergeten.cs</DependentUpon>
+    <Compile Include="Usercontrols\Uc_WachtwoordVergeten.Designer.cs">
+      <DependentUpon>Uc_WachtwoordVergeten.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Usercontrols\Ingelogd.resx">
-      <DependentUpon>Ingelogd.cs</DependentUpon>
+    <EmbeddedResource Include="Usercontrols\Uc_Ingelogd.resx">
+      <DependentUpon>Uc_Ingelogd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Usercontrols\Regels.resx">
-      <DependentUpon>Regels.cs</DependentUpon>
+    <EmbeddedResource Include="Usercontrols\Uc_Regels.resx">
+      <DependentUpon>Uc_Regels.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Usercontrols\Register.resx">
-      <DependentUpon>Register.cs</DependentUpon>
+    <EmbeddedResource Include="Usercontrols\Uc_Register.resx">
+      <DependentUpon>Uc_Register.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Usercontrols\Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="Usercontrols\Uc_Login.resx">
+      <DependentUpon>Uc_Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -135,14 +135,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Usercontrols\Settings.resx">
-      <DependentUpon>Settings.cs</DependentUpon>
+    <EmbeddedResource Include="Usercontrols\Uc_Settings.resx">
+      <DependentUpon>Uc_Settings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Usercontrols\Toernooi.resx">
-      <DependentUpon>Toernooi.cs</DependentUpon>
+    <EmbeddedResource Include="Usercontrols\Uc_Toernooi.resx">
+      <DependentUpon>Uc_Toernooi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Usercontrols\WachtwoordVergeten.resx">
-      <DependentUpon>WachtwoordVergeten.cs</DependentUpon>
+    <EmbeddedResource Include="Usercontrols\Uc_WachtwoordVergeten.resx">
+      <DependentUpon>Uc_WachtwoordVergeten.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
