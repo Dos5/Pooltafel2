@@ -24,7 +24,23 @@ namespace Pool
 
         private void BtnVerder_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Het desbtreffende spel wordt gestart");
+            if (RadiobtnToernooi.Checked || RadiobtnDuel.Checked)
+            {
+                if (Radiobtn9ball.Checked || Radiobtn8ball.Checked)
+                {
+                    Toernooi toernooi = new Toernooi();
+                    Controls.Add(toernooi);
+                    toernooi.BringToFront();
+                }
+                else
+                {
+                    MessageBox.Show("selecteer wel een speltype voor je kan beginnen");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Selecteer ook of je toernooi of duel wil");
+            }
         }
 
         private void BtnRegels_Click(object sender, EventArgs e)
