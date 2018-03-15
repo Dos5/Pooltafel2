@@ -29,58 +29,25 @@
         private void InitializeComponent()
         {
             this.GbxTaal = new System.Windows.Forms.GroupBox();
-            this.RbtnNl = new System.Windows.Forms.RadioButton();
-            this.RbtnDuits = new System.Windows.Forms.RadioButton();
-            this.RbtnEngels = new System.Windows.Forms.RadioButton();
             this.BtnTerug = new System.Windows.Forms.Button();
             this.BtnBevestig = new System.Windows.Forms.Button();
+            this.RbtnNederlands = new System.Windows.Forms.RadioButton();
+            this.RbtnEngels = new System.Windows.Forms.RadioButton();
+            this.RbtnDuits = new System.Windows.Forms.RadioButton();
             this.GbxTaal.SuspendLayout();
             this.SuspendLayout();
             // 
             // GbxTaal
             // 
-            this.GbxTaal.Controls.Add(this.RbtnNl);
             this.GbxTaal.Controls.Add(this.RbtnDuits);
             this.GbxTaal.Controls.Add(this.RbtnEngels);
+            this.GbxTaal.Controls.Add(this.RbtnNederlands);
             this.GbxTaal.Location = new System.Drawing.Point(8, 24);
             this.GbxTaal.Name = "GbxTaal";
             this.GbxTaal.Size = new System.Drawing.Size(200, 100);
             this.GbxTaal.TabIndex = 0;
             this.GbxTaal.TabStop = false;
             this.GbxTaal.Text = "Taal";
-            // 
-            // RbtnNl
-            // 
-            this.RbtnNl.AutoSize = true;
-            this.RbtnNl.Location = new System.Drawing.Point(24, 72);
-            this.RbtnNl.Name = "RbtnNl";
-            this.RbtnNl.Size = new System.Drawing.Size(79, 17);
-            this.RbtnNl.TabIndex = 2;
-            this.RbtnNl.TabStop = true;
-            this.RbtnNl.Text = "Nederlands";
-            this.RbtnNl.UseVisualStyleBackColor = true;
-            // 
-            // RbtnDuits
-            // 
-            this.RbtnDuits.AutoSize = true;
-            this.RbtnDuits.Location = new System.Drawing.Point(24, 48);
-            this.RbtnDuits.Name = "RbtnDuits";
-            this.RbtnDuits.Size = new System.Drawing.Size(49, 17);
-            this.RbtnDuits.TabIndex = 1;
-            this.RbtnDuits.TabStop = true;
-            this.RbtnDuits.Text = "Duits";
-            this.RbtnDuits.UseVisualStyleBackColor = true;
-            // 
-            // RbtnEngels
-            // 
-            this.RbtnEngels.AutoSize = true;
-            this.RbtnEngels.Location = new System.Drawing.Point(24, 24);
-            this.RbtnEngels.Name = "RbtnEngels";
-            this.RbtnEngels.Size = new System.Drawing.Size(57, 17);
-            this.RbtnEngels.TabIndex = 0;
-            this.RbtnEngels.TabStop = true;
-            this.RbtnEngels.Text = "Engels";
-            this.RbtnEngels.UseVisualStyleBackColor = true;
             // 
             // BtnTerug
             // 
@@ -100,6 +67,41 @@
             this.BtnBevestig.TabIndex = 2;
             this.BtnBevestig.Text = "Bevestig";
             this.BtnBevestig.UseVisualStyleBackColor = true;
+            this.BtnBevestig.Click += new System.EventHandler(this.BtnBevestig_Click);
+            // 
+            // RbtnNederlands
+            // 
+            this.RbtnNederlands.AutoSize = true;
+            this.RbtnNederlands.Checked = true;
+            this.RbtnNederlands.Location = new System.Drawing.Point(16, 16);
+            this.RbtnNederlands.Name = "RbtnNederlands";
+            this.RbtnNederlands.Size = new System.Drawing.Size(77, 17);
+            this.RbtnNederlands.TabIndex = 0;
+            this.RbtnNederlands.TabStop = true;
+            this.RbtnNederlands.Text = "nederlands";
+            this.RbtnNederlands.UseVisualStyleBackColor = true;
+            // 
+            // RbtnEngels
+            // 
+            this.RbtnEngels.AutoSize = true;
+            this.RbtnEngels.Location = new System.Drawing.Point(16, 48);
+            this.RbtnEngels.Name = "RbtnEngels";
+            this.RbtnEngels.Size = new System.Drawing.Size(56, 17);
+            this.RbtnEngels.TabIndex = 1;
+            this.RbtnEngels.TabStop = true;
+            this.RbtnEngels.Text = "engels";
+            this.RbtnEngels.UseVisualStyleBackColor = true;
+            // 
+            // RbtnDuits
+            // 
+            this.RbtnDuits.AutoSize = true;
+            this.RbtnDuits.Location = new System.Drawing.Point(16, 80);
+            this.RbtnDuits.Name = "RbtnDuits";
+            this.RbtnDuits.Size = new System.Drawing.Size(47, 17);
+            this.RbtnDuits.TabIndex = 2;
+            this.RbtnDuits.TabStop = true;
+            this.RbtnDuits.Text = "duits";
+            this.RbtnDuits.UseVisualStyleBackColor = true;
             // 
             // Settings
             // 
@@ -120,10 +122,10 @@
         #endregion
 
         private System.Windows.Forms.GroupBox GbxTaal;
-        private System.Windows.Forms.RadioButton RbtnNl;
-        private System.Windows.Forms.RadioButton RbtnDuits;
-        private System.Windows.Forms.RadioButton RbtnEngels;
         private System.Windows.Forms.Button BtnTerug;
         private System.Windows.Forms.Button BtnBevestig;
+        private System.Windows.Forms.RadioButton RbtnDuits;
+        private System.Windows.Forms.RadioButton RbtnEngels;
+        private System.Windows.Forms.RadioButton RbtnNederlands;
     }
 }
