@@ -32,6 +32,7 @@
             this.BtnRegistreren = new System.Windows.Forms.Button();
             this.BtnAfsluiten = new System.Windows.Forms.Button();
             this.BtnSettings = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.BtnSettings)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,12 +78,22 @@
             this.BtnSettings.TabStop = false;
             this.BtnSettings.Click += new System.EventHandler(this.BtnSettings_Click_2);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(265, 96);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // PooltafelMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(314, 186);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnSettings);
             this.Controls.Add(this.BtnAfsluiten);
             this.Controls.Add(this.BtnRegistreren);
@@ -100,6 +111,7 @@
         private System.Windows.Forms.Button BtnRegistreren;
         private System.Windows.Forms.Button BtnAfsluiten;
         private System.Windows.Forms.PictureBox BtnSettings;
+        private System.Windows.Forms.Button button1;
     }
 }
 
