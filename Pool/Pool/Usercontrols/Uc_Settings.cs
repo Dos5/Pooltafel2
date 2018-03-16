@@ -18,6 +18,7 @@ namespace Pool
         
         public Settings()
         {
+
             InitializeComponent();
         }
 
@@ -28,13 +29,36 @@ namespace Pool
 
         private void BtnBevestig_Click(object sender, EventArgs e)
         {
-          /*if (RbtnEngels.Checked) {
-                foreach (var item in Settings)
-                {
+            if (RbtnEngels.Checked)
+            {
+                //SetCulture("en-US");
+               
+            }            
+        }
+        // Set the form's culture.
+        /*private void SetCulture(string culture)
+        {
+            // Make the CultureInfo.
+            CultureInfo culture_info = new CultureInfo(culture);
 
-                }
-            }*/             
-        }  
+            // Make a ComponentResourceManager.
+            ComponentResourceManager component_resource_manager
+                = new ComponentResourceManager(this.GetType());
+
+            // Apply resources to the form.
+            component_resource_manager.ApplyResources(
+                this, "$this", culture_info);
+
+            // Apply resources to the form's controls.
+            foreach (Control ctl in this.Controls)
+            {
+                component_resource_manager.ApplyResources(
+                    ctl, ctl.Name, culture_info);
+            }
+            
+        }*/
+        
+
     }
 }
 
