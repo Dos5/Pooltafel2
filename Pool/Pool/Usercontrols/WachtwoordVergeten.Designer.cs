@@ -32,8 +32,8 @@
             this.LbNaam = new System.Windows.Forms.Label();
             this.BtnExit = new System.Windows.Forms.Button();
             this.BtnVerander = new System.Windows.Forms.Button();
-            this.TbWw = new System.Windows.Forms.TextBox();
-            this.TbNaam = new System.Windows.Forms.TextBox();
+            this.TextWw = new System.Windows.Forms.TextBox();
+            this.TextNaam = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -77,23 +77,22 @@
             this.BtnVerander.TabIndex = 11;
             this.BtnVerander.Text = "Verander";
             this.BtnVerander.UseVisualStyleBackColor = true;
-            this.BtnVerander.Click += new System.EventHandler(this.BtnVerander_Click);
             // 
-            // TbWw
+            // TextWw
             // 
-            this.TbWw.Location = new System.Drawing.Point(77, 86);
-            this.TbWw.Margin = new System.Windows.Forms.Padding(2);
-            this.TbWw.Name = "TbWw";
-            this.TbWw.Size = new System.Drawing.Size(134, 20);
-            this.TbWw.TabIndex = 10;
+            this.TextWw.Location = new System.Drawing.Point(77, 86);
+            this.TextWw.Margin = new System.Windows.Forms.Padding(2);
+            this.TextWw.Name = "TextWw";
+            this.TextWw.Size = new System.Drawing.Size(134, 20);
+            this.TextWw.TabIndex = 10;
             // 
-            // TbNaam
+            // TextNaam
             // 
-            this.TbNaam.Location = new System.Drawing.Point(77, 46);
-            this.TbNaam.Margin = new System.Windows.Forms.Padding(2);
-            this.TbNaam.Name = "TbNaam";
-            this.TbNaam.Size = new System.Drawing.Size(134, 20);
-            this.TbNaam.TabIndex = 9;
+            this.TextNaam.Location = new System.Drawing.Point(77, 46);
+            this.TextNaam.Margin = new System.Windows.Forms.Padding(2);
+            this.TextNaam.Name = "TextNaam";
+            this.TextNaam.Size = new System.Drawing.Size(134, 20);
+            this.TextNaam.TabIndex = 9;
             // 
             // button1
             // 
@@ -113,8 +112,8 @@
             this.Controls.Add(this.LbNaam);
             this.Controls.Add(this.BtnExit);
             this.Controls.Add(this.BtnVerander);
-            this.Controls.Add(this.TbWw);
-            this.Controls.Add(this.TbNaam);
+            this.Controls.Add(this.TextWw);
+            this.Controls.Add(this.TextNaam);
             this.Controls.Add(this.button1);
             this.Name = "WachtwoordVergeten";
             this.Size = new System.Drawing.Size(248, 203);
@@ -129,8 +128,8 @@
         private System.Windows.Forms.Label LbNaam;
         private System.Windows.Forms.Button BtnExit;
         private System.Windows.Forms.Button BtnVerander;
-        private System.Windows.Forms.TextBox TbWw;
-        private System.Windows.Forms.TextBox TbNaam;
+        private System.Windows.Forms.TextBox TextWw;
+        private System.Windows.Forms.TextBox TextNaam;
         private System.Windows.Forms.Button button1;
     }
 }

@@ -28,56 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.GbxTaal = new System.Windows.Forms.GroupBox();
-            this.RbtnDuits = new System.Windows.Forms.RadioButton();
-            this.RbtnEngels = new System.Windows.Forms.RadioButton();
-            this.RbtnNederlands = new System.Windows.Forms.RadioButton();
+            this.BoxTaal = new System.Windows.Forms.GroupBox();
+            this.RadiobtnNl = new System.Windows.Forms.RadioButton();
+            this.RadiobtnDuits = new System.Windows.Forms.RadioButton();
+            this.RadiobtnEngels = new System.Windows.Forms.RadioButton();
             this.BtnTerug = new System.Windows.Forms.Button();
             this.BtnBevestig = new System.Windows.Forms.Button();
-            this.GbxTaal.SuspendLayout();
+            this.BoxTaal.SuspendLayout();
             this.SuspendLayout();
             // 
-            // GbxTaal
+            // BoxTaal
             // 
-            this.GbxTaal.Controls.Add(this.RbtnDuits);
-            this.GbxTaal.Controls.Add(this.RbtnEngels);
-            this.GbxTaal.Controls.Add(this.RbtnNederlands);
-            this.GbxTaal.Location = new System.Drawing.Point(8, 24);
-            this.GbxTaal.Name = "GbxTaal";
-            this.GbxTaal.Size = new System.Drawing.Size(200, 100);
-            this.GbxTaal.TabIndex = 0;
-            this.GbxTaal.TabStop = false;
-            this.GbxTaal.Text = "Taal";
+            this.BoxTaal.Controls.Add(this.RadiobtnNl);
+            this.BoxTaal.Controls.Add(this.RadiobtnDuits);
+            this.BoxTaal.Controls.Add(this.RadiobtnEngels);
+            this.BoxTaal.Location = new System.Drawing.Point(8, 24);
+            this.BoxTaal.Name = "BoxTaal";
+            this.BoxTaal.Size = new System.Drawing.Size(200, 100);
+            this.BoxTaal.TabIndex = 0;
+            this.BoxTaal.TabStop = false;
+            this.BoxTaal.Text = "Taal";
             // 
-            // RbtnDuits
+            // RadiobtnNl
             // 
-            this.RbtnDuits.AutoSize = true;
-            this.RbtnDuits.Location = new System.Drawing.Point(16, 80);
-            this.RbtnDuits.Name = "RbtnDuits";
-            this.RbtnDuits.Size = new System.Drawing.Size(47, 17);
-            this.RbtnDuits.TabIndex = 2;
-            this.RbtnDuits.Text = "duits";
-            this.RbtnDuits.UseVisualStyleBackColor = true;
+            this.RadiobtnNl.AutoSize = true;
+            this.RadiobtnNl.Location = new System.Drawing.Point(24, 72);
+            this.RadiobtnNl.Name = "RadiobtnNl";
+            this.RadiobtnNl.Size = new System.Drawing.Size(79, 17);
+            this.RadiobtnNl.TabIndex = 2;
+            this.RadiobtnNl.TabStop = true;
+            this.RadiobtnNl.Text = "Nederlands";
+            this.RadiobtnNl.UseVisualStyleBackColor = true;
             // 
-            // RbtnEngels
+            // RadiobtnDuits
             // 
-            this.RbtnEngels.AutoSize = true;
-            this.RbtnEngels.Location = new System.Drawing.Point(16, 48);
-            this.RbtnEngels.Name = "RbtnEngels";
-            this.RbtnEngels.Size = new System.Drawing.Size(56, 17);
-            this.RbtnEngels.TabIndex = 1;
-            this.RbtnEngels.Text = "engels";
-            this.RbtnEngels.UseVisualStyleBackColor = true;
+            this.RadiobtnDuits.AutoSize = true;
+            this.RadiobtnDuits.Location = new System.Drawing.Point(24, 48);
+            this.RadiobtnDuits.Name = "RadiobtnDuits";
+            this.RadiobtnDuits.Size = new System.Drawing.Size(49, 17);
+            this.RadiobtnDuits.TabIndex = 1;
+            this.RadiobtnDuits.TabStop = true;
+            this.RadiobtnDuits.Text = "Duits";
+            this.RadiobtnDuits.UseVisualStyleBackColor = true;
             // 
-            // RbtnNederlands
+            // RadiobtnEngels
             // 
-            this.RbtnNederlands.AutoSize = true;
-            this.RbtnNederlands.Location = new System.Drawing.Point(16, 16);
-            this.RbtnNederlands.Name = "RbtnNederlands";
-            this.RbtnNederlands.Size = new System.Drawing.Size(77, 17);
-            this.RbtnNederlands.TabIndex = 0;
-            this.RbtnNederlands.Text = "nederlands";
-            this.RbtnNederlands.UseVisualStyleBackColor = true;
+            this.RadiobtnEngels.AutoSize = true;
+            this.RadiobtnEngels.Location = new System.Drawing.Point(24, 24);
+            this.RadiobtnEngels.Name = "RadiobtnEngels";
+            this.RadiobtnEngels.Size = new System.Drawing.Size(57, 17);
+            this.RadiobtnEngels.TabIndex = 0;
+            this.RadiobtnEngels.TabStop = true;
+            this.RadiobtnEngels.Text = "Engels";
+            this.RadiobtnEngels.UseVisualStyleBackColor = true;
             // 
             // BtnTerug
             // 
@@ -97,7 +100,6 @@
             this.BtnBevestig.TabIndex = 2;
             this.BtnBevestig.Text = "Bevestig";
             this.BtnBevestig.UseVisualStyleBackColor = true;
-            this.BtnBevestig.Click += new System.EventHandler(this.BtnBevestig_Click);
             // 
             // Settings
             // 
@@ -106,22 +108,22 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.BtnBevestig);
             this.Controls.Add(this.BtnTerug);
-            this.Controls.Add(this.GbxTaal);
+            this.Controls.Add(this.BoxTaal);
             this.Name = "Settings";
             this.Size = new System.Drawing.Size(252, 188);
-            this.GbxTaal.ResumeLayout(false);
-            this.GbxTaal.PerformLayout();
+            this.BoxTaal.ResumeLayout(false);
+            this.BoxTaal.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox GbxTaal;
+        private System.Windows.Forms.GroupBox BoxTaal;
+        private System.Windows.Forms.RadioButton RadiobtnNl;
+        private System.Windows.Forms.RadioButton RadiobtnDuits;
+        private System.Windows.Forms.RadioButton RadiobtnEngels;
         private System.Windows.Forms.Button BtnTerug;
         private System.Windows.Forms.Button BtnBevestig;
-        private System.Windows.Forms.RadioButton RbtnDuits;
-        private System.Windows.Forms.RadioButton RbtnEngels;
-        private System.Windows.Forms.RadioButton RbtnNederlands;
     }
 }

@@ -10,21 +10,16 @@ using System.Windows.Forms;
 
 namespace Pool
 {
-    public partial class Toernooi : UserControl
+    public partial class WachtwoordVergeten : UserControl
     {
-        public Toernooi()
+        public WachtwoordVergeten()
         {
             InitializeComponent();
         }
 
-        private void BtnTerug_Click(object sender, EventArgs e)
+        private void BtnExit_Click(object sender, EventArgs e)
         {
             this.Hide();
-        }
-
-        private void BtnVerder_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Het toernooi wordt gestart, veel plezier!");
         }
     }
 }

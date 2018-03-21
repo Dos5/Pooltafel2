@@ -24,9 +24,9 @@ namespace Pool
 
         private void BtnVerder_Click(object sender, EventArgs e)
         {
-            if (RbtnToernooi.Checked || RbtnDuel.Checked)
+            if (RadiobtnToernooi.Checked || RadiobtnDuel.Checked)
             {
-                if (Rbtn9ball.Checked || Rbtn8ball.Checked)
+                if (Radiobtn9ball.Checked || Radiobtn8ball.Checked)
                 {
                     Toernooi toernooi = new Toernooi();
                     Controls.Add(toernooi);

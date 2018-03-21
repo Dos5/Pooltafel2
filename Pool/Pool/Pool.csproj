@@ -104,11 +104,11 @@
     <Compile Include="Usercontrols\Uc_Settings.Designer.cs">
       <DependentUpon>Uc_Settings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usercontrols\Uc_WachtwoordVergeten.cs">
+    <Compile Include="Usercontrols\WachtwoordVergeten.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Usercontrols\Uc_WachtwoordVergeten.Designer.cs">
-      <DependentUpon>Uc_WachtwoordVergeten.cs</DependentUpon>
+    <Compile Include="Usercontrols\WachtwoordVergeten.Designer.cs">
+      <DependentUpon>WachtwoordVergeten.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -141,8 +141,8 @@
     <EmbeddedResource Include="Usercontrols\Uc_Toernooi.resx">
       <DependentUpon>Uc_Toernooi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Usercontrols\Uc_WachtwoordVergeten.resx">
-      <DependentUpon>Uc_WachtwoordVergeten.cs</DependentUpon>
+    <EmbeddedResource Include="Usercontrols\WachtwoordVergeten.resx">
+      <DependentUpon>WachtwoordVergeten.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -158,6 +158,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Database\PoolData.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database\PoolData_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>PoolData.mdf</DependentUpon>
+    </Content>
     <Content Include="Resources\Gear.png" />
   </ItemGroup>
   <ItemGroup>
@@ -172,8 +179,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Database\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

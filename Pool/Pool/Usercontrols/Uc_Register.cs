@@ -21,26 +21,5 @@ namespace Pool
         {
             this.Hide();
         }
-
-        private void BtnRegister_Click(object sender, EventArgs e)
-        {
-            if (TbNaam.Text != "")
-            {
-                if (TbWw.Text != "")
-                {
-                    Ingelogd ingelogd = new Ingelogd();
-                    Controls.Add(ingelogd);
-                    ingelogd.BringToFront();
-                }
-                else
-                {
-                    MessageBox.Show("Vul een wachtwoord in");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Vul een naam in padoog");
-            }
-        }
     }
 }

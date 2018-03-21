@@ -31,15 +31,15 @@
             this.BtnExit = new System.Windows.Forms.Button();
             this.BtnRegels = new System.Windows.Forms.Button();
             this.BtnVerder = new System.Windows.Forms.Button();
-            this.GbxSpelkeus = new System.Windows.Forms.GroupBox();
-            this.Rbtn9ball = new System.Windows.Forms.RadioButton();
-            this.Rbtn8ball = new System.Windows.Forms.RadioButton();
-            this.GbxVariant = new System.Windows.Forms.GroupBox();
-            this.RbtnToernooi = new System.Windows.Forms.RadioButton();
-            this.RbtnDuel = new System.Windows.Forms.RadioButton();
+            this.GrboxSpelkeus = new System.Windows.Forms.GroupBox();
+            this.Radiobtn9ball = new System.Windows.Forms.RadioButton();
+            this.Radiobtn8ball = new System.Windows.Forms.RadioButton();
+            this.GrboxVariant = new System.Windows.Forms.GroupBox();
+            this.RadiobtnToernooi = new System.Windows.Forms.RadioButton();
+            this.RadiobtnDuel = new System.Windows.Forms.RadioButton();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.GbxSpelkeus.SuspendLayout();
-            this.GbxVariant.SuspendLayout();
+            this.GrboxSpelkeus.SuspendLayout();
+            this.GrboxVariant.SuspendLayout();
             this.SuspendLayout();
             // 
             // BtnExit
@@ -75,87 +75,87 @@
             this.BtnVerder.UseVisualStyleBackColor = true;
             this.BtnVerder.Click += new System.EventHandler(this.BtnVerder_Click);
             // 
-            // GbxSpelkeus
+            // GrboxSpelkeus
             // 
-            this.GbxSpelkeus.Controls.Add(this.Rbtn9ball);
-            this.GbxSpelkeus.Controls.Add(this.Rbtn8ball);
-            this.GbxSpelkeus.Location = new System.Drawing.Point(24, 0);
-            this.GbxSpelkeus.Name = "GbxSpelkeus";
-            this.GbxSpelkeus.Size = new System.Drawing.Size(160, 56);
-            this.GbxSpelkeus.TabIndex = 9;
-            this.GbxSpelkeus.TabStop = false;
-            this.GbxSpelkeus.Text = "Spelvorm";
+            this.GrboxSpelkeus.Controls.Add(this.Radiobtn9ball);
+            this.GrboxSpelkeus.Controls.Add(this.Radiobtn8ball);
+            this.GrboxSpelkeus.Location = new System.Drawing.Point(24, 0);
+            this.GrboxSpelkeus.Name = "GrboxSpelkeus";
+            this.GrboxSpelkeus.Size = new System.Drawing.Size(160, 56);
+            this.GrboxSpelkeus.TabIndex = 9;
+            this.GrboxSpelkeus.TabStop = false;
+            this.GrboxSpelkeus.Text = "Spelvorm";
             // 
-            // Rbtn9ball
+            // Radiobtn9ball
             // 
-            this.Rbtn9ball.AutoSize = true;
-            this.Rbtn9ball.Location = new System.Drawing.Point(80, 24);
-            this.Rbtn9ball.Name = "Rbtn9ball";
-            this.Rbtn9ball.Size = new System.Drawing.Size(51, 17);
-            this.Rbtn9ball.TabIndex = 1;
-            this.Rbtn9ball.TabStop = true;
-            this.Rbtn9ball.Text = "9-Ball";
-            this.Rbtn9ball.UseVisualStyleBackColor = true;
+            this.Radiobtn9ball.AutoSize = true;
+            this.Radiobtn9ball.Location = new System.Drawing.Point(80, 24);
+            this.Radiobtn9ball.Name = "Radiobtn9ball";
+            this.Radiobtn9ball.Size = new System.Drawing.Size(51, 17);
+            this.Radiobtn9ball.TabIndex = 1;
+            this.Radiobtn9ball.TabStop = true;
+            this.Radiobtn9ball.Text = "9-Ball";
+            this.Radiobtn9ball.UseVisualStyleBackColor = true;
             // 
-            // Rbtn8ball
+            // Radiobtn8ball
             // 
-            this.Rbtn8ball.AutoSize = true;
-            this.Rbtn8ball.Location = new System.Drawing.Point(8, 24);
-            this.Rbtn8ball.Name = "Rbtn8ball";
-            this.Rbtn8ball.Size = new System.Drawing.Size(51, 17);
-            this.Rbtn8ball.TabIndex = 0;
-            this.Rbtn8ball.TabStop = true;
-            this.Rbtn8ball.Text = "8-Ball";
-            this.Rbtn8ball.UseVisualStyleBackColor = true;
+            this.Radiobtn8ball.AutoSize = true;
+            this.Radiobtn8ball.Location = new System.Drawing.Point(8, 24);
+            this.Radiobtn8ball.Name = "Radiobtn8ball";
+            this.Radiobtn8ball.Size = new System.Drawing.Size(51, 17);
+            this.Radiobtn8ball.TabIndex = 0;
+            this.Radiobtn8ball.TabStop = true;
+            this.Radiobtn8ball.Text = "8-Ball";
+            this.Radiobtn8ball.UseVisualStyleBackColor = true;
             // 
-            // GbxVariant
+            // GrboxVariant
             // 
-            this.GbxVariant.Controls.Add(this.RbtnToernooi);
-            this.GbxVariant.Controls.Add(this.RbtnDuel);
-            this.GbxVariant.Location = new System.Drawing.Point(24, 80);
-            this.GbxVariant.Name = "GbxVariant";
-            this.GbxVariant.Size = new System.Drawing.Size(160, 56);
-            this.GbxVariant.TabIndex = 10;
-            this.GbxVariant.TabStop = false;
-            this.GbxVariant.Text = "Duel of toernooi?";
+            this.GrboxVariant.Controls.Add(this.RadiobtnToernooi);
+            this.GrboxVariant.Controls.Add(this.RadiobtnDuel);
+            this.GrboxVariant.Location = new System.Drawing.Point(24, 80);
+            this.GrboxVariant.Name = "GrboxVariant";
+            this.GrboxVariant.Size = new System.Drawing.Size(160, 56);
+            this.GrboxVariant.TabIndex = 10;
+            this.GrboxVariant.TabStop = false;
+            this.GrboxVariant.Text = "Duel of toernooi?";
             // 
-            // RbtnToernooi
+            // RadiobtnToernooi
             // 
-            this.RbtnToernooi.AutoSize = true;
-            this.RbtnToernooi.Location = new System.Drawing.Point(80, 24);
-            this.RbtnToernooi.Name = "RbtnToernooi";
-            this.RbtnToernooi.Size = new System.Drawing.Size(67, 17);
-            this.RbtnToernooi.TabIndex = 1;
-            this.RbtnToernooi.TabStop = true;
-            this.RbtnToernooi.Text = "Toernooi";
-            this.RbtnToernooi.UseVisualStyleBackColor = true;
+            this.RadiobtnToernooi.AutoSize = true;
+            this.RadiobtnToernooi.Location = new System.Drawing.Point(80, 24);
+            this.RadiobtnToernooi.Name = "RadiobtnToernooi";
+            this.RadiobtnToernooi.Size = new System.Drawing.Size(67, 17);
+            this.RadiobtnToernooi.TabIndex = 1;
+            this.RadiobtnToernooi.TabStop = true;
+            this.RadiobtnToernooi.Text = "Toernooi";
+            this.RadiobtnToernooi.UseVisualStyleBackColor = true;
             // 
-            // RbtnDuel
+            // RadiobtnDuel
             // 
-            this.RbtnDuel.AutoSize = true;
-            this.RbtnDuel.Location = new System.Drawing.Point(16, 24);
-            this.RbtnDuel.Name = "RbtnDuel";
-            this.RbtnDuel.Size = new System.Drawing.Size(47, 17);
-            this.RbtnDuel.TabIndex = 0;
-            this.RbtnDuel.TabStop = true;
-            this.RbtnDuel.Text = "Duel";
-            this.RbtnDuel.UseVisualStyleBackColor = true;
+            this.RadiobtnDuel.AutoSize = true;
+            this.RadiobtnDuel.Location = new System.Drawing.Point(16, 24);
+            this.RadiobtnDuel.Name = "RadiobtnDuel";
+            this.RadiobtnDuel.Size = new System.Drawing.Size(47, 17);
+            this.RadiobtnDuel.TabIndex = 0;
+            this.RadiobtnDuel.TabStop = true;
+            this.RadiobtnDuel.Text = "Duel";
+            this.RadiobtnDuel.UseVisualStyleBackColor = true;
             // 
             // Ingelogd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.GbxVariant);
-            this.Controls.Add(this.GbxSpelkeus);
+            this.Controls.Add(this.GrboxVariant);
+            this.Controls.Add(this.GrboxSpelkeus);
             this.Controls.Add(this.BtnExit);
             this.Controls.Add(this.BtnRegels);
             this.Controls.Add(this.BtnVerder);
             this.Name = "Ingelogd";
             this.Size = new System.Drawing.Size(248, 203);
-            this.GbxSpelkeus.ResumeLayout(false);
-            this.GbxSpelkeus.PerformLayout();
-            this.GbxVariant.ResumeLayout(false);
-            this.GbxVariant.PerformLayout();
+            this.GrboxSpelkeus.ResumeLayout(false);
+            this.GrboxSpelkeus.PerformLayout();
+            this.GrboxVariant.ResumeLayout(false);
+            this.GrboxVariant.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -165,12 +165,12 @@
         private System.Windows.Forms.Button BtnExit;
         private System.Windows.Forms.Button BtnRegels;
         private System.Windows.Forms.Button BtnVerder;
-        private System.Windows.Forms.GroupBox GbxSpelkeus;
-        private System.Windows.Forms.RadioButton Rbtn9ball;
-        private System.Windows.Forms.RadioButton Rbtn8ball;
-        private System.Windows.Forms.GroupBox GbxVariant;
-        private System.Windows.Forms.RadioButton RbtnToernooi;
-        private System.Windows.Forms.RadioButton RbtnDuel;
+        private System.Windows.Forms.GroupBox GrboxSpelkeus;
+        private System.Windows.Forms.RadioButton Radiobtn9ball;
+        private System.Windows.Forms.RadioButton Radiobtn8ball;
+        private System.Windows.Forms.GroupBox GrboxVariant;
+        private System.Windows.Forms.RadioButton RadiobtnToernooi;
+        private System.Windows.Forms.RadioButton RadiobtnDuel;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
