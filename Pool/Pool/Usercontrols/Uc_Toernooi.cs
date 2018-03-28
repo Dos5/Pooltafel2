@@ -12,6 +12,9 @@ namespace Pool
 {
     public partial class Toernooi : UserControl
     {
+
+        public int HoeveelheidSpelers;
+
         public Toernooi()
         {
             InitializeComponent();
@@ -24,7 +27,28 @@ namespace Pool
 
         private void BtnVerder_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Het toernooi wordt gestart, veel plezier!");
+            Pool.Usercontrols.Uc_Spelers players = new Usercontrols.Uc_Spelers(8);
+            players.Show();
+        }
+
+        private void RadiobtnVierspelers_CheckedChanged(object sender, EventArgs e)
+        {
+            HoeveelheidSpelers = 4;
+        }
+
+        private void RadiobtnZesspelers_CheckedChanged(object sender, EventArgs e)
+        {
+            HoeveelheidSpelers = 6;
+        }
+
+        private void RadiobtnAchtspelers_CheckedChanged(object sender, EventArgs e)
+        {
+            HoeveelheidSpelers = 8;
+        }
+
+        private void RadiobtnTienspelers_CheckedChanged(object sender, EventArgs e)
+        {
+            HoeveelheidSpelers = 10;
         }
     }
 }
