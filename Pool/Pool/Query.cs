@@ -11,12 +11,14 @@ namespace Pool
     class Query
     {
 
-        private int UserId;
-        private string Name;
-        private string Password;
-        private string Email;
-        private string PhoneNumber;
+        private DataTable rules = new DataTable();
 
+        public DataTable Rules
+        {
+            get { return rules; }
+        }
+
+        
        public Query()
         {
 
@@ -27,7 +29,7 @@ namespace Pool
             ConnectionString = @" Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\bstad\Source\Repos\Pooltafel23\Pool\Pool\Database\PoolData.mdf;Integrated Security = True"
         };
 
-        
+       
 
         public void registratie(string Name, string Password, string Email, int Phonenumber)
         {
@@ -63,6 +65,8 @@ namespace Pool
             conn.Close();
             return inloggen;
         }
+
+        
 
 
 

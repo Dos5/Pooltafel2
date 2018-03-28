@@ -92,10 +92,6 @@
             // 
             // GbxBracketGrafiek
             // 
-            this.GbxBracketGrafiek.Controls.Add(this.label19);
-            this.GbxBracketGrafiek.Controls.Add(this.label18);
-            this.GbxBracketGrafiek.Controls.Add(this.label16);
-            this.GbxBracketGrafiek.Controls.Add(this.label17);
             this.GbxBracketGrafiek.Controls.Add(this.label15);
             this.GbxBracketGrafiek.Controls.Add(this.label13);
             this.GbxBracketGrafiek.Controls.Add(this.label14);
@@ -180,6 +176,15 @@
             this.label14.Size = new System.Drawing.Size(54, 17);
             this.label14.TabIndex = 12;
             this.label14.Text = "label14";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(626, 255);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(46, 17);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "label8";
             // 
             // label9
             // 

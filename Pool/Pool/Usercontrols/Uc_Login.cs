@@ -34,14 +34,20 @@ namespace Pool
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
+            bool inloggen = false;
             string naam = Tb_naam.Text;
             string wachtwoord = Tb_wachtwoord.Text;
-            query.login(naam, wachtwoord);
-            
-
-            Ingelogd ingelogd = new Ingelogd();
-            Controls.Add(ingelogd);
-            ingelogd.BringToFront();
+            inloggen = query.login(naam, wachtwoord);
+            if (inloggen == true)
+            {
+                Ingelogd login = new Ingelogd();
+                Controls.Add(login);
+                login.BringToFront();
+            }
+            else if (inloggen == false)
+            {
+                MessageBox.Show("login failed");
+            }
         }
 
         private void Login_Load(object sender, EventArgs e)

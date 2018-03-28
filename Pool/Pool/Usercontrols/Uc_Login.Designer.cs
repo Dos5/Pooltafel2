@@ -61,6 +61,7 @@
             this.Tb_wachtwoord.Location = new System.Drawing.Point(101, 96);
             this.Tb_wachtwoord.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Tb_wachtwoord.Name = "Tb_wachtwoord";
+            this.Tb_wachtwoord.PasswordChar = '*';
             this.Tb_wachtwoord.Size = new System.Drawing.Size(177, 22);
             this.Tb_wachtwoord.TabIndex = 2;
             // 
