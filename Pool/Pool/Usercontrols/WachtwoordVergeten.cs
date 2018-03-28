@@ -17,7 +17,7 @@ namespace Pool
             InitializeComponent();
         }
 
-        private void BtnExit_Click(object sender, EventArgs e)
+        private void Btn_Terug_Click(object sender, EventArgs e)
         {
             this.Hide();
         }

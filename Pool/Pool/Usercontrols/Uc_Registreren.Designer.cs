@@ -1,6 +1,6 @@
 ﻿namespace Pool
 {
-    partial class WachtwoordVergeten
+    partial class Register
     {
         /// <summary> 
         /// Required designer variable.
@@ -31,16 +31,20 @@
             this.Lb_Wachtwoord = new System.Windows.Forms.Label();
             this.Lb_Naam = new System.Windows.Forms.Label();
             this.Btn_Terug = new System.Windows.Forms.Button();
-            this.Btn_Verander = new System.Windows.Forms.Button();
+            this.Btn_Register = new System.Windows.Forms.Button();
             this.Tb_Wachtwoord = new System.Windows.Forms.TextBox();
             this.Tb_Naam = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.Tb_Email = new System.Windows.Forms.TextBox();
+            this.Tb_Mobiel = new System.Windows.Forms.TextBox();
+            this.Lb_Email = new System.Windows.Forms.Label();
+            this.Lb_Mobiel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Lb_Wachtwoord
             // 
             this.Lb_Wachtwoord.AutoSize = true;
-            this.Lb_Wachtwoord.Location = new System.Drawing.Point(11, 108);
+            this.Lb_Wachtwoord.Location = new System.Drawing.Point(11, 78);
             this.Lb_Wachtwoord.Name = "Lb_Wachtwoord";
             this.Lb_Wachtwoord.Size = new System.Drawing.Size(86, 17);
             this.Lb_Wachtwoord.TabIndex = 15;
@@ -49,7 +53,7 @@
             // Lb_Naam
             // 
             this.Lb_Naam.AutoSize = true;
-            this.Lb_Naam.Location = new System.Drawing.Point(52, 57);
+            this.Lb_Naam.Location = new System.Drawing.Point(52, 47);
             this.Lb_Naam.Name = "Lb_Naam";
             this.Lb_Naam.Size = new System.Drawing.Size(45, 17);
             this.Lb_Naam.TabIndex = 14;
@@ -57,36 +61,38 @@
             // 
             // Btn_Terug
             // 
-            this.Btn_Terug.Location = new System.Drawing.Point(240, 167);
+            this.Btn_Terug.Location = new System.Drawing.Point(168, 167);
             this.Btn_Terug.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_Terug.Name = "Btn_Terug";
-            this.Btn_Terug.Size = new System.Drawing.Size(87, 48);
+            this.Btn_Terug.Size = new System.Drawing.Size(112, 48);
             this.Btn_Terug.TabIndex = 13;
             this.Btn_Terug.Text = "Terug";
             this.Btn_Terug.UseVisualStyleBackColor = true;
             this.Btn_Terug.Click += new System.EventHandler(this.Btn_Terug_Click);
             // 
-            // Btn_Verander
+            // Btn_Register
             // 
-            this.Btn_Verander.Location = new System.Drawing.Point(3, 167);
-            this.Btn_Verander.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Btn_Verander.Name = "Btn_Verander";
-            this.Btn_Verander.Size = new System.Drawing.Size(87, 48);
-            this.Btn_Verander.TabIndex = 11;
-            this.Btn_Verander.Text = "Verander";
-            this.Btn_Verander.UseVisualStyleBackColor = true;
+            this.Btn_Register.Location = new System.Drawing.Point(55, 167);
+            this.Btn_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Btn_Register.Name = "Btn_Register";
+            this.Btn_Register.Size = new System.Drawing.Size(107, 48);
+            this.Btn_Register.TabIndex = 11;
+            this.Btn_Register.Text = "Register";
+            this.Btn_Register.UseVisualStyleBackColor = true;
+            this.Btn_Register.Click += new System.EventHandler(this.Btn_Register_Click);
             // 
             // Tb_Wachtwoord
             // 
-            this.Tb_Wachtwoord.Location = new System.Drawing.Point(103, 106);
+            this.Tb_Wachtwoord.Location = new System.Drawing.Point(103, 73);
             this.Tb_Wachtwoord.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Tb_Wachtwoord.Name = "Tb_Wachtwoord";
             this.Tb_Wachtwoord.Size = new System.Drawing.Size(177, 22);
             this.Tb_Wachtwoord.TabIndex = 10;
+            this.Tb_Wachtwoord.TextChanged += new System.EventHandler(this.TextWw_TextChanged);
             // 
             // Tb_Naam
             // 
-            this.Tb_Naam.Location = new System.Drawing.Point(103, 57);
+            this.Tb_Naam.Location = new System.Drawing.Point(103, 47);
             this.Tb_Naam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Tb_Naam.Name = "Tb_Naam";
             this.Tb_Naam.Size = new System.Drawing.Size(177, 22);
@@ -94,7 +100,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(47, 49);
+            this.button1.Location = new System.Drawing.Point(47, 69);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(0, 0);
@@ -102,20 +108,57 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // WachtwoordVergeten
+            // Tb_Email
+            // 
+            this.Tb_Email.Location = new System.Drawing.Point(103, 100);
+            this.Tb_Email.Name = "Tb_Email";
+            this.Tb_Email.Size = new System.Drawing.Size(177, 22);
+            this.Tb_Email.TabIndex = 18;
+            // 
+            // Tb_Mobiel
+            // 
+            this.Tb_Mobiel.Location = new System.Drawing.Point(103, 128);
+            this.Tb_Mobiel.Name = "Tb_Mobiel";
+            this.Tb_Mobiel.Size = new System.Drawing.Size(177, 22);
+            this.Tb_Mobiel.TabIndex = 19;
+            // 
+            // Lb_Email
+            // 
+            this.Lb_Email.AutoSize = true;
+            this.Lb_Email.Location = new System.Drawing.Point(44, 103);
+            this.Lb_Email.Name = "Lb_Email";
+            this.Lb_Email.Size = new System.Drawing.Size(46, 17);
+            this.Lb_Email.TabIndex = 20;
+            this.Lb_Email.Text = "E mail";
+            // 
+            // Lb_Mobiel
+            // 
+            this.Lb_Mobiel.AutoSize = true;
+            this.Lb_Mobiel.Location = new System.Drawing.Point(41, 131);
+            this.Lb_Mobiel.Name = "Lb_Mobiel";
+            this.Lb_Mobiel.Size = new System.Drawing.Size(49, 17);
+            this.Lb_Mobiel.TabIndex = 21;
+            this.Lb_Mobiel.Text = "mobiel";
+            // 
+            // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.Lb_Mobiel);
+            this.Controls.Add(this.Lb_Email);
+            this.Controls.Add(this.Tb_Mobiel);
+            this.Controls.Add(this.Tb_Email);
             this.Controls.Add(this.Lb_Wachtwoord);
             this.Controls.Add(this.Lb_Naam);
             this.Controls.Add(this.Btn_Terug);
-            this.Controls.Add(this.Btn_Verander);
+            this.Controls.Add(this.Btn_Register);
             this.Controls.Add(this.Tb_Wachtwoord);
             this.Controls.Add(this.Tb_Naam);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "WachtwoordVergeten";
-            this.Size = new System.Drawing.Size(331, 250);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "Register";
+            this.Size = new System.Drawing.Size(306, 238);
+            this.Load += new System.EventHandler(this.Register_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,9 +169,13 @@
         private System.Windows.Forms.Label Lb_Wachtwoord;
         private System.Windows.Forms.Label Lb_Naam;
         private System.Windows.Forms.Button Btn_Terug;
-        private System.Windows.Forms.Button Btn_Verander;
+        private System.Windows.Forms.Button Btn_Register;
         private System.Windows.Forms.TextBox Tb_Wachtwoord;
         private System.Windows.Forms.TextBox Tb_Naam;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox Tb_Email;
+        private System.Windows.Forms.TextBox Tb_Mobiel;
+        private System.Windows.Forms.Label Lb_Email;
+        private System.Windows.Forms.Label Lb_Mobiel;
     }
 }

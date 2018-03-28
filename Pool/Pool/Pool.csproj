@@ -97,17 +97,17 @@
     <Compile Include="Usercontrols\Uc_Regels.Designer.cs">
       <DependentUpon>Uc_Regels.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usercontrols\Uc_Register.cs">
+    <Compile Include="Usercontrols\Uc_Registreren.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Usercontrols\Uc_Register.Designer.cs">
-      <DependentUpon>Uc_Register.cs</DependentUpon>
+    <Compile Include="Usercontrols\Uc_Registreren.Designer.cs">
+      <DependentUpon>Uc_Registreren.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usercontrols\Uc_Login.cs">
+    <Compile Include="Usercontrols\Uc_Inloggen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Usercontrols\Uc_Login.Designer.cs">
-      <DependentUpon>Uc_Login.cs</DependentUpon>
+    <Compile Include="Usercontrols\Uc_Inloggen.Designer.cs">
+      <DependentUpon>Uc_Inloggen.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -138,11 +138,11 @@
     <EmbeddedResource Include="Usercontrols\Uc_Regels.resx">
       <DependentUpon>Uc_Regels.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Usercontrols\Uc_Register.resx">
-      <DependentUpon>Uc_Register.cs</DependentUpon>
+    <EmbeddedResource Include="Usercontrols\Uc_Registreren.resx">
+      <DependentUpon>Uc_Registreren.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Usercontrols\Uc_Login.resx">
-      <DependentUpon>Uc_Login.cs</DependentUpon>
+    <EmbeddedResource Include="Usercontrols\Uc_Inloggen.resx">
+      <DependentUpon>Uc_Inloggen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
