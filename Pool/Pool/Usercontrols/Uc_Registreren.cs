@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace Pool
 {
     public partial class Register : UserControl
@@ -17,19 +16,16 @@ namespace Pool
             InitializeComponent();
         }
         Query Query = new Query();
-
         private void Register_Load(object sender, EventArgs e)
         {
             Login login = new Login();
             Controls.Add(login);
             login.BringToFront();
         }
-
         private void TextWw_TextChanged(object sender, EventArgs e)
         {
 
         }
-
         private void Btn_Register_Click(object sender, EventArgs e)
         {
             try
@@ -47,18 +43,15 @@ namespace Pool
                     int PhoneNumber = Convert.ToInt32(mobiel1);
                     Query.registratie(Name, Password, Email, PhoneNumber);
                 }
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void Btn_Terug_Click(object sender, EventArgs e)
         {
             this.Hide();
         }
     }
-    }
-
+}

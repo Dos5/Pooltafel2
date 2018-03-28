@@ -24,21 +24,21 @@ namespace Pool
         };
         public void registratie(string Name, string Password, string Email, int Phonenumber)
         {
-                conn.Open();
-                string query = "INSERT INTO  [User] VALUES (@Name, @Password, @Email, @PhoneNumber);";
-                SqlCommand cmd = new SqlCommand(query,conn);
-                cmd.Parameters.AddWithValue("@Name", Name);
-                cmd.Parameters.AddWithValue("@Password", Password);
-                cmd.Parameters.AddWithValue("@Email", Email);
-                cmd.Parameters.AddWithValue("@PhoneNumber", Phonenumber);
-                cmd.ExecuteNonQuery();  
-                conn.Close();
+            conn.Open();
+            string query = "INSERT INTO  [User] VALUES (@Name, @Password, @Email, @PhoneNumber);";
+            SqlCommand cmd = new SqlCommand(query,conn);
+            cmd.Parameters.AddWithValue("@Name", Name);
+            cmd.Parameters.AddWithValue("@Password", Password);
+            cmd.Parameters.AddWithValue("@Email", Email);
+            cmd.Parameters.AddWithValue("@PhoneNumber", Phonenumber);
+            cmd.ExecuteNonQuery();  
+            conn.Close();
         }
         public bool login(string Name, string Password)
         {
             bool inloggen = false;
             conn.Open();
-            string query = "select * from [User] where Name=@Name and Password=@Password";
+            string query = "SELECT (*) FROM [User] WHERE Name=@Name and Password=@Password";
             SqlCommand cmd = new SqlCommand(query, conn);
             cmd.Parameters.Clear();
             cmd.Parameters.AddWithValue("@Name", Name);
