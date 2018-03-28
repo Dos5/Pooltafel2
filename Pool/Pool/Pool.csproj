@@ -73,12 +73,6 @@
     <Compile Include="Usercontrols\Uc_EliminationBracket.Designer.cs">
       <DependentUpon>Uc_EliminationBracket.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usercontrols\Uc_Spelers.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Usercontrols\Uc_Spelers.Designer.cs">
-      <DependentUpon>Uc_Spelers.cs</DependentUpon>
-    </Compile>
     <Compile Include="Usercontrols\Uc_Toernooi.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -128,9 +122,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Usercontrols\Uc_EliminationBracket.resx">
       <DependentUpon>Uc_EliminationBracket.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Usercontrols\Uc_Spelers.resx">
-      <DependentUpon>Uc_Spelers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usercontrols\Uc_Ingelogd.resx">
       <DependentUpon>Uc_Ingelogd.cs</DependentUpon>
