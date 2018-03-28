@@ -12,19 +12,23 @@ namespace Pool
 {
     public partial class Regels : UserControl
     {
+        Query Query = new Query();
+        private DataTable regels;
         public Regels()
         {
             InitializeComponent();
-        }
-
-        private void Lbx_Regels_SelectedIndexChanged(object sender, EventArgs e)
-        {
+            regels = Query.Rules;
 
         }
 
-        private void Btn_Terug_Click(object sender, EventArgs e)
+        private void BtnTerug_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void Regels_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
