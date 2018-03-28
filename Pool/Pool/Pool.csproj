@@ -66,6 +66,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Query.cs" />
     <Compile Include="Usercontrols\Uc_Toernooi.cs">
       <SubType>UserControl</SubType>
     </Compile>
