@@ -27,8 +27,7 @@ namespace Pool
 
         private void Btn_Verder_Click(object sender, EventArgs e)
         {
-            Pool.Usercontrols.Uc_Spelers players = new Usercontrols.Uc_Spelers(8);
-            players.Show();
+
         }
 
         private void Rbtn_Vierspelers_CheckedChanged(object sender, EventArgs e)

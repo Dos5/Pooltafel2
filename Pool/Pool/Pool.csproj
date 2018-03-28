@@ -60,11 +60,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Pooltafel-Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Pooltafel-Main.Designer.cs">
+      <DependentUpon>Pooltafel-Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Query.cs" />
     <Compile Include="Usercontrols\Uc_EliminationBracket.cs">
@@ -72,12 +72,6 @@
     </Compile>
     <Compile Include="Usercontrols\Uc_EliminationBracket.Designer.cs">
       <DependentUpon>Uc_EliminationBracket.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Usercontrols\Uc_Spelers.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Usercontrols\Uc_Spelers.Designer.cs">
-      <DependentUpon>Uc_Spelers.cs</DependentUpon>
     </Compile>
     <Compile Include="Usercontrols\Uc_Toernooi.cs">
       <SubType>UserControl</SubType>
@@ -123,14 +117,11 @@
     <Compile Include="Usercontrols\WachtwoordVergeten.Designer.cs">
       <DependentUpon>WachtwoordVergeten.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Pooltafel-Main.resx">
+      <DependentUpon>Pooltafel-Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usercontrols\Uc_EliminationBracket.resx">
       <DependentUpon>Uc_EliminationBracket.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Usercontrols\Uc_Spelers.resx">
-      <DependentUpon>Uc_Spelers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usercontrols\Uc_Ingelogd.resx">
       <DependentUpon>Uc_Ingelogd.cs</DependentUpon>
