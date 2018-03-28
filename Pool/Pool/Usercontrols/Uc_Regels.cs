@@ -17,8 +17,14 @@ namespace Pool
         public Regels()
         {
             InitializeComponent();
-            regels = Query.Rules;
-
+            Query.load_regeln();
+            List<string> regel = new List<string>();
+            foreach (DataRow r in regels.Rows)
+            {
+                regel.Add(r["Name"].ToString());
+            }
+            ListboxRegels.Items.Clear();
+            ListboxRegels.DataSource = regels;
         }
 
         private void BtnTerug_Click(object sender, EventArgs e)

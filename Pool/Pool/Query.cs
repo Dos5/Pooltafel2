@@ -26,7 +26,7 @@ namespace Pool
 
         private SqlConnection conn = new SqlConnection
         {
-            ConnectionString = @" Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\bstad\Source\Repos\Pooltafel23\Pool\Pool\Database\PoolData.mdf;Integrated Security = True"
+            ConnectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\bstad\source\repos\Pooltafel23\Pool\Pool\Database\PoolData.mdf;Integrated Security = True"
         };
 
        
@@ -66,7 +66,24 @@ namespace Pool
             return inloggen;
         }
 
-        
+        public void load_regeln()
+        {
+            SqlDataReader reader;
+            conn.Open();
+            string query = "select * from [Rule]";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            reader = null;
+            
+            using (reader = cmd.ExecuteReader())
+            {
+                rules.Load(reader);
+            }
+            conn.Close();
+            return;
+
+        }
+
+
 
 
 
