@@ -22,14 +22,8 @@ namespace Pool.Usercontrols
         // bewaart de posities van de labels voor de laatste ronde
 
         public Uc_EliminationBracket(int AantalSpelers)
-        {
-            //    InitializeComponent();
-
-            //    for (int i = 0; i < AantalSpelers; i++)
-            //    {
-            //        ToernooiSpelers[i] = new Label();
-            //        // maakt de speler labels aan
-            //    }
+        {            
+            InitializeComponent();
 
             // Verticaal
             /*
@@ -84,13 +78,10 @@ namespace Pool.Usercontrols
                 // maakt de speler labels aan
             }
 
-            //}
+            if (AantalSpelers == 4)
+            {
 
-            //private void TournooiTekenen
-            //{
-
-            //}
-
+            }
         }
     }
 }
