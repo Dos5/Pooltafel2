@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Tb_naam = new System.Windows.Forms.TextBox();
+            this.Tb_wachtwoord = new System.Windows.Forms.TextBox();
             this.BtnLogin = new System.Windows.Forms.Button();
             this.BtnWachtwoord = new System.Windows.Forms.Button();
             this.BtnExit = new System.Windows.Forms.Button();
@@ -40,36 +40,36 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(34, 45);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(45, 55);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(0, 0);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // Tb_naam
             // 
-            this.textBox1.Location = new System.Drawing.Point(76, 38);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(134, 20);
-            this.textBox1.TabIndex = 1;
+            this.Tb_naam.Location = new System.Drawing.Point(101, 47);
+            this.Tb_naam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Tb_naam.Name = "Tb_naam";
+            this.Tb_naam.Size = new System.Drawing.Size(177, 22);
+            this.Tb_naam.TabIndex = 1;
             // 
-            // textBox2
+            // Tb_wachtwoord
             // 
-            this.textBox2.Location = new System.Drawing.Point(76, 78);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(134, 20);
-            this.textBox2.TabIndex = 2;
+            this.Tb_wachtwoord.Location = new System.Drawing.Point(101, 96);
+            this.Tb_wachtwoord.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Tb_wachtwoord.Name = "Tb_wachtwoord";
+            this.Tb_wachtwoord.Size = new System.Drawing.Size(177, 22);
+            this.Tb_wachtwoord.TabIndex = 2;
             // 
             // BtnLogin
             // 
-            this.BtnLogin.Location = new System.Drawing.Point(2, 136);
-            this.BtnLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnLogin.Location = new System.Drawing.Point(3, 167);
+            this.BtnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnLogin.Name = "BtnLogin";
-            this.BtnLogin.Size = new System.Drawing.Size(65, 39);
+            this.BtnLogin.Size = new System.Drawing.Size(87, 48);
             this.BtnLogin.TabIndex = 3;
             this.BtnLogin.Text = "Login";
             this.BtnLogin.UseVisualStyleBackColor = true;
@@ -77,10 +77,10 @@
             // 
             // BtnWachtwoord
             // 
-            this.BtnWachtwoord.Location = new System.Drawing.Point(82, 136);
-            this.BtnWachtwoord.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnWachtwoord.Location = new System.Drawing.Point(109, 167);
+            this.BtnWachtwoord.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnWachtwoord.Name = "BtnWachtwoord";
-            this.BtnWachtwoord.Size = new System.Drawing.Size(85, 39);
+            this.BtnWachtwoord.Size = new System.Drawing.Size(113, 48);
             this.BtnWachtwoord.TabIndex = 4;
             this.BtnWachtwoord.Text = "Wachtwoord vergeten";
             this.BtnWachtwoord.UseVisualStyleBackColor = true;
@@ -88,10 +88,10 @@
             // 
             // BtnExit
             // 
-            this.BtnExit.Location = new System.Drawing.Point(180, 136);
-            this.BtnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnExit.Location = new System.Drawing.Point(240, 167);
+            this.BtnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnExit.Name = "BtnExit";
-            this.BtnExit.Size = new System.Drawing.Size(65, 39);
+            this.BtnExit.Size = new System.Drawing.Size(87, 48);
             this.BtnExit.TabIndex = 5;
             this.BtnExit.Text = "Exit";
             this.BtnExit.UseVisualStyleBackColor = true;
@@ -100,38 +100,37 @@
             // LbNaam
             // 
             this.LbNaam.AutoSize = true;
-            this.LbNaam.Location = new System.Drawing.Point(38, 38);
-            this.LbNaam.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LbNaam.Location = new System.Drawing.Point(51, 47);
             this.LbNaam.Name = "LbNaam";
-            this.LbNaam.Size = new System.Drawing.Size(35, 13);
+            this.LbNaam.Size = new System.Drawing.Size(45, 17);
             this.LbNaam.TabIndex = 6;
             this.LbNaam.Text = "Naam";
             // 
             // LbWachtwoord
             // 
             this.LbWachtwoord.AutoSize = true;
-            this.LbWachtwoord.Location = new System.Drawing.Point(7, 80);
-            this.LbWachtwoord.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LbWachtwoord.Location = new System.Drawing.Point(9, 98);
             this.LbWachtwoord.Name = "LbWachtwoord";
-            this.LbWachtwoord.Size = new System.Drawing.Size(68, 13);
+            this.LbWachtwoord.Size = new System.Drawing.Size(86, 17);
             this.LbWachtwoord.TabIndex = 7;
             this.LbWachtwoord.Text = "Wachtwoord";
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.LbWachtwoord);
             this.Controls.Add(this.LbNaam);
             this.Controls.Add(this.BtnExit);
             this.Controls.Add(this.BtnWachtwoord);
             this.Controls.Add(this.BtnLogin);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Tb_wachtwoord);
+            this.Controls.Add(this.Tb_naam);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Login";
-            this.Size = new System.Drawing.Size(248, 203);
+            this.Size = new System.Drawing.Size(331, 250);
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,8 +139,8 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Tb_naam;
+        private System.Windows.Forms.TextBox Tb_wachtwoord;
         private System.Windows.Forms.Button BtnLogin;
         private System.Windows.Forms.Button BtnWachtwoord;
         private System.Windows.Forms.Button BtnExit;
