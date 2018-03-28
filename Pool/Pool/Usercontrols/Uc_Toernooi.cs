@@ -20,33 +20,32 @@ namespace Pool
             InitializeComponent();
         }
 
-        private void BtnTerug_Click(object sender, EventArgs e)
+        private void Btn_Terug_Click(object sender, EventArgs e)
         {
             this.Hide();
         }
 
-        private void BtnVerder_Click(object sender, EventArgs e)
+        private void Btn_Verder_Click(object sender, EventArgs e)
         {
-            Pool.Usercontrols.Uc_Spelers players = new Usercontrols.Uc_Spelers(8);
-            players.Show();
+
         }
 
-        private void RadiobtnVierspelers_CheckedChanged(object sender, EventArgs e)
+        private void Rbtn_Vierspelers_CheckedChanged(object sender, EventArgs e)
         {
             HoeveelheidSpelers = 4;
         }
 
-        private void RadiobtnZesspelers_CheckedChanged(object sender, EventArgs e)
+        private void Rbtn_Zesspelers_CheckedChanged(object sender, EventArgs e)
         {
             HoeveelheidSpelers = 6;
         }
 
-        private void RadiobtnAchtspelers_CheckedChanged(object sender, EventArgs e)
+        private void Rbtn_Achtspelers_CheckedChanged(object sender, EventArgs e)
         {
             HoeveelheidSpelers = 8;
         }
 
-        private void RadiobtnTienspelers_CheckedChanged(object sender, EventArgs e)
+        private void Rbtn_Tienspelers_CheckedChanged(object sender, EventArgs e)
         {
             HoeveelheidSpelers = 10;
         }

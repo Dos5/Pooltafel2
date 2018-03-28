@@ -17,7 +17,12 @@ namespace Pool
             InitializeComponent();
         }
 
-        private void BtnTerug_Click(object sender, EventArgs e)
+        private void Btn_Bevestig_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Terug_Click(object sender, EventArgs e)
         {
             this.Hide();
         }

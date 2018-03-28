@@ -5,32 +5,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
-
 namespace Pool
 {
     class Query
     {
-
-        private DataTable rules = new DataTable();
-
-        public DataTable Rules
-        {
-            get { return rules; }
-        }
-
-        
-       public Query()
+        private int UserId;
+        private string Name;
+        private string Password;
+        private string Email;
+        private string PhoneNumber;
+        public Query()
         {
 
         }
-
         private SqlConnection conn = new SqlConnection
         {
-            ConnectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\bstad\source\repos\Pooltafel23\Pool\Pool\Database\PoolData.mdf;Integrated Security = True"
+            ConnectionString = @" Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\bstad\Source\Repos\Pooltafel23\Pool\Pool\Database\PoolData.mdf;Integrated Security = True"
         };
-
-       
-
         public void registratie(string Name, string Password, string Email, int Phonenumber)
         {
                 conn.Open();
@@ -43,7 +34,6 @@ namespace Pool
                 cmd.ExecuteNonQuery();  
                 conn.Close();
         }
-
         public bool login(string Name, string Password)
         {
             bool inloggen = false;
@@ -65,29 +55,5 @@ namespace Pool
             conn.Close();
             return inloggen;
         }
-
-        public void load_regeln()
-        {
-            SqlDataReader reader;
-            conn.Open();
-            string query = "select * from [Rule]";
-            SqlCommand cmd = new SqlCommand(query, conn);
-            reader = null;
-            
-            using (reader = cmd.ExecuteReader())
-            {
-                rules.Load(reader);
-            }
-            conn.Close();
-            return;
-
-        }
-
-
-
-
-
-
-
     }
 }

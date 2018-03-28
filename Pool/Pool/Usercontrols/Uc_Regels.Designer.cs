@@ -28,63 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.BtnTerug = new System.Windows.Forms.Button();
-            this.ListboxRegels = new System.Windows.Forms.ListBox();
-            this.Lbx_beschrijving = new System.Windows.Forms.ListBox();
+            this.Btn_Terug = new System.Windows.Forms.Button();
+            this.Lbx_Regels = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // BtnTerug
+            // Btn_Terug
             // 
-            this.BtnTerug.Location = new System.Drawing.Point(0, 187);
-            this.BtnTerug.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.BtnTerug.Name = "BtnTerug";
-            this.BtnTerug.Size = new System.Drawing.Size(100, 39);
-            this.BtnTerug.TabIndex = 0;
-            this.BtnTerug.Text = "Terug";
-            this.BtnTerug.UseVisualStyleBackColor = true;
-            this.BtnTerug.Click += new System.EventHandler(this.BtnTerug_Click);
+            this.Btn_Terug.Location = new System.Drawing.Point(0, 187);
+            this.Btn_Terug.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Terug.Name = "Btn_Terug";
+            this.Btn_Terug.Size = new System.Drawing.Size(100, 39);
+            this.Btn_Terug.TabIndex = 0;
+            this.Btn_Terug.Text = "Terug";
+            this.Btn_Terug.UseVisualStyleBackColor = true;
+            this.Btn_Terug.Click += new System.EventHandler(this.Btn_Terug_Click);
             // 
-            // ListboxRegels
+            // Lbx_Regels
             // 
-            this.ListboxRegels.FormattingEnabled = true;
-            this.ListboxRegels.ItemHeight = 16;
-            this.ListboxRegels.Location = new System.Drawing.Point(53, 20);
-            this.ListboxRegels.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ListboxRegels.Name = "ListboxRegels";
-            this.ListboxRegels.ScrollAlwaysVisible = true;
-            this.ListboxRegels.Size = new System.Drawing.Size(212, 164);
-            this.ListboxRegels.TabIndex = 1;
-            // 
-            // Lbx_beschrijving
-            // 
-            this.Lbx_beschrijving.FormattingEnabled = true;
-            this.Lbx_beschrijving.ItemHeight = 16;
-            this.Lbx_beschrijving.Location = new System.Drawing.Point(273, 20);
-            this.Lbx_beschrijving.Margin = new System.Windows.Forms.Padding(4);
-            this.Lbx_beschrijving.Name = "Lbx_beschrijving";
-            this.Lbx_beschrijving.ScrollAlwaysVisible = true;
-            this.Lbx_beschrijving.Size = new System.Drawing.Size(212, 164);
-            this.Lbx_beschrijving.TabIndex = 2;
+            this.Lbx_Regels.FormattingEnabled = true;
+            this.Lbx_Regels.ItemHeight = 16;
+            this.Lbx_Regels.Location = new System.Drawing.Point(53, 20);
+            this.Lbx_Regels.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Lbx_Regels.Name = "Lbx_Regels";
+            this.Lbx_Regels.ScrollAlwaysVisible = true;
+            this.Lbx_Regels.Size = new System.Drawing.Size(212, 164);
+            this.Lbx_Regels.TabIndex = 1;
+            this.Lbx_Regels.SelectedIndexChanged += new System.EventHandler(this.Lbx_Regels_SelectedIndexChanged);
             // 
             // Regels
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.Lbx_beschrijving);
-            this.Controls.Add(this.ListboxRegels);
-            this.Controls.Add(this.BtnTerug);
+            this.Controls.Add(this.Lbx_Regels);
+            this.Controls.Add(this.Btn_Terug);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Regels";
-            this.Size = new System.Drawing.Size(499, 250);
-            this.Load += new System.EventHandler(this.Regels_Load);
+            this.Size = new System.Drawing.Size(331, 250);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button BtnTerug;
-        private System.Windows.Forms.ListBox ListboxRegels;
-        private System.Windows.Forms.ListBox Lbx_beschrijving;
+        private System.Windows.Forms.Button Btn_Terug;
+        private System.Windows.Forms.ListBox Lbx_Regels;
     }
 }
