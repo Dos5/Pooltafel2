@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Data;
 using System.Linq;
+
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,6 +17,8 @@ namespace Pool
         {
             InitializeComponent();
         }
+
+        Query query = new Query();
 
         private void BtnExit_Click(object sender, EventArgs e)
         {
@@ -31,9 +34,19 @@ namespace Pool
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
+            string naam = Tb_naam.Text;
+            string wachtwoord = Tb_wachtwoord.Text;
+            query.login(naam, wachtwoord);
+            
+
             Ingelogd ingelogd = new Ingelogd();
             Controls.Add(ingelogd);
             ingelogd.BringToFront();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
