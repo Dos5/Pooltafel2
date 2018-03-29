@@ -37,9 +37,19 @@ namespace Pool
         }
         private void Btn_Regels_Click(object sender, EventArgs e)
         {
-            Regels regels = new Regels();
-            Controls.Add(regels);
-            regels.BringToFront();
+            if (Rbtn_8ball.Checked)
+            {
+                Regels regels = new Regels(8);
+                Controls.Add(regels);
+                regels.BringToFront();
+            }
+            else if (Rbtn_9ball.Checked)
+            {
+                Regels regels = new Regels(9);
+                Controls.Add(regels);
+                regels.BringToFront();
+            }
+            
         }
         private void Btn_Terug_Click(object sender, EventArgs e)
         {

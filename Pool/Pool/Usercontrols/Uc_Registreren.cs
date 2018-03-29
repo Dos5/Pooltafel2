@@ -8,43 +8,52 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-
 namespace Pool
 {
     public partial class Register : UserControl
     {
         Query Query = new Query();
+        //Fields
+        private string naam;
+        private string wachtwoord;
+        private string Email;
+        private int telefoonNummer;
         public Register()
         {
             InitializeComponent();
         }
         private void Btn_Register_Click(object sender, EventArgs e)
         {
-            try
+            
+            if (string.IsNullOrEmpty(Tb_Naam.Text) || string.IsNullOrEmpty(Tb_Wachtwoord.Text) || string.IsNullOrEmpty(Tb_Email.Text) || string.IsNullOrEmpty(Tb_Mobiel.Text))
             {
-                if (string.IsNullOrEmpty(Tb_Naam.Text) || string.IsNullOrEmpty(Tb_Wachtwoord.Text) || string.IsNullOrEmpty(Tb_Email.Text) || string.IsNullOrEmpty(Tb_Mobiel.Text))
-                {
-                    MessageBox.Show("foutmelding niet alle vakken zijn correct ingevuld");
-                }
-                else
-                {
-                    string Name = Tb_Naam.Text;
-                    string Password = Tb_Wachtwoord.Text;
-                    string Email = Tb_Email.Text;
-                    string mobiel1 = Tb_Mobiel.Text;
-                    int PhoneNumber = Convert.ToInt32(mobiel1);
-                    Query.RegistratieQuery(Name, Password, Email, PhoneNumber);
-                }
+                 //Laat waarschuwing zien
+                 MessageBox.Show("Niet alle velden zijn ingevuld.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            catch (Exception Ex)
+            else
             {
-                File.AppendAllText(Environment.CurrentDirectory.ToString() + "\\Error Log.txt", DateTime.Now.ToString() + " A Login error has occurred." + Environment.NewLine + Ex + Environment.NewLine + Environment.NewLine);
-                MessageBox.Show(Ex.Message);
-
+                try
+                {
+                    //Zet de velden naar de ingevoerde data
+                    naam = Tb_Naam.Text;
+                    wachtwoord = Tb_Wachtwoord.Text;
+                    Email = Tb_Email.Text;
+                    telefoonNummer = Convert.ToInt32(Tb_Mobiel.Text);
+                    //Roep de Query aan voor registratie
+                    Query.RegistratieQuery(naam, wachtwoord, Email, telefoonNummer);
+                }
+                catch (Exception Ex)
+                {
+                    //Schrijf de fout naar een Txt bestand
+                    File.AppendAllText(Environment.CurrentDirectory.ToString() + "\\Error Log.txt", DateTime.Now.ToString() + " Een registratie fout is waargenomen." + Environment.NewLine + Ex + Environment.NewLine + Environment.NewLine);
+                    //Geef een fout melding naar de gebruiker
+                    MessageBox.Show(Ex.Message, "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                }
             }
         }
         private void Btn_Terug_Click(object sender, EventArgs e)
         {
+            //Sluit dit scherm
             this.Hide();
         }
     }

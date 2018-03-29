@@ -37,10 +37,9 @@
             // 
             this.Btn_Terug.BackColor = System.Drawing.Color.Navy;
             this.Btn_Terug.ForeColor = System.Drawing.Color.White;
-            this.Btn_Terug.Location = new System.Drawing.Point(4, 299);
-            this.Btn_Terug.Margin = new System.Windows.Forms.Padding(4);
+            this.Btn_Terug.Location = new System.Drawing.Point(3, 243);
             this.Btn_Terug.Name = "Btn_Terug";
-            this.Btn_Terug.Size = new System.Drawing.Size(110, 47);
+            this.Btn_Terug.Size = new System.Drawing.Size(82, 38);
             this.Btn_Terug.TabIndex = 0;
             this.Btn_Terug.Text = "Terug";
             this.Btn_Terug.UseVisualStyleBackColor = false;
@@ -50,38 +49,33 @@
             // 
             this.Lbx_NaamRegels.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Lbx_NaamRegels.FormattingEnabled = true;
-            this.Lbx_NaamRegels.ItemHeight = 16;
-            this.Lbx_NaamRegels.Location = new System.Drawing.Point(4, 19);
-            this.Lbx_NaamRegels.Margin = new System.Windows.Forms.Padding(4);
+            this.Lbx_NaamRegels.Location = new System.Drawing.Point(3, 15);
             this.Lbx_NaamRegels.Name = "Lbx_NaamRegels";
             this.Lbx_NaamRegels.ScrollAlwaysVisible = true;
-            this.Lbx_NaamRegels.Size = new System.Drawing.Size(277, 272);
+            this.Lbx_NaamRegels.Size = new System.Drawing.Size(208, 221);
             this.Lbx_NaamRegels.TabIndex = 1;
-            this.Lbx_NaamRegels.SelectedIndexChanged += new System.EventHandler(this.Lbx_Regels_SelectedIndexChanged);
+            this.Lbx_NaamRegels.SelectedIndexChanged += new System.EventHandler(this.Lbx_NaamRegels_SelectedIndexChanged);
             // 
             // Lbx_UitlegRegels
             // 
             this.Lbx_UitlegRegels.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Lbx_UitlegRegels.FormattingEnabled = true;
-            this.Lbx_UitlegRegels.ItemHeight = 16;
-            this.Lbx_UitlegRegels.Location = new System.Drawing.Point(289, 19);
-            this.Lbx_UitlegRegels.Margin = new System.Windows.Forms.Padding(4);
+            this.Lbx_UitlegRegels.Location = new System.Drawing.Point(217, 15);
             this.Lbx_UitlegRegels.Name = "Lbx_UitlegRegels";
             this.Lbx_UitlegRegels.ScrollAlwaysVisible = true;
-            this.Lbx_UitlegRegels.Size = new System.Drawing.Size(277, 272);
+            this.Lbx_UitlegRegels.Size = new System.Drawing.Size(208, 221);
             this.Lbx_UitlegRegels.TabIndex = 2;
             // 
             // Regels
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
             this.Controls.Add(this.Lbx_UitlegRegels);
             this.Controls.Add(this.Lbx_NaamRegels);
             this.Controls.Add(this.Btn_Terug);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Regels";
-            this.Size = new System.Drawing.Size(570, 350);
+            this.Size = new System.Drawing.Size(428, 284);
             this.ResumeLayout(false);
 
         }

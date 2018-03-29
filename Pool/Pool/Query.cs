@@ -75,7 +75,7 @@ namespace Pool
             conn.Close();
             return inloggen;
         }
-        public void RegelsQuery()
+        public DataTable RegelsQuery(int Game)
         {   
             //Set the Command
             query = "SELECT * FROM [dbo].[Rule]";
@@ -92,7 +92,7 @@ namespace Pool
             }
             //Close the Connection
             conn.Close();
-            return;
+            return Rules;
         }
     }
 }
