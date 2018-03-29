@@ -44,6 +44,7 @@
             this.Gbx_Spelers.Controls.Add(this.Rbtn_Tienspelers);
             this.Gbx_Spelers.Controls.Add(this.Rbtn_Zesspelers);
             this.Gbx_Spelers.Controls.Add(this.Rbtn_Vierspelers);
+            this.Gbx_Spelers.ForeColor = System.Drawing.Color.White;
             this.Gbx_Spelers.Location = new System.Drawing.Point(32, 20);
             this.Gbx_Spelers.Margin = new System.Windows.Forms.Padding(4);
             this.Gbx_Spelers.Name = "Gbx_Spelers";
@@ -105,30 +106,35 @@
             // 
             // Btn_Terug
             // 
+            this.Btn_Terug.BackColor = System.Drawing.Color.Navy;
+            this.Btn_Terug.ForeColor = System.Drawing.Color.White;
             this.Btn_Terug.Location = new System.Drawing.Point(13, 167);
             this.Btn_Terug.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Terug.Name = "Btn_Terug";
             this.Btn_Terug.Size = new System.Drawing.Size(87, 48);
             this.Btn_Terug.TabIndex = 1;
             this.Btn_Terug.Text = "Terug";
-            this.Btn_Terug.UseVisualStyleBackColor = true;
+            this.Btn_Terug.UseVisualStyleBackColor = false;
             this.Btn_Terug.Click += new System.EventHandler(this.Btn_Terug_Click);
             // 
             // Btn_Verder
             // 
+            this.Btn_Verder.BackColor = System.Drawing.Color.Navy;
+            this.Btn_Verder.ForeColor = System.Drawing.Color.White;
             this.Btn_Verder.Location = new System.Drawing.Point(240, 167);
             this.Btn_Verder.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Verder.Name = "Btn_Verder";
             this.Btn_Verder.Size = new System.Drawing.Size(87, 48);
             this.Btn_Verder.TabIndex = 2;
             this.Btn_Verder.Text = "Verder";
-            this.Btn_Verder.UseVisualStyleBackColor = true;
+            this.Btn_Verder.UseVisualStyleBackColor = false;
             this.Btn_Verder.Click += new System.EventHandler(this.Btn_Verder_Click);
             // 
             // Toernooi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.RoyalBlue;
             this.Controls.Add(this.Btn_Verder);
             this.Controls.Add(this.Btn_Terug);
             this.Controls.Add(this.Gbx_Spelers);

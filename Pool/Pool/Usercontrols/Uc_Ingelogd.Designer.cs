@@ -44,35 +44,41 @@
             // 
             // Btn_Terug
             // 
-            this.Btn_Terug.Location = new System.Drawing.Point(235, 177);
+            this.Btn_Terug.BackColor = System.Drawing.Color.Navy;
+            this.Btn_Terug.ForeColor = System.Drawing.Color.White;
+            this.Btn_Terug.Location = new System.Drawing.Point(226, 177);
             this.Btn_Terug.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_Terug.Name = "Btn_Terug";
             this.Btn_Terug.Size = new System.Drawing.Size(87, 48);
             this.Btn_Terug.TabIndex = 8;
             this.Btn_Terug.Text = "Terug";
-            this.Btn_Terug.UseVisualStyleBackColor = true;
+            this.Btn_Terug.UseVisualStyleBackColor = false;
             this.Btn_Terug.Click += new System.EventHandler(this.Btn_Terug_Click);
             // 
             // Btn_Regels
             // 
+            this.Btn_Regels.BackColor = System.Drawing.Color.Navy;
+            this.Btn_Regels.ForeColor = System.Drawing.Color.White;
             this.Btn_Regels.Location = new System.Drawing.Point(107, 177);
             this.Btn_Regels.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_Regels.Name = "Btn_Regels";
             this.Btn_Regels.Size = new System.Drawing.Size(113, 48);
             this.Btn_Regels.TabIndex = 7;
             this.Btn_Regels.Text = "Spelregels";
-            this.Btn_Regels.UseVisualStyleBackColor = true;
+            this.Btn_Regels.UseVisualStyleBackColor = false;
             this.Btn_Regels.Click += new System.EventHandler(this.Btn_Regels_Click);
             // 
             // Btn_Verder
             // 
+            this.Btn_Verder.BackColor = System.Drawing.Color.Navy;
+            this.Btn_Verder.ForeColor = System.Drawing.Color.White;
             this.Btn_Verder.Location = new System.Drawing.Point(11, 177);
             this.Btn_Verder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_Verder.Name = "Btn_Verder";
             this.Btn_Verder.Size = new System.Drawing.Size(87, 48);
             this.Btn_Verder.TabIndex = 6;
             this.Btn_Verder.Text = "Verder";
-            this.Btn_Verder.UseVisualStyleBackColor = true;
+            this.Btn_Verder.UseVisualStyleBackColor = false;
             this.Btn_Verder.Click += new System.EventHandler(this.Btn_Verder_Click);
             // 
             // Gbx_Spelkeus
@@ -153,6 +159,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.RoyalBlue;
             this.Controls.Add(this.Gbx_Variant);
             this.Controls.Add(this.Gbx_Spelkeus);
             this.Controls.Add(this.Btn_Terug);
@@ -160,7 +167,7 @@
             this.Controls.Add(this.Btn_Verder);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Ingelogd";
-            this.Size = new System.Drawing.Size(331, 250);
+            this.Size = new System.Drawing.Size(570, 350);
             this.Gbx_Spelkeus.ResumeLayout(false);
             this.Gbx_Spelkeus.PerformLayout();
             this.Gbx_Variant.ResumeLayout(false);
