@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+
 namespace Pool
 {
     public partial class Register : UserControl
@@ -34,9 +36,10 @@ namespace Pool
                     Query.RegistratieQuery(Name, Password, Email, PhoneNumber);
                 }
             }
-            catch (Exception ex)
+            catch (Exception Ex)
             {
-                MessageBox.Show(ex.Message);
+                File.AppendAllText(Environment.CurrentDirectory.ToString() + "\\Error Log.txt", DateTime.Now.ToString() + " A Login error has occurred." + Environment.NewLine + Ex + Environment.NewLine + Environment.NewLine);
+                MessageBox.Show(Ex.Message);
 
             }
         }
