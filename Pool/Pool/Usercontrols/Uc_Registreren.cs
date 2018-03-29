@@ -37,6 +37,7 @@ namespace Pool
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+
             }
         }
         private void Btn_Terug_Click(object sender, EventArgs e)

@@ -9,22 +9,24 @@ namespace Pool
 {
     class Query
     {
+        private SqlConnection conn = new SqlConnection
+        {
+            ConnectionString = @" Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\bstad\Source\Repos\Pooltafel23\Pool\Pool\Database\PoolData.mdf;Integrated Security = True"
+        };
         private DataTable rules = new DataTable();
         private SqlDataReader myReader;
+        private SqlCommand cmd = new SqlCommand();
+        private string query;
         public DataTable Rules { get { return rules; } }
         public Query()
         {
 
         }
-        private SqlConnection conn = new SqlConnection
-        {
-            ConnectionString = @" Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\bstad\Source\Repos\Pooltafel23\Pool\Pool\Database\PoolData.mdf;Integrated Security = True"
-        };
         public void RegistratieQuery(string Name, string Password, string Email, int Phonenumber)
         {
             conn.Open();
-            string query = "INSERT INTO  [User] VALUES (@Name, @Password, @Email, @PhoneNumber);";
-            SqlCommand cmd = new SqlCommand(query,conn);
+            query = "INSERT INTO  [User] VALUES (@Name, @Password, @Email, @PhoneNumber);";
+            cmd = new SqlCommand(query,conn);
             cmd.Parameters.Clear();
             cmd.Parameters.AddWithValue("@Name", Name);
             cmd.Parameters.AddWithValue("@Password", Password);
@@ -37,8 +39,8 @@ namespace Pool
         {
             bool inloggen = false;
             conn.Open();
-            string query = "SELECT (*) FROM [User] WHERE Name=@Name and Password=@Password";
-            SqlCommand cmd = new SqlCommand(query, conn);
+            query = "SELECT (*) FROM [User] WHERE Name=@Name and Password=@Password";
+            cmd = new SqlCommand(query, conn);
             cmd.Parameters.Clear();
             cmd.Parameters.AddWithValue("@Name", Name);
             cmd.Parameters.AddWithValue("@Password", Password);
@@ -55,11 +57,17 @@ namespace Pool
             return inloggen;
         }
         public void RegelsQuery()
-        {
-            string query = "SELECT (*) FROM [dbo].[Rule]";
-            SqlCommand cmd = new SqlCommand(query, conn);
-            conn.Open();
+        {   
+            query = "SELECT (*) FROM [dbo].[Rule]";
+            cmd = new SqlCommand(query, conn);
             myReader = null;
+            conn.Open();
+            using (myReader = cmd.ExecuteReader())
+            {
+                rules.Load(myReader);
+            }
+            conn.Close();
+            return;
         }
     }
 }
