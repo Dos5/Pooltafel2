@@ -11,20 +11,10 @@ namespace Pool
 {
     public partial class Register : UserControl
     {
+        Query Query = new Query();
         public Register()
         {
             InitializeComponent();
-        }
-        Query Query = new Query();
-        private void Register_Load(object sender, EventArgs e)
-        {
-            Login login = new Login();
-            Controls.Add(login);
-            login.BringToFront();
-        }
-        private void TextWw_TextChanged(object sender, EventArgs e)
-        {
-
         }
         private void Btn_Register_Click(object sender, EventArgs e)
         {
@@ -41,7 +31,7 @@ namespace Pool
                     string Email = Tb_Email.Text;
                     string mobiel1 = Tb_Mobiel.Text;
                     int PhoneNumber = Convert.ToInt32(mobiel1);
-                    Query.registratie(Name, Password, Email, PhoneNumber);
+                    Query.RegistratieQuery(Name, Password, Email, PhoneNumber);
                 }
             }
             catch (Exception ex)

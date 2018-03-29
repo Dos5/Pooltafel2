@@ -9,11 +9,9 @@ namespace Pool
 {
     class Query
     {
-        private int UserId;
-        private string Name;
-        private string Password;
-        private string Email;
-        private string PhoneNumber;
+        private DataTable rules = new DataTable();
+        private SqlDataReader myReader;
+        public DataTable Rules { get { return rules; } }
         public Query()
         {
 
@@ -22,11 +20,12 @@ namespace Pool
         {
             ConnectionString = @" Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\bstad\Source\Repos\Pooltafel23\Pool\Pool\Database\PoolData.mdf;Integrated Security = True"
         };
-        public void registratie(string Name, string Password, string Email, int Phonenumber)
+        public void RegistratieQuery(string Name, string Password, string Email, int Phonenumber)
         {
             conn.Open();
             string query = "INSERT INTO  [User] VALUES (@Name, @Password, @Email, @PhoneNumber);";
             SqlCommand cmd = new SqlCommand(query,conn);
+            cmd.Parameters.Clear();
             cmd.Parameters.AddWithValue("@Name", Name);
             cmd.Parameters.AddWithValue("@Password", Password);
             cmd.Parameters.AddWithValue("@Email", Email);
@@ -34,7 +33,7 @@ namespace Pool
             cmd.ExecuteNonQuery();  
             conn.Close();
         }
-        public bool login(string Name, string Password)
+        public bool LoginQuery(string Name, string Password)
         {
             bool inloggen = false;
             conn.Open();
@@ -54,6 +53,13 @@ namespace Pool
             }
             conn.Close();
             return inloggen;
+        }
+        public void RegelsQuery()
+        {
+            string query = "SELECT (*) FROM [dbo].[Rule]";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            conn.Open();
+            myReader = null;
         }
     }
 }

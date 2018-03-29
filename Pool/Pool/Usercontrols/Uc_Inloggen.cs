@@ -41,7 +41,7 @@ namespace Pool
         {
             string naam = Tb_Naam.Text;
             string wachtwoord = Tb_Wachtwoord.Text;
-            query.login(naam, wachtwoord);
+            query.LoginQuery(naam, wachtwoord);
 
 
             Ingelogd ingelogd = new Ingelogd();
