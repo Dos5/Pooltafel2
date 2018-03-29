@@ -7,19 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-namespace Pool
+namespace Pool.Usercontrols
 {
-    public partial class WachtwoordVergeten : UserControl
+    public partial class EliminatieBracket : UserControl
     {
-        public WachtwoordVergeten()
+        public EliminatieBracket()
         {
             InitializeComponent();
+            tabControl1.ItemSize = new Size(tabControl1.ItemSize.Width, 1);
         }
-
-        private void Btn_Terug_Click(object sender, EventArgs e)
+        private void EliminatieBracket_Load(object sender, EventArgs e)
         {
-            this.Hide();
+
         }
     }
 }

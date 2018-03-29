@@ -9,19 +9,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 namespace Pool
 {
-    public partial class Settings : UserControl
+    public partial class WachtwoordVergeten : UserControl
     {
-        public Settings()
+        public WachtwoordVergeten()
         {
             InitializeComponent();
-        }
-        private void Btn_Bevestig_Click(object sender, EventArgs e)
-        {
-
         }
         private void Btn_Terug_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+        private void Btn_Verander_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

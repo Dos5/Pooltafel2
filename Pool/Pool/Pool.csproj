@@ -67,11 +67,11 @@
       <DependentUpon>Pooltafel-Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Query.cs" />
-    <Compile Include="Usercontrols\Uc_EliminationBracket.cs">
+    <Compile Include="Usercontrols\Uc_EliminatieBracket.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Usercontrols\Uc_EliminationBracket.Designer.cs">
-      <DependentUpon>Uc_EliminationBracket.cs</DependentUpon>
+    <Compile Include="Usercontrols\Uc_EliminatieBracket.Designer.cs">
+      <DependentUpon>Uc_EliminatieBracket.cs</DependentUpon>
     </Compile>
     <Compile Include="Usercontrols\Uc_Toernooi.cs">
       <SubType>UserControl</SubType>
@@ -111,17 +111,17 @@
     <Compile Include="Usercontrols\Uc_Settings.Designer.cs">
       <DependentUpon>Uc_Settings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usercontrols\WachtwoordVergeten.cs">
+    <Compile Include="Usercontrols\Uc_WachtwoordVergeten.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Usercontrols\WachtwoordVergeten.Designer.cs">
-      <DependentUpon>WachtwoordVergeten.cs</DependentUpon>
+    <Compile Include="Usercontrols\Uc_WachtwoordVergeten.Designer.cs">
+      <DependentUpon>Uc_WachtwoordVergeten.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Pooltafel-Main.resx">
       <DependentUpon>Pooltafel-Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Usercontrols\Uc_EliminationBracket.resx">
-      <DependentUpon>Uc_EliminationBracket.cs</DependentUpon>
+    <EmbeddedResource Include="Usercontrols\Uc_EliminatieBracket.resx">
+      <DependentUpon>Uc_EliminatieBracket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usercontrols\Uc_Ingelogd.resx">
       <DependentUpon>Uc_Ingelogd.cs</DependentUpon>
@@ -151,8 +151,8 @@
     <EmbeddedResource Include="Usercontrols\Uc_Toernooi.resx">
       <DependentUpon>Uc_Toernooi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Usercontrols\WachtwoordVergeten.resx">
-      <DependentUpon>WachtwoordVergeten.cs</DependentUpon>
+    <EmbeddedResource Include="Usercontrols\Uc_WachtwoordVergeten.resx">
+      <DependentUpon>Uc_WachtwoordVergeten.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

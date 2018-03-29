@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace Pool
 {
     public partial class Ingelogd : UserControl
@@ -16,7 +15,6 @@ namespace Pool
         {
             InitializeComponent();
         }
-
         private void Btn_Verder_Click(object sender, EventArgs e)
         {
             if (Rbtn_Toernooi.Checked || Rbtn_Duel.Checked)
@@ -37,18 +35,15 @@ namespace Pool
                 MessageBox.Show("Selecteer ook of je toernooi of duel wil");
             }
         }
-
         private void Btn_Regels_Click(object sender, EventArgs e)
         {
             Regels regels = new Regels();
             Controls.Add(regels);
             regels.BringToFront();
         }
-
         private void Btn_Terug_Click(object sender, EventArgs e)
         {
             this.Hide();
         }
     }
-    }
-
+}
