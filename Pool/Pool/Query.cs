@@ -48,15 +48,15 @@ namespace Pool
             //Set the Bool False
             inloggen = false;
             //Set the Command
-            query = "SELECT Name,Password FROM [dbo].[User] WHERE Name=@Name and Password=@Password";
+            query = "SELECT Name, Password FROM [dbo].[User] WHERE Name=@usr and Password=@pwd";
             cmd = new SqlCommand(query, conn);
             //Clear the Parameters
             cmd.Parameters.Clear();
             //Clear the Reader
             myReader = null;
             //Fill the Parameters with the right value
-            cmd.Parameters.AddWithValue("@Name", Name);
-            cmd.Parameters.AddWithValue("@Password", Password);
+            cmd.Parameters.AddWithValue("@usr", Name);
+            cmd.Parameters.AddWithValue("@pwd", Password);
             //Open the Connection
             conn.Open();
             //Preform the Command
@@ -78,7 +78,7 @@ namespace Pool
         public DataTable RegelsQuery(int Game)
         {   
             //Set the Command
-            query = "SELECT * FROM [dbo].[Rule]";
+            query = "SELECT RuleId, Name, Description FROM [dbo].[Rule]";
             cmd = new SqlCommand(query, conn);
             //Clear the Reader
             myReader = null;

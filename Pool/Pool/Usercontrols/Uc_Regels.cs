@@ -44,10 +44,13 @@ namespace Pool
         {
             Lbx_UitlegRegels.Items.Clear();
             Lbx_UitlegRegels.DataSource = regels;
+            regels.PrimaryKey = new DataColumn[] { regels.Columns["<RuleId>"] };
+
             DataRow Find = regels.Rows.Find(Lbx_NaamRegels.SelectedItem);
             if (Find != null)
             {
                 //yes
+                MessageBox.Show("a");
             }
             else
             {
