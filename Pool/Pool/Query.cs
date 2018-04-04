@@ -89,7 +89,8 @@ namespace Pool
                 Class_regels class_regels = new Class_regels();
                 class_regels.RuleId = (int)myReader["RuleId"];
                 class_regels.Name = myReader["Name"].ToString();
-                class_regels.Description = myReader["Description"].ToString(); 
+                class_regels.Description = myReader["Description"].ToString();
+                list_regels.Add(class_regels);
             }
             conn.Close();
             return list_regels;
