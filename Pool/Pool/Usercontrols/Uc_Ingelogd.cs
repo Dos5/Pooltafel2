@@ -39,13 +39,13 @@ namespace Pool
         {
             if (Rbtn_8ball.Checked)
             {
-                Regels regels = new Regels(8);
+                Regels regels = new Regels();
                 Controls.Add(regels);
                 regels.BringToFront();
             }
             else if (Rbtn_9ball.Checked)
             {
-                Regels regels = new Regels(9);
+                Regels regels = new Regels();
                 Controls.Add(regels);
                 regels.BringToFront();
             }

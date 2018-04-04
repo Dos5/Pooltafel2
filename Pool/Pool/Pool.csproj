@@ -60,6 +60,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class_regels.cs" />
     <Compile Include="Pooltafel-Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +68,12 @@
       <DependentUpon>Pooltafel-Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Query.cs" />
+    <Compile Include="Regels.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Regels.Designer.cs">
+      <DependentUpon>Regels.cs</DependentUpon>
+    </Compile>
     <Compile Include="Usercontrols\Uc_EliminatieBracket.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -84,12 +91,6 @@
     </Compile>
     <Compile Include="Usercontrols\Uc_Ingelogd.Designer.cs">
       <DependentUpon>Uc_Ingelogd.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Usercontrols\Uc_Regels.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Usercontrols\Uc_Regels.Designer.cs">
-      <DependentUpon>Uc_Regels.cs</DependentUpon>
     </Compile>
     <Compile Include="Usercontrols\Uc_Registreren.cs">
       <SubType>UserControl</SubType>
@@ -120,14 +121,14 @@
     <EmbeddedResource Include="Pooltafel-Main.resx">
       <DependentUpon>Pooltafel-Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Regels.resx">
+      <DependentUpon>Regels.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Usercontrols\Uc_EliminatieBracket.resx">
       <DependentUpon>Uc_EliminatieBracket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usercontrols\Uc_Ingelogd.resx">
       <DependentUpon>Uc_Ingelogd.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Usercontrols\Uc_Regels.resx">
-      <DependentUpon>Uc_Regels.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usercontrols\Uc_Registreren.resx">
       <DependentUpon>Uc_Registreren.cs</DependentUpon>

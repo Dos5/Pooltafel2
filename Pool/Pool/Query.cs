@@ -75,24 +75,24 @@ namespace Pool
             conn.Close();
             return inloggen;
         }
-        public DataTable RegelsQuery(int Game)
-        {   
-            //Set the Command
-            query = "SELECT RuleId, Name, Description FROM [dbo].[Rule]";
+        
+        public List<Class_regels> Inladen_regels()
+        {
+            query = "SELECT * FROM [dbo].[Rule]";
+            List<Class_regels> list_regels = new List<Class_regels>();
             cmd = new SqlCommand(query, conn);
-            //Clear the Reader
-            myReader = null;
-            //Open the Connection
+
             conn.Open();
-            //Preform the Command
-            using (myReader = cmd.ExecuteReader())
+            myReader = cmd.ExecuteReader();
+            while (myReader.Read())
             {
-                //Fill the DataTable with the Reader
-                rules.Load(myReader);
+                Class_regels class_regels = new Class_regels();
+                class_regels.RuleId = (int)myReader["RuleId"];
+                class_regels.Name = myReader["Name"].ToString();
+                class_regels.Description = myReader["Description"].ToString(); 
             }
-            //Close the Connection
             conn.Close();
-            return Rules;
+            return list_regels;
         }
     }
 }
