@@ -29,6 +29,17 @@
         private void InitializeComponent()
         {
             this.Tc_Eliminatiebracket = new System.Windows.Forms.TabControl();
+            this.Tc_4Spelers = new System.Windows.Forms.TabPage();
+            this.Lb_4Speler_Winnaar = new System.Windows.Forms.Label();
+            this.Lb_4Speler_Ronde2_Speler2 = new System.Windows.Forms.Label();
+            this.Lb_4Speler_Ronde2_Speler1 = new System.Windows.Forms.Label();
+            this.Lb_4Speler_Ronde1_Speler4 = new System.Windows.Forms.Label();
+            this.Lb_4Speler_Ronde1_Speler3 = new System.Windows.Forms.Label();
+            this.Lb_4Speler_Ronde1_Speler2 = new System.Windows.Forms.Label();
+            this.Lb_4Speler_Ronde1_Speler1 = new System.Windows.Forms.Label();
+            this.Tb_Naam1 = new System.Windows.Forms.TextBox();
+            this.Btn_Terug1 = new System.Windows.Forms.Button();
+            this.Btn_Verder1 = new System.Windows.Forms.Button();
             this.Tc_6Spelers = new System.Windows.Forms.TabPage();
             this.Lb_6Speler_Winnaar = new System.Windows.Forms.Label();
             this.Lb_6Speler_Ronde3_Speler2 = new System.Windows.Forms.Label();
@@ -44,19 +55,7 @@
             this.Tb_Naam2 = new System.Windows.Forms.TextBox();
             this.Btn_Verder2 = new System.Windows.Forms.Button();
             this.Btn_Terug2 = new System.Windows.Forms.Button();
-            this.Tc_4Spelers = new System.Windows.Forms.TabPage();
-            this.Lb_4Speler_Winnaar = new System.Windows.Forms.Label();
-            this.Lb_4Speler_Ronde2_Speler2 = new System.Windows.Forms.Label();
-            this.Lb_4Speler_Ronde2_Speler1 = new System.Windows.Forms.Label();
-            this.Lb_4Speler_Ronde1_Speler4 = new System.Windows.Forms.Label();
-            this.Lb_4Speler_Ronde1_Speler3 = new System.Windows.Forms.Label();
-            this.Lb_4Speler_Ronde1_Speler2 = new System.Windows.Forms.Label();
-            this.Lb_4Speler_Ronde1_Speler1 = new System.Windows.Forms.Label();
-            this.Tb_Naam1 = new System.Windows.Forms.TextBox();
-            this.Btn_Terug1 = new System.Windows.Forms.Button();
-            this.Btn_Verder1 = new System.Windows.Forms.Button();
             this.Tc_8Spelers = new System.Windows.Forms.TabPage();
-            this.Lb_8Speler_Winnaar = new System.Windows.Forms.Label();
             this.Lb_8Speler_Ronde3_Speler1 = new System.Windows.Forms.Label();
             this.Lb_8Speler_Ronde3_Speler2 = new System.Windows.Forms.Label();
             this.Lb_8Speler_Ronde2_Speler4 = new System.Windows.Forms.Label();
@@ -75,7 +74,6 @@
             this.Btn_Verder3 = new System.Windows.Forms.Button();
             this.Btn_Terug3 = new System.Windows.Forms.Button();
             this.Tc_10Spelers = new System.Windows.Forms.TabPage();
-            this.Lb_10Speler_Winnaar = new System.Windows.Forms.Label();
             this.Lb_10Speler_Ronde3_Speler2 = new System.Windows.Forms.Label();
             this.Lb_10Speler_Ronde2_Speler1 = new System.Windows.Forms.Label();
             this.Lb_10Speler_Ronde2_Speler2 = new System.Windows.Forms.Label();
@@ -98,8 +96,8 @@
             this.Btn_Verder4 = new System.Windows.Forms.Button();
             this.Btn_Terug4 = new System.Windows.Forms.Button();
             this.Tc_Eliminatiebracket.SuspendLayout();
-            this.Tc_6Spelers.SuspendLayout();
             this.Tc_4Spelers.SuspendLayout();
+            this.Tc_6Spelers.SuspendLayout();
             this.Tc_8Spelers.SuspendLayout();
             this.Tc_10Spelers.SuspendLayout();
             this.SuspendLayout();
@@ -124,6 +122,114 @@
             this.Tc_Eliminatiebracket.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.Tc_Eliminatiebracket.TabIndex = 0;
             // 
+            // Tc_4Spelers
+            // 
+            this.Tc_4Spelers.Controls.Add(this.Lb_4Speler_Winnaar);
+            this.Tc_4Spelers.Controls.Add(this.Lb_4Speler_Ronde2_Speler2);
+            this.Tc_4Spelers.Controls.Add(this.Lb_4Speler_Ronde2_Speler1);
+            this.Tc_4Spelers.Controls.Add(this.Lb_4Speler_Ronde1_Speler4);
+            this.Tc_4Spelers.Controls.Add(this.Lb_4Speler_Ronde1_Speler3);
+            this.Tc_4Spelers.Controls.Add(this.Lb_4Speler_Ronde1_Speler2);
+            this.Tc_4Spelers.Controls.Add(this.Lb_4Speler_Ronde1_Speler1);
+            this.Tc_4Spelers.Controls.Add(this.Tb_Naam1);
+            this.Tc_4Spelers.Controls.Add(this.Btn_Terug1);
+            this.Tc_4Spelers.Controls.Add(this.Btn_Verder1);
+            this.Tc_4Spelers.Location = new System.Drawing.Point(4, 4);
+            this.Tc_4Spelers.Margin = new System.Windows.Forms.Padding(0);
+            this.Tc_4Spelers.Name = "Tc_4Spelers";
+            this.Tc_4Spelers.Size = new System.Drawing.Size(562, 341);
+            this.Tc_4Spelers.TabIndex = 2;
+            this.Tc_4Spelers.UseVisualStyleBackColor = true;
+            this.Tc_4Spelers.Paint += new System.Windows.Forms.PaintEventHandler(this.Tc_4Spelers_Paint);
+            // 
+            // Lb_4Speler_Winnaar
+            // 
+            this.Lb_4Speler_Winnaar.AutoSize = true;
+            this.Lb_4Speler_Winnaar.Location = new System.Drawing.Point(361, 110);
+            this.Lb_4Speler_Winnaar.Name = "Lb_4Speler_Winnaar";
+            this.Lb_4Speler_Winnaar.Size = new System.Drawing.Size(46, 17);
+            this.Lb_4Speler_Winnaar.TabIndex = 9;
+            this.Lb_4Speler_Winnaar.Text = "label7";
+            // 
+            // Lb_4Speler_Ronde2_Speler2
+            // 
+            this.Lb_4Speler_Ronde2_Speler2.AutoSize = true;
+            this.Lb_4Speler_Ronde2_Speler2.Location = new System.Drawing.Point(250, 181);
+            this.Lb_4Speler_Ronde2_Speler2.Name = "Lb_4Speler_Ronde2_Speler2";
+            this.Lb_4Speler_Ronde2_Speler2.Size = new System.Drawing.Size(46, 17);
+            this.Lb_4Speler_Ronde2_Speler2.TabIndex = 8;
+            this.Lb_4Speler_Ronde2_Speler2.Text = "label6";
+            // 
+            // Lb_4Speler_Ronde2_Speler1
+            // 
+            this.Lb_4Speler_Ronde2_Speler1.AutoSize = true;
+            this.Lb_4Speler_Ronde2_Speler1.Location = new System.Drawing.Point(250, 44);
+            this.Lb_4Speler_Ronde2_Speler1.Name = "Lb_4Speler_Ronde2_Speler1";
+            this.Lb_4Speler_Ronde2_Speler1.Size = new System.Drawing.Size(46, 17);
+            this.Lb_4Speler_Ronde2_Speler1.TabIndex = 7;
+            this.Lb_4Speler_Ronde2_Speler1.Text = "label5";
+            // 
+            // Lb_4Speler_Ronde1_Speler4
+            // 
+            this.Lb_4Speler_Ronde1_Speler4.AutoSize = true;
+            this.Lb_4Speler_Ronde1_Speler4.Location = new System.Drawing.Point(125, 206);
+            this.Lb_4Speler_Ronde1_Speler4.Name = "Lb_4Speler_Ronde1_Speler4";
+            this.Lb_4Speler_Ronde1_Speler4.Size = new System.Drawing.Size(46, 17);
+            this.Lb_4Speler_Ronde1_Speler4.TabIndex = 6;
+            this.Lb_4Speler_Ronde1_Speler4.Text = "label4";
+            // 
+            // Lb_4Speler_Ronde1_Speler3
+            // 
+            this.Lb_4Speler_Ronde1_Speler3.AutoSize = true;
+            this.Lb_4Speler_Ronde1_Speler3.Location = new System.Drawing.Point(125, 154);
+            this.Lb_4Speler_Ronde1_Speler3.Name = "Lb_4Speler_Ronde1_Speler3";
+            this.Lb_4Speler_Ronde1_Speler3.Size = new System.Drawing.Size(46, 17);
+            this.Lb_4Speler_Ronde1_Speler3.TabIndex = 5;
+            this.Lb_4Speler_Ronde1_Speler3.Text = "label3";
+            // 
+            // Lb_4Speler_Ronde1_Speler2
+            // 
+            this.Lb_4Speler_Ronde1_Speler2.AutoSize = true;
+            this.Lb_4Speler_Ronde1_Speler2.Location = new System.Drawing.Point(125, 70);
+            this.Lb_4Speler_Ronde1_Speler2.Name = "Lb_4Speler_Ronde1_Speler2";
+            this.Lb_4Speler_Ronde1_Speler2.Size = new System.Drawing.Size(46, 17);
+            this.Lb_4Speler_Ronde1_Speler2.TabIndex = 4;
+            this.Lb_4Speler_Ronde1_Speler2.Text = "label2";
+            // 
+            // Lb_4Speler_Ronde1_Speler1
+            // 
+            this.Lb_4Speler_Ronde1_Speler1.AutoSize = true;
+            this.Lb_4Speler_Ronde1_Speler1.Location = new System.Drawing.Point(125, 24);
+            this.Lb_4Speler_Ronde1_Speler1.Name = "Lb_4Speler_Ronde1_Speler1";
+            this.Lb_4Speler_Ronde1_Speler1.Size = new System.Drawing.Size(46, 17);
+            this.Lb_4Speler_Ronde1_Speler1.TabIndex = 3;
+            this.Lb_4Speler_Ronde1_Speler1.Text = "label1";
+            // 
+            // Tb_Naam1
+            // 
+            this.Tb_Naam1.Location = new System.Drawing.Point(236, 295);
+            this.Tb_Naam1.Name = "Tb_Naam1";
+            this.Tb_Naam1.Size = new System.Drawing.Size(100, 22);
+            this.Tb_Naam1.TabIndex = 2;
+            // 
+            // Btn_Terug1
+            // 
+            this.Btn_Terug1.Location = new System.Drawing.Point(364, 295);
+            this.Btn_Terug1.Name = "Btn_Terug1";
+            this.Btn_Terug1.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Terug1.TabIndex = 1;
+            this.Btn_Terug1.Text = "Terug";
+            this.Btn_Terug1.UseVisualStyleBackColor = true;
+            // 
+            // Btn_Verder1
+            // 
+            this.Btn_Verder1.Location = new System.Drawing.Point(133, 295);
+            this.Btn_Verder1.Name = "Btn_Verder1";
+            this.Btn_Verder1.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Verder1.TabIndex = 0;
+            this.Btn_Verder1.Text = "Verder";
+            this.Btn_Verder1.UseVisualStyleBackColor = true;
+            // 
             // Tc_6Spelers
             // 
             this.Tc_6Spelers.Controls.Add(this.Lb_6Speler_Winnaar);
@@ -143,9 +249,10 @@
             this.Tc_6Spelers.Location = new System.Drawing.Point(4, 4);
             this.Tc_6Spelers.Margin = new System.Windows.Forms.Padding(0);
             this.Tc_6Spelers.Name = "Tc_6Spelers";
-            this.Tc_6Spelers.Size = new System.Drawing.Size(562, 321);
+            this.Tc_6Spelers.Size = new System.Drawing.Size(562, 341);
             this.Tc_6Spelers.TabIndex = 1;
             this.Tc_6Spelers.UseVisualStyleBackColor = true;
+            this.Tc_6Spelers.Paint += new System.Windows.Forms.PaintEventHandler(this.Tc_6Spelers_Paint);
             // 
             // Lb_6Speler_Winnaar
             // 
@@ -271,116 +378,8 @@
             this.Btn_Terug2.Text = "Verder";
             this.Btn_Terug2.UseVisualStyleBackColor = true;
             // 
-            // Tc_4Spelers
-            // 
-            this.Tc_4Spelers.Controls.Add(this.Lb_4Speler_Winnaar);
-            this.Tc_4Spelers.Controls.Add(this.Lb_4Speler_Ronde2_Speler2);
-            this.Tc_4Spelers.Controls.Add(this.Lb_4Speler_Ronde2_Speler1);
-            this.Tc_4Spelers.Controls.Add(this.Lb_4Speler_Ronde1_Speler4);
-            this.Tc_4Spelers.Controls.Add(this.Lb_4Speler_Ronde1_Speler3);
-            this.Tc_4Spelers.Controls.Add(this.Lb_4Speler_Ronde1_Speler2);
-            this.Tc_4Spelers.Controls.Add(this.Lb_4Speler_Ronde1_Speler1);
-            this.Tc_4Spelers.Controls.Add(this.Tb_Naam1);
-            this.Tc_4Spelers.Controls.Add(this.Btn_Terug1);
-            this.Tc_4Spelers.Controls.Add(this.Btn_Verder1);
-            this.Tc_4Spelers.Location = new System.Drawing.Point(4, 4);
-            this.Tc_4Spelers.Margin = new System.Windows.Forms.Padding(0);
-            this.Tc_4Spelers.Name = "Tc_4Spelers";
-            this.Tc_4Spelers.Size = new System.Drawing.Size(562, 341);
-            this.Tc_4Spelers.TabIndex = 2;
-            this.Tc_4Spelers.UseVisualStyleBackColor = true;
-            // 
-            // Lb_4Speler_Winnaar
-            // 
-            this.Lb_4Speler_Winnaar.AutoSize = true;
-            this.Lb_4Speler_Winnaar.Location = new System.Drawing.Point(361, 110);
-            this.Lb_4Speler_Winnaar.Name = "Lb_4Speler_Winnaar";
-            this.Lb_4Speler_Winnaar.Size = new System.Drawing.Size(46, 17);
-            this.Lb_4Speler_Winnaar.TabIndex = 9;
-            this.Lb_4Speler_Winnaar.Text = "label7";
-            // 
-            // Lb_4Speler_Ronde2_Speler2
-            // 
-            this.Lb_4Speler_Ronde2_Speler2.AutoSize = true;
-            this.Lb_4Speler_Ronde2_Speler2.Location = new System.Drawing.Point(250, 181);
-            this.Lb_4Speler_Ronde2_Speler2.Name = "Lb_4Speler_Ronde2_Speler2";
-            this.Lb_4Speler_Ronde2_Speler2.Size = new System.Drawing.Size(46, 17);
-            this.Lb_4Speler_Ronde2_Speler2.TabIndex = 8;
-            this.Lb_4Speler_Ronde2_Speler2.Text = "label6";
-            // 
-            // Lb_4Speler_Ronde2_Speler1
-            // 
-            this.Lb_4Speler_Ronde2_Speler1.AutoSize = true;
-            this.Lb_4Speler_Ronde2_Speler1.Location = new System.Drawing.Point(250, 44);
-            this.Lb_4Speler_Ronde2_Speler1.Name = "Lb_4Speler_Ronde2_Speler1";
-            this.Lb_4Speler_Ronde2_Speler1.Size = new System.Drawing.Size(46, 17);
-            this.Lb_4Speler_Ronde2_Speler1.TabIndex = 7;
-            this.Lb_4Speler_Ronde2_Speler1.Text = "label5";
-            // 
-            // Lb_4Speler_Ronde1_Speler4
-            // 
-            this.Lb_4Speler_Ronde1_Speler4.AutoSize = true;
-            this.Lb_4Speler_Ronde1_Speler4.Location = new System.Drawing.Point(125, 206);
-            this.Lb_4Speler_Ronde1_Speler4.Name = "Lb_4Speler_Ronde1_Speler4";
-            this.Lb_4Speler_Ronde1_Speler4.Size = new System.Drawing.Size(46, 17);
-            this.Lb_4Speler_Ronde1_Speler4.TabIndex = 6;
-            this.Lb_4Speler_Ronde1_Speler4.Text = "label4";
-            // 
-            // Lb_4Speler_Ronde1_Speler3
-            // 
-            this.Lb_4Speler_Ronde1_Speler3.AutoSize = true;
-            this.Lb_4Speler_Ronde1_Speler3.Location = new System.Drawing.Point(125, 154);
-            this.Lb_4Speler_Ronde1_Speler3.Name = "Lb_4Speler_Ronde1_Speler3";
-            this.Lb_4Speler_Ronde1_Speler3.Size = new System.Drawing.Size(46, 17);
-            this.Lb_4Speler_Ronde1_Speler3.TabIndex = 5;
-            this.Lb_4Speler_Ronde1_Speler3.Text = "label3";
-            // 
-            // Lb_4Speler_Ronde1_Speler2
-            // 
-            this.Lb_4Speler_Ronde1_Speler2.AutoSize = true;
-            this.Lb_4Speler_Ronde1_Speler2.Location = new System.Drawing.Point(125, 70);
-            this.Lb_4Speler_Ronde1_Speler2.Name = "Lb_4Speler_Ronde1_Speler2";
-            this.Lb_4Speler_Ronde1_Speler2.Size = new System.Drawing.Size(46, 17);
-            this.Lb_4Speler_Ronde1_Speler2.TabIndex = 4;
-            this.Lb_4Speler_Ronde1_Speler2.Text = "label2";
-            // 
-            // Lb_4Speler_Ronde1_Speler1
-            // 
-            this.Lb_4Speler_Ronde1_Speler1.AutoSize = true;
-            this.Lb_4Speler_Ronde1_Speler1.Location = new System.Drawing.Point(125, 24);
-            this.Lb_4Speler_Ronde1_Speler1.Name = "Lb_4Speler_Ronde1_Speler1";
-            this.Lb_4Speler_Ronde1_Speler1.Size = new System.Drawing.Size(46, 17);
-            this.Lb_4Speler_Ronde1_Speler1.TabIndex = 3;
-            this.Lb_4Speler_Ronde1_Speler1.Text = "label1";
-            // 
-            // Tb_Naam1
-            // 
-            this.Tb_Naam1.Location = new System.Drawing.Point(236, 295);
-            this.Tb_Naam1.Name = "Tb_Naam1";
-            this.Tb_Naam1.Size = new System.Drawing.Size(100, 22);
-            this.Tb_Naam1.TabIndex = 2;
-            // 
-            // Btn_Terug1
-            // 
-            this.Btn_Terug1.Location = new System.Drawing.Point(364, 295);
-            this.Btn_Terug1.Name = "Btn_Terug1";
-            this.Btn_Terug1.Size = new System.Drawing.Size(75, 23);
-            this.Btn_Terug1.TabIndex = 1;
-            this.Btn_Terug1.Text = "Terug";
-            this.Btn_Terug1.UseVisualStyleBackColor = true;
-            // 
-            // Btn_Verder1
-            // 
-            this.Btn_Verder1.Location = new System.Drawing.Point(133, 295);
-            this.Btn_Verder1.Name = "Btn_Verder1";
-            this.Btn_Verder1.Size = new System.Drawing.Size(75, 23);
-            this.Btn_Verder1.TabIndex = 0;
-            this.Btn_Verder1.Text = "Verder";
-            this.Btn_Verder1.UseVisualStyleBackColor = true;
-            // 
             // Tc_8Spelers
             // 
-            this.Tc_8Spelers.Controls.Add(this.Lb_8Speler_Winnaar);
             this.Tc_8Spelers.Controls.Add(this.Lb_8Speler_Ronde3_Speler1);
             this.Tc_8Spelers.Controls.Add(this.Lb_8Speler_Ronde3_Speler2);
             this.Tc_8Spelers.Controls.Add(this.Lb_8Speler_Ronde2_Speler4);
@@ -401,18 +400,10 @@
             this.Tc_8Spelers.Location = new System.Drawing.Point(4, 4);
             this.Tc_8Spelers.Margin = new System.Windows.Forms.Padding(0);
             this.Tc_8Spelers.Name = "Tc_8Spelers";
-            this.Tc_8Spelers.Size = new System.Drawing.Size(562, 321);
+            this.Tc_8Spelers.Size = new System.Drawing.Size(562, 341);
             this.Tc_8Spelers.TabIndex = 3;
             this.Tc_8Spelers.UseVisualStyleBackColor = true;
-            // 
-            // Lb_8Speler_Winnaar
-            // 
-            this.Lb_8Speler_Winnaar.AutoSize = true;
-            this.Lb_8Speler_Winnaar.Location = new System.Drawing.Point(254, 64);
-            this.Lb_8Speler_Winnaar.Name = "Lb_8Speler_Winnaar";
-            this.Lb_8Speler_Winnaar.Size = new System.Drawing.Size(54, 17);
-            this.Lb_8Speler_Winnaar.TabIndex = 20;
-            this.Lb_8Speler_Winnaar.Text = "label15";
+            this.Tc_8Spelers.Paint += new System.Windows.Forms.PaintEventHandler(this.Tc_8Spelers_Paint);
             // 
             // Lb_8Speler_Ronde3_Speler1
             // 
@@ -567,7 +558,6 @@
             // 
             // Tc_10Spelers
             // 
-            this.Tc_10Spelers.Controls.Add(this.Lb_10Speler_Winnaar);
             this.Tc_10Spelers.Controls.Add(this.Lb_10Speler_Ronde3_Speler2);
             this.Tc_10Spelers.Controls.Add(this.Lb_10Speler_Ronde2_Speler1);
             this.Tc_10Spelers.Controls.Add(this.Lb_10Speler_Ronde2_Speler2);
@@ -592,23 +582,15 @@
             this.Tc_10Spelers.Location = new System.Drawing.Point(4, 4);
             this.Tc_10Spelers.Margin = new System.Windows.Forms.Padding(0);
             this.Tc_10Spelers.Name = "Tc_10Spelers";
-            this.Tc_10Spelers.Size = new System.Drawing.Size(562, 321);
+            this.Tc_10Spelers.Size = new System.Drawing.Size(562, 341);
             this.Tc_10Spelers.TabIndex = 4;
             this.Tc_10Spelers.UseVisualStyleBackColor = true;
-            // 
-            // Lb_10Speler_Winnaar
-            // 
-            this.Lb_10Speler_Winnaar.AutoSize = true;
-            this.Lb_10Speler_Winnaar.Location = new System.Drawing.Point(297, 81);
-            this.Lb_10Speler_Winnaar.Name = "Lb_10Speler_Winnaar";
-            this.Lb_10Speler_Winnaar.Size = new System.Drawing.Size(54, 17);
-            this.Lb_10Speler_Winnaar.TabIndex = 39;
-            this.Lb_10Speler_Winnaar.Text = "label34";
+            this.Tc_10Spelers.Paint += new System.Windows.Forms.PaintEventHandler(this.Tc_10Spelers_Paint);
             // 
             // Lb_10Speler_Ronde3_Speler2
             // 
             this.Lb_10Speler_Ronde3_Speler2.AutoSize = true;
-            this.Lb_10Speler_Ronde3_Speler2.Location = new System.Drawing.Point(181, 161);
+            this.Lb_10Speler_Ronde3_Speler2.Location = new System.Drawing.Point(181, 186);
             this.Lb_10Speler_Ronde3_Speler2.Name = "Lb_10Speler_Ronde3_Speler2";
             this.Lb_10Speler_Ronde3_Speler2.Size = new System.Drawing.Size(54, 17);
             this.Lb_10Speler_Ronde3_Speler2.TabIndex = 38;
@@ -617,7 +599,7 @@
             // Lb_10Speler_Ronde2_Speler1
             // 
             this.Lb_10Speler_Ronde2_Speler1.AutoSize = true;
-            this.Lb_10Speler_Ronde2_Speler1.Location = new System.Drawing.Point(95, 81);
+            this.Lb_10Speler_Ronde2_Speler1.Location = new System.Drawing.Point(95, 64);
             this.Lb_10Speler_Ronde2_Speler1.Name = "Lb_10Speler_Ronde2_Speler1";
             this.Lb_10Speler_Ronde2_Speler1.Size = new System.Drawing.Size(54, 17);
             this.Lb_10Speler_Ronde2_Speler1.TabIndex = 37;
@@ -626,7 +608,7 @@
             // Lb_10Speler_Ronde2_Speler2
             // 
             this.Lb_10Speler_Ronde2_Speler2.AutoSize = true;
-            this.Lb_10Speler_Ronde2_Speler2.Location = new System.Drawing.Point(95, 115);
+            this.Lb_10Speler_Ronde2_Speler2.Location = new System.Drawing.Point(95, 98);
             this.Lb_10Speler_Ronde2_Speler2.Name = "Lb_10Speler_Ronde2_Speler2";
             this.Lb_10Speler_Ronde2_Speler2.Size = new System.Drawing.Size(54, 17);
             this.Lb_10Speler_Ronde2_Speler2.TabIndex = 36;
@@ -644,7 +626,7 @@
             // Lb_10Speler_Ronde3_Speler1
             // 
             this.Lb_10Speler_Ronde3_Speler1.AutoSize = true;
-            this.Lb_10Speler_Ronde3_Speler1.Location = new System.Drawing.Point(181, 115);
+            this.Lb_10Speler_Ronde3_Speler1.Location = new System.Drawing.Point(181, 81);
             this.Lb_10Speler_Ronde3_Speler1.Name = "Lb_10Speler_Ronde3_Speler1";
             this.Lb_10Speler_Ronde3_Speler1.Size = new System.Drawing.Size(54, 17);
             this.Lb_10Speler_Ronde3_Speler1.TabIndex = 34;
@@ -662,7 +644,7 @@
             // Lb_10Speler_Ronde2_Speler6
             // 
             this.Lb_10Speler_Ronde2_Speler6.AutoSize = true;
-            this.Lb_10Speler_Ronde2_Speler6.Location = new System.Drawing.Point(416, 161);
+            this.Lb_10Speler_Ronde2_Speler6.Location = new System.Drawing.Point(416, 186);
             this.Lb_10Speler_Ronde2_Speler6.Name = "Lb_10Speler_Ronde2_Speler6";
             this.Lb_10Speler_Ronde2_Speler6.Size = new System.Drawing.Size(54, 17);
             this.Lb_10Speler_Ronde2_Speler6.TabIndex = 32;
@@ -671,7 +653,7 @@
             // Lb_10Speler_Ronde2_Speler5
             // 
             this.Lb_10Speler_Ronde2_Speler5.AutoSize = true;
-            this.Lb_10Speler_Ronde2_Speler5.Location = new System.Drawing.Point(416, 108);
+            this.Lb_10Speler_Ronde2_Speler5.Location = new System.Drawing.Point(416, 98);
             this.Lb_10Speler_Ronde2_Speler5.Name = "Lb_10Speler_Ronde2_Speler5";
             this.Lb_10Speler_Ronde2_Speler5.Size = new System.Drawing.Size(54, 17);
             this.Lb_10Speler_Ronde2_Speler5.TabIndex = 31;
@@ -680,7 +662,7 @@
             // Lb_10Speler_Ronde2_Speler3
             // 
             this.Lb_10Speler_Ronde2_Speler3.AutoSize = true;
-            this.Lb_10Speler_Ronde2_Speler3.Location = new System.Drawing.Point(95, 161);
+            this.Lb_10Speler_Ronde2_Speler3.Location = new System.Drawing.Point(95, 173);
             this.Lb_10Speler_Ronde2_Speler3.Name = "Lb_10Speler_Ronde2_Speler3";
             this.Lb_10Speler_Ronde2_Speler3.Size = new System.Drawing.Size(54, 17);
             this.Lb_10Speler_Ronde2_Speler3.TabIndex = 30;
@@ -689,7 +671,7 @@
             // Lb_10Speler_Ronde2_Speler4
             // 
             this.Lb_10Speler_Ronde2_Speler4.AutoSize = true;
-            this.Lb_10Speler_Ronde2_Speler4.Location = new System.Drawing.Point(95, 195);
+            this.Lb_10Speler_Ronde2_Speler4.Location = new System.Drawing.Point(95, 207);
             this.Lb_10Speler_Ronde2_Speler4.Name = "Lb_10Speler_Ronde2_Speler4";
             this.Lb_10Speler_Ronde2_Speler4.Size = new System.Drawing.Size(54, 17);
             this.Lb_10Speler_Ronde2_Speler4.TabIndex = 29;
@@ -803,10 +785,10 @@
             this.Size = new System.Drawing.Size(570, 350);
             this.Load += new System.EventHandler(this.EliminatieBracket_Load);
             this.Tc_Eliminatiebracket.ResumeLayout(false);
-            this.Tc_6Spelers.ResumeLayout(false);
-            this.Tc_6Spelers.PerformLayout();
             this.Tc_4Spelers.ResumeLayout(false);
             this.Tc_4Spelers.PerformLayout();
+            this.Tc_6Spelers.ResumeLayout(false);
+            this.Tc_6Spelers.PerformLayout();
             this.Tc_8Spelers.ResumeLayout(false);
             this.Tc_8Spelers.PerformLayout();
             this.Tc_10Spelers.ResumeLayout(false);
@@ -852,7 +834,6 @@
         private System.Windows.Forms.Label Lb_4Speler_Ronde1_Speler3;
         private System.Windows.Forms.Label Lb_4Speler_Ronde1_Speler2;
         private System.Windows.Forms.Label Lb_4Speler_Ronde1_Speler1;
-        private System.Windows.Forms.Label Lb_8Speler_Winnaar;
         private System.Windows.Forms.Label Lb_8Speler_Ronde3_Speler1;
         private System.Windows.Forms.Label Lb_8Speler_Ronde3_Speler2;
         private System.Windows.Forms.Label Lb_8Speler_Ronde2_Speler4;
@@ -867,7 +848,6 @@
         private System.Windows.Forms.Label Lb_8Speler_Ronde1_Speler3;
         private System.Windows.Forms.Label Lb_8Speler_Ronde1_Speler2;
         private System.Windows.Forms.Label Lb_8Speler_Ronde1_Speler1;
-        private System.Windows.Forms.Label Lb_10Speler_Winnaar;
         private System.Windows.Forms.Label Lb_10Speler_Ronde3_Speler2;
         private System.Windows.Forms.Label Lb_10Speler_Ronde2_Speler1;
         private System.Windows.Forms.Label Lb_10Speler_Ronde2_Speler2;

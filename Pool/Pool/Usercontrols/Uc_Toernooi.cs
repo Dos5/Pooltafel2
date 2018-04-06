@@ -12,7 +12,7 @@ namespace Pool
 {
     public partial class Toernooi : UserControl
     {
-        public int HoeveelheidSpelers;
+        private int HoeveelheidSpelers;
         public Toernooi()
         {
             InitializeComponent();
@@ -23,7 +23,7 @@ namespace Pool
         }
         private void Btn_Verder_Click(object sender, EventArgs e)
         {
-            EliminatieBracket eliminatieBracket = new EliminatieBracket();
+            EliminatieBracket eliminatieBracket = new EliminatieBracket(HoeveelheidSpelers);
             Controls.Add(eliminatieBracket);
             eliminatieBracket.BringToFront();
         }
