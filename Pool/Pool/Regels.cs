@@ -46,8 +46,28 @@ namespace Pool
             }
         }
 
+        private void Lb_naamregel_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Class_regels class_regels = new Class_regels();
+                foreach (Class_regels regels in regel_list)
+                {
+                    if (Lb_naamregel.SelectedItem == regels)
+                    {
+                        class_regels = regels;
+                        break;
+                       
+                    }
+                }
+                Lb_regel_uitleg.Items.Clear();
+                Lb_regel_uitleg.Items.Add(class_regels.description);
+            }
+            catch (Exception ex)
+            {
 
-
-
+                throw ex;
+            }
+        }
     }
 }

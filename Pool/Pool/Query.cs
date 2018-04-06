@@ -75,7 +75,24 @@ namespace Pool
             conn.Close();
             return inloggen;
         }
+
+        public void change_password(string Name,string Password)
+        {
+
         
+            
+            query = "UPDATE [dbo].[User] SET Password=@Password where Name=@Name";
+            cmd = new SqlCommand(query, conn);
+     
+            cmd.Parameters.Clear();
+            cmd.Parameters.AddWithValue("@Name", Name);
+            cmd.Parameters.AddWithValue("@Password", Password);
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
+
+
         public List<Class_regels> Inladen_regels()
         {
             query = "SELECT * FROM [dbo].[Rule]";

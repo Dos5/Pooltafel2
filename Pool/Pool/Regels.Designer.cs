@@ -41,6 +41,7 @@
             this.Lb_naamregel.Name = "Lb_naamregel";
             this.Lb_naamregel.Size = new System.Drawing.Size(173, 212);
             this.Lb_naamregel.TabIndex = 0;
+            this.Lb_naamregel.SelectedIndexChanged += new System.EventHandler(this.Lb_naamregel_SelectedIndexChanged);
             // 
             // Lb_regel_uitleg
             // 

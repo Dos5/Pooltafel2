@@ -30,7 +30,7 @@ namespace Pool
         }
         private void Btn_Login_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(Tb_Naam.Text) || string.IsNullOrEmpty(Tb_Wachtwoord.Text))
+            if (string.IsNullOrEmpty(Tb_Naam.Text) || string.IsNullOrEmpty(Tb_Wachtwoord.Text))
             {
                 //Laat waarschuwing zien
                 MessageBox.Show("Niet alle velden zijn ingevuld.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -56,7 +56,7 @@ namespace Pool
                         MessageBox.Show("Wachtwoord is onjuist", "Error", MessageBoxButtons.OK, MessageBoxIcon.Question);
                     }
                 }
-                catch(Exception Ex)
+                catch (Exception Ex)
                 {
                     //Schrijf de fout naar een Txt bestand
                     File.AppendAllText(Environment.CurrentDirectory.ToString() + "\\Error Log.txt", DateTime.Now.ToString() + " Een login fout is waargenomen." + Environment.NewLine + Ex + Environment.NewLine + Environment.NewLine);
@@ -64,6 +64,9 @@ namespace Pool
                     MessageBox.Show(Ex.Message, "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
                 }
             }
+            //Ingelogd ingelogd = new Ingelogd();
+            //Controls.Add(ingelogd);
+            //ingelogd.BringToFront();
         }
         private void Btn_Terug_Click(object sender, EventArgs e)
         {
