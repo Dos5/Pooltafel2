@@ -31,13 +31,10 @@ namespace Pool.Usercontrols
                 Tc_Eliminatiebracket.SelectTab(Tc_10Spelers);
             }
         }
-
         private void EliminatieBracket_Load(object sender, EventArgs e)
         {
 
         }
-
-
         private void DrawBracket (Label VariabeleLabel1, Label VariabeleLabel2, Label VariabeleLabel3, PaintEventArgs e)
         {
             Pen BracketLine = new Pen (Color.Black, 5);
@@ -60,7 +57,6 @@ namespace Pool.Usercontrols
             e.Graphics.DrawLine(BracketLine, Point5, Point3);
             BracketLine.Dispose();
         }
-
         private void Tc_4Spelers_Paint(object sender, PaintEventArgs e)
         {
             // Ronde 1
@@ -69,7 +65,6 @@ namespace Pool.Usercontrols
             // Ronde 2
             DrawBracket(Lb_4Speler_Ronde2_Speler1, Lb_4Speler_Ronde2_Speler2, Lb_4Speler_Winnaar, e);
         }
-
         private void Tc_6Spelers_Paint(object sender, PaintEventArgs e)
         {
             // Ronde 1
@@ -81,7 +76,6 @@ namespace Pool.Usercontrols
             // Ronde 3
             DrawBracket(Lb_6Speler_Ronde3_Speler1, Lb_6Speler_Ronde3_Speler2, Lb_6Speler_Winnaar, e);
         }
-
         private void Tc_8Spelers_Paint(object sender, PaintEventArgs e)
         {
             // Ronde 1
@@ -103,7 +97,6 @@ namespace Pool.Usercontrols
                 Lb_8Speler_Ronde3_Speler2.Location.Y + (Lb_8Speler_Ronde3_Speler2.Height / 2));
             BracketLine.Dispose();
         }
-
         private void Tc_10Spelers_Paint(object sender, PaintEventArgs e)
         {
             // Ronde 1
@@ -127,6 +120,11 @@ namespace Pool.Usercontrols
                 Lb_10Speler_Ronde4_Speler2.Location.X + Lb_10Speler_Ronde4_Speler2.Width,
                 Lb_10Speler_Ronde4_Speler2.Location.Y + (Lb_10Speler_Ronde4_Speler2.Height / 2));
             BracketLine.Dispose();
+        }
+        private void Btn_Terug1_Click(object sender, EventArgs e)
+        {
+            //Sluit dit scherm
+            this.Visible = false;
         }
     }
 }
