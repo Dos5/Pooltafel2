@@ -60,14 +60,19 @@ namespace Pool
                        
                     }
                 }
-                Lb_regel_uitleg.Items.Clear();
-                Lb_regel_uitleg.Items.Add(class_regels.description);
+                Rtb_regel_uitleg.Clear();
+                Rtb_regel_uitleg.Text = class_regels.description;
             }
             catch (Exception ex)
             {
 
                 throw ex;
             }
+        }
+
+        private void Btn_Terug_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

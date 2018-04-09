@@ -29,47 +29,50 @@
         private void InitializeComponent()
         {
             this.Lb_naamregel = new System.Windows.Forms.ListBox();
-            this.Lb_regel_uitleg = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Btn_Terug = new System.Windows.Forms.Button();
+            this.Rtb_regel_uitleg = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // Lb_naamregel
             // 
             this.Lb_naamregel.FormattingEnabled = true;
-            this.Lb_naamregel.ItemHeight = 16;
-            this.Lb_naamregel.Location = new System.Drawing.Point(17, 53);
+            this.Lb_naamregel.Location = new System.Drawing.Point(13, 43);
+            this.Lb_naamregel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Lb_naamregel.Name = "Lb_naamregel";
-            this.Lb_naamregel.Size = new System.Drawing.Size(173, 212);
+            this.Lb_naamregel.Size = new System.Drawing.Size(131, 173);
             this.Lb_naamregel.TabIndex = 0;
             this.Lb_naamregel.SelectedIndexChanged += new System.EventHandler(this.Lb_naamregel_SelectedIndexChanged);
             // 
-            // Lb_regel_uitleg
+            // Btn_Terug
             // 
-            this.Lb_regel_uitleg.FormattingEnabled = true;
-            this.Lb_regel_uitleg.ItemHeight = 16;
-            this.Lb_regel_uitleg.Location = new System.Drawing.Point(212, 53);
-            this.Lb_regel_uitleg.Name = "Lb_regel_uitleg";
-            this.Lb_regel_uitleg.Size = new System.Drawing.Size(173, 212);
-            this.Lb_regel_uitleg.TabIndex = 1;
+            this.Btn_Terug.Location = new System.Drawing.Point(16, 232);
+            this.Btn_Terug.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_Terug.Name = "Btn_Terug";
+            this.Btn_Terug.Size = new System.Drawing.Size(56, 24);
+            this.Btn_Terug.TabIndex = 2;
+            this.Btn_Terug.Text = "Terug";
+            this.Btn_Terug.UseVisualStyleBackColor = true;
+            this.Btn_Terug.Click += new System.EventHandler(this.Btn_Terug_Click);
             // 
-            // button1
+            // Rtb_regel_uitleg
             // 
-            this.button1.Location = new System.Drawing.Point(17, 292);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Rtb_regel_uitleg.Location = new System.Drawing.Point(160, 40);
+            this.Rtb_regel_uitleg.Name = "Rtb_regel_uitleg";
+            this.Rtb_regel_uitleg.ReadOnly = true;
+            this.Rtb_regel_uitleg.Size = new System.Drawing.Size(131, 173);
+            this.Rtb_regel_uitleg.TabIndex = 3;
+            this.Rtb_regel_uitleg.Text = "";
             // 
             // Regels
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.Lb_regel_uitleg);
+            this.Controls.Add(this.Rtb_regel_uitleg);
+            this.Controls.Add(this.Btn_Terug);
             this.Controls.Add(this.Lb_naamregel);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Regels";
-            this.Size = new System.Drawing.Size(403, 341);
+            this.Size = new System.Drawing.Size(302, 277);
             this.Load += new System.EventHandler(this.Regels_Load);
             this.ResumeLayout(false);
 
@@ -78,7 +81,7 @@
         #endregion
 
         private System.Windows.Forms.ListBox Lb_naamregel;
-        private System.Windows.Forms.ListBox Lb_regel_uitleg;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Btn_Terug;
+        private System.Windows.Forms.RichTextBox Rtb_regel_uitleg;
     }
 }
