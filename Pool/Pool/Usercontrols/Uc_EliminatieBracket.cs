@@ -31,16 +31,24 @@ namespace Pool.Usercontrols
                 Tc_Eliminatiebracket.SelectTab(Tc_10Spelers);
             }
         }
-        private void EliminatieBracket_Load(object sender, EventArgs e)
-        {
-
-        }
         private void DrawBracket (Label VariabeleLabel1, Label VariabeleLabel2, Label VariabeleLabel3, PaintEventArgs e)
         {
-            Pen BracketLine = new Pen (Color.Black, 5);
-            int X1 = (VariabeleLabel1.Location.X + VariabeleLabel1.Width);
-            int X2 = (VariabeleLabel3.Location.X);
-            int X3 = ((X1 + X2) / 2);
+            Pen BracketLine = new Pen(Color.Black, 5);
+            int X1;
+            int X2;
+            int X3;
+            if (VariabeleLabel1.Location.X > VariabeleLabel3.Location.X)
+            {
+                X1 = (VariabeleLabel1.Location.X);
+                X2 = (VariabeleLabel3.Location.X + VariabeleLabel3.Width);
+                X3 = ((X1 + X2) / 2);
+            }
+            else
+            {
+                X1 = (VariabeleLabel1.Location.X + VariabeleLabel1.Width);
+                X2 = (VariabeleLabel3.Location.X);
+                X3 = ((X1 + X2) / 2);
+            }                        
             int Y1 = (VariabeleLabel1.Location.Y + (VariabeleLabel1.Height / 2));
             int Y2 = (VariabeleLabel3.Location.Y + (VariabeleLabel3.Height / 2));
             int Y3 = (VariabeleLabel2.Location.Y + (VariabeleLabel2.Height / 2));
@@ -86,14 +94,13 @@ namespace Pool.Usercontrols
             // Ronde 2
             DrawBracket(Lb_8Speler_Ronde2_Speler1, Lb_8Speler_Ronde2_Speler2, Lb_8Speler_Ronde3_Speler1, e);
             DrawBracket(Lb_8Speler_Ronde2_Speler3, Lb_8Speler_Ronde2_Speler4, Lb_8Speler_Ronde3_Speler2, e);
-
-            // Lijnen tekenen van ronde 3 naar de winnaar
+            // Ronde 4
             Pen BracketLine = new Pen(Color.Black, 5);
             e.Graphics.DrawLine
                 (BracketLine,
                 Lb_8Speler_Ronde3_Speler1.Location.X + Lb_8Speler_Ronde3_Speler1.Width, 
                 Lb_8Speler_Ronde3_Speler1.Location.Y + (Lb_8Speler_Ronde3_Speler1.Height / 2), 
-                Lb_8Speler_Ronde3_Speler2.Location.X + Lb_8Speler_Ronde3_Speler2.Width, 
+                Lb_8Speler_Ronde3_Speler2.Location.X, 
                 Lb_8Speler_Ronde3_Speler2.Location.Y + (Lb_8Speler_Ronde3_Speler2.Height / 2));
             BracketLine.Dispose();
         }
@@ -110,21 +117,50 @@ namespace Pool.Usercontrols
             DrawBracket(Lb_10Speler_Ronde2_Speler5, Lb_10Speler_Ronde2_Speler6, Lb_10Speler_Ronde4_Speler2, e);
             // Ronde 3
             DrawBracket(Lb_10Speler_Ronde3_Speler1, Lb_10Speler_Ronde3_Speler2, Lb_10Speler_Ronde4_Speler1, e);
-
-            // Lijnen tekenen van ronde 4 naar de winnaar
+            // Ronde 4
             Pen BracketLine = new Pen(Color.Black, 5);
             e.Graphics.DrawLine
                 (BracketLine,
                 Lb_10Speler_Ronde4_Speler1.Location.X + Lb_10Speler_Ronde4_Speler1.Width,
                 Lb_10Speler_Ronde4_Speler1.Location.Y + (Lb_10Speler_Ronde4_Speler1.Height / 2),
-                Lb_10Speler_Ronde4_Speler2.Location.X + Lb_10Speler_Ronde4_Speler2.Width,
+                Lb_10Speler_Ronde4_Speler2.Location.X,
                 Lb_10Speler_Ronde4_Speler2.Location.Y + (Lb_10Speler_Ronde4_Speler2.Height / 2));
             BracketLine.Dispose();
         }
         private void Btn_Terug1_Click(object sender, EventArgs e)
         {
-            //Sluit dit scherm
             this.Visible = false;
+        }
+        private void Btn_Terug2_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+        }
+        private void Btn_Terug3_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+        }
+        private void Btn_Terug4_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+        }
+
+        private void Btn_Verder1_Click(object sender, EventArgs e)
+        {
+            // Onbruikbaar maken van de labels, "verder" knop en de tekstbox
+            // Beginnen met luisteren naar sensoren voor verloop van het toernooi
+            // etc...
+        }
+        private void Btn_Verder2_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Btn_Verder3_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Btn_Verder4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
