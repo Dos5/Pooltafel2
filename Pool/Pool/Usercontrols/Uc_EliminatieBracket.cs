@@ -162,5 +162,10 @@ namespace Pool.Usercontrols
         {
 
         }
+
+        private void Tc_4Spelers_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

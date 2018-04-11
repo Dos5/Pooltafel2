@@ -119,7 +119,7 @@
             this.Tc_Eliminatiebracket.Name = "Tc_Eliminatiebracket";
             this.Tc_Eliminatiebracket.Padding = new System.Drawing.Point(0, 0);
             this.Tc_Eliminatiebracket.SelectedIndex = 0;
-            this.Tc_Eliminatiebracket.Size = new System.Drawing.Size(571, 350);
+            this.Tc_Eliminatiebracket.Size = new System.Drawing.Size(552, 321);
             this.Tc_Eliminatiebracket.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.Tc_Eliminatiebracket.TabIndex = 0;
             // 
@@ -139,8 +139,9 @@
             this.Tc_4Spelers.Location = new System.Drawing.Point(4, 4);
             this.Tc_4Spelers.Margin = new System.Windows.Forms.Padding(0);
             this.Tc_4Spelers.Name = "Tc_4Spelers";
-            this.Tc_4Spelers.Size = new System.Drawing.Size(563, 341);
+            this.Tc_4Spelers.Size = new System.Drawing.Size(544, 312);
             this.Tc_4Spelers.TabIndex = 2;
+            this.Tc_4Spelers.Click += new System.EventHandler(this.Tc_4Spelers_Click);
             this.Tc_4Spelers.Paint += new System.Windows.Forms.PaintEventHandler(this.Tc_4Spelers_Paint);
             // 
             // Lb_4Speler_Winnaar
@@ -880,7 +881,7 @@
             this.Controls.Add(this.Tc_Eliminatiebracket);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "EliminatieBracket";
-            this.Size = new System.Drawing.Size(571, 350);
+            this.Size = new System.Drawing.Size(552, 321);
             this.Tc_Eliminatiebracket.ResumeLayout(false);
             this.Tc_4Spelers.ResumeLayout(false);
             this.Tc_4Spelers.PerformLayout();
