@@ -11,7 +11,6 @@ namespace Pool
 {
     public partial class PooltafelMain : Form
     {
-        int buttonclick = 0;
        public static bool isopen = false;
         public PooltafelMain()
         {
@@ -34,12 +33,18 @@ namespace Pool
             register.BringToFront();
         }
         private void Btn_Settings_Click(object sender, EventArgs e)
-        {
-         //   buttonclick++;        
+        {      
             Settings settings = new Settings();
             Controls.Add(settings);
             settings.BringToFront();
+<<<<<<< HEAD
+            if (settings.Visible)
+            {
+                Btn_Settings.Enabled = false;
+            }
+=======
             
+>>>>>>> 30cb80621972825735124e617c61f7a548aebbd0
         }
     }
 }
