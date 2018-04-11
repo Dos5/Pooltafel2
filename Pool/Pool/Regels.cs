@@ -23,10 +23,10 @@ namespace Pool
 
         private void Regels_Load(object sender, EventArgs e)
         {
-            laad_regels();
+            Laad_regels();
         }
 
-        public void laad_regels()
+        public void Laad_regels()
         {
             try
             {
@@ -73,6 +73,11 @@ namespace Pool
         private void Btn_Terug_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void Lb_naamregel_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

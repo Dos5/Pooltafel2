@@ -23,5 +23,10 @@ namespace Pool
         {
             this.Hide();
         }
+
+        private void Settings_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

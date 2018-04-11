@@ -38,7 +38,8 @@ namespace Pool
          //   buttonclick++;        
             Settings settings = new Settings();
             Controls.Add(settings);
-            settings.BringToFront();        
+            settings.BringToFront();
+            
         }
     }
 }

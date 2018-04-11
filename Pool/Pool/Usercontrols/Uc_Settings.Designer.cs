@@ -124,7 +124,8 @@
             this.Controls.Add(this.Gbx_Taal);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Settings";
-            this.Size = new System.Drawing.Size(552, 321);
+            this.Size = new System.Drawing.Size(810, 321);
+            this.Load += new System.EventHandler(this.Settings_Load);
             this.Gbx_Taal.ResumeLayout(false);
             this.Gbx_Taal.PerformLayout();
             this.ResumeLayout(false);

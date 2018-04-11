@@ -48,7 +48,7 @@
             // 
             this.Btn_Terug.BackColor = System.Drawing.Color.Navy;
             this.Btn_Terug.ForeColor = System.Drawing.Color.White;
-            this.Btn_Terug.Location = new System.Drawing.Point(50, 262);
+            this.Btn_Terug.Location = new System.Drawing.Point(415, 262);
             this.Btn_Terug.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_Terug.Name = "Btn_Terug";
             this.Btn_Terug.Size = new System.Drawing.Size(87, 48);
@@ -59,7 +59,7 @@
             // 
             // Rtb_Regel_Uitleg
             // 
-            this.Rtb_Regel_Uitleg.Location = new System.Drawing.Point(304, 27);
+            this.Rtb_Regel_Uitleg.Location = new System.Drawing.Point(302, 27);
             this.Rtb_Regel_Uitleg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Rtb_Regel_Uitleg.Name = "Rtb_Regel_Uitleg";
             this.Rtb_Regel_Uitleg.ReadOnly = true;
