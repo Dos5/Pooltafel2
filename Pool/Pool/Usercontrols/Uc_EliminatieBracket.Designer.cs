@@ -95,6 +95,7 @@
             this.Tb_Naam4 = new System.Windows.Forms.TextBox();
             this.Btn_Terug4 = new System.Windows.Forms.Button();
             this.Btn_Verder4 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.Tc_Eliminatiebracket.SuspendLayout();
             this.Tc_4Spelers.SuspendLayout();
             this.Tc_6Spelers.SuspendLayout();
@@ -249,6 +250,7 @@
             // Tc_6Spelers
             // 
             this.Tc_6Spelers.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Tc_6Spelers.Controls.Add(this.label1);
             this.Tc_6Spelers.Controls.Add(this.Lb_6Speler_Winnaar);
             this.Tc_6Spelers.Controls.Add(this.Lb_6Speler_Ronde3_Speler2);
             this.Tc_6Spelers.Controls.Add(this.Lb_6Speler_Ronde3_Speler1);
@@ -860,6 +862,16 @@
             this.Btn_Verder4.UseVisualStyleBackColor = false;
             this.Btn_Verder4.Click += new System.EventHandler(this.Btn_Verder4_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(417, 177);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(68, 17);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "PushTest";
+            // 
             // EliminatieBracket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -951,5 +963,6 @@
         private System.Windows.Forms.TextBox Tb_Naam1;
         private System.Windows.Forms.Button Btn_Terug1;
         private System.Windows.Forms.Button Btn_Verder1;
+        private System.Windows.Forms.Label label1;
     }
 }
