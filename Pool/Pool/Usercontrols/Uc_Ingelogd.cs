@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Pool.Usercontrols;
 namespace Pool
 {
     public partial class Ingelogd : UserControl
@@ -18,22 +17,13 @@ namespace Pool
         }
         private void Btn_Verder_Click(object sender, EventArgs e)
         {
-            if (Rbtn_9ball.Checked || Rbtn_8ball.Checked)
+            if (Rbtn_Toernooi.Checked || Rbtn_Duel.Checked)
             {
-                if (Rbtn_Toernooi.Checked || Rbtn_Duel.Checked)
+                if (Rbtn_9ball.Checked || Rbtn_8ball.Checked)
                 {
-                    if (Rbtn_Duel.Checked)
-                    {
-                        Uc_Duel duel = new Uc_Duel();
-                        Controls.Add(duel);
-                        duel.BringToFront();
-                    }
-                    if (Rbtn_Toernooi.Checked)
-                    {
-                        Toernooi toernooi = new Toernooi();
-                        Controls.Add(toernooi);
-                        toernooi.BringToFront();
-                    }
+                    Toernooi toernooi = new Toernooi();
+                    Controls.Add(toernooi);
+                    toernooi.BringToFront();
                 }
                 else
                 {
@@ -49,13 +39,13 @@ namespace Pool
         {
             if (Rbtn_8ball.Checked)
             {
-                Regels regels = new Regels();
+                Regels regels = new Regels(1);
                 Controls.Add(regels);
                 regels.BringToFront();
             }
             else if (Rbtn_9ball.Checked)
             {
-                Regels regels = new Regels();
+                Regels regels = new Regels(2);
                 Controls.Add(regels);
                 regels.BringToFront();
             }

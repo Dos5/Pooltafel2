@@ -74,23 +74,11 @@
     <Compile Include="Regels.Designer.cs">
       <DependentUpon>Regels.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usercontrols\Uc_Duel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Usercontrols\Uc_Duel.Designer.cs">
-      <DependentUpon>Uc_Duel.cs</DependentUpon>
-    </Compile>
     <Compile Include="Usercontrols\Uc_EliminatieBracket.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Usercontrols\Uc_EliminatieBracket.Designer.cs">
       <DependentUpon>Uc_EliminatieBracket.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Usercontrols\Uc_Stand.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Usercontrols\Uc_Stand.Designer.cs">
-      <DependentUpon>Uc_Stand.cs</DependentUpon>
     </Compile>
     <Compile Include="Usercontrols\Uc_Toernooi.cs">
       <SubType>UserControl</SubType>
@@ -136,9 +124,6 @@
     <EmbeddedResource Include="Regels.resx">
       <DependentUpon>Regels.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Usercontrols\Uc_Duel.resx">
-      <DependentUpon>Uc_Duel.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Usercontrols\Uc_EliminatieBracket.resx">
       <DependentUpon>Uc_EliminatieBracket.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,9 +148,6 @@
     </Compile>
     <EmbeddedResource Include="Usercontrols\Uc_Settings.resx">
       <DependentUpon>Uc_Settings.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Usercontrols\Uc_Stand.resx">
-      <DependentUpon>Uc_Stand.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usercontrols\Uc_Toernooi.resx">
       <DependentUpon>Uc_Toernooi.cs</DependentUpon>
@@ -194,21 +176,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>PoolData.mdf</DependentUpon>
     </Content>
-    <None Include="Resources\bal15.jpg" />
-    <None Include="Resources\bal14.jpg" />
-    <None Include="Resources\bal13.jpg" />
-    <None Include="Resources\bal12.jpg" />
-    <None Include="Resources\bal11.jpg" />
-    <None Include="Resources\bal10.jpg" />
-    <None Include="Resources\bal9.jpg" />
-    <None Include="Resources\bal8.jpg" />
-    <None Include="Resources\bal7.jpg" />
-    <None Include="Resources\bal6.jpg" />
-    <None Include="Resources\bal5.jpg" />
-    <None Include="Resources\bal4.jpg" />
-    <None Include="Resources\bal3.jpg" />
-    <None Include="Resources\bal2.jpg" />
-    <None Include="Resources\bal1.jpg" />
     <Content Include="Resources\Gear.png" />
   </ItemGroup>
   <ItemGroup>

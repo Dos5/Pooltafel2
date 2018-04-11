@@ -93,13 +93,15 @@ namespace Pool
         }
 
 
-        public List<Class_regels> Inladen_regels()
+        public List<Class_regels> Inladen_regels(int gameid)
         {
-            query = "SELECT * FROM [dbo].[Rule]";
+            query = "SELECT a.Ruleid, a.Name, a.Description FROM dbo.[Rule] a inner join GameRule b on a.RuleId = b.RuleId" +
+            " where b.GameId = @gameid";
             List<Class_regels> list_regels = new List<Class_regels>();
             cmd = new SqlCommand(query, conn);
 
             conn.Open();
+            cmd.Parameters.AddWithValue("@gameid", gameid);
             myReader = cmd.ExecuteReader();
             while (myReader.Read())
             {
