@@ -34,6 +34,7 @@
             this.Rbtn_Engels = new System.Windows.Forms.RadioButton();
             this.BtnTerug = new System.Windows.Forms.Button();
             this.BtnBevestig = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.Gbx_Taal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -107,11 +108,21 @@
             this.BtnBevestig.UseVisualStyleBackColor = false;
             this.BtnBevestig.Click += new System.EventHandler(this.Btn_Bevestig_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(8, 16);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnBevestig);
             this.Controls.Add(this.BtnTerug);
             this.Controls.Add(this.Gbx_Taal);
@@ -131,5 +142,6 @@
         private System.Windows.Forms.RadioButton Rbtn_Engels;
         private System.Windows.Forms.Button BtnTerug;
         private System.Windows.Forms.Button BtnBevestig;
+        private System.Windows.Forms.Button button1;
     }
 }
