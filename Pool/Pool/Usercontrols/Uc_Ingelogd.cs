@@ -41,6 +41,18 @@ namespace Pool
             {
                 eightball = true;
                 nineball = false;
+                if (Rbtn_Toernooi.Checked)
+                {
+                    Toernooi toernooi = new Toernooi();
+                    Controls.Add(toernooi);
+                    toernooi.BringToFront();
+                }
+                else if (Rbtn_Duel.Checked)
+                {
+                    Uc_Duel duel = new Uc_Duel();
+                    Controls.Add(duel);
+                    duel.BringToFront();
+                }
             }
         }
         private void Btn_Regels_Click(object sender, EventArgs e)
