@@ -37,10 +37,14 @@ namespace Pool
             Settings settings = new Settings();
             Controls.Add(settings);
             settings.BringToFront();
+<<<<<<< HEAD
             if (settings.Visible)
             {
                 Btn_Settings.Enabled = false;
             }
+=======
+            
+>>>>>>> 30cb80621972825735124e617c61f7a548aebbd0
         }
     }
 }

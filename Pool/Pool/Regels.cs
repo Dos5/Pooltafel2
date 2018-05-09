@@ -15,24 +15,22 @@ namespace Pool
 
         Query Query = new Query();
         List<Class_regels> regel_list = new List<Class_regels>();
-        private int gameId;
 
-        public Regels(int gameid)
+        public Regels()
         {
             InitializeComponent();
-            this.gameId = gameid;
         }
 
         private void Regels_Load(object sender, EventArgs e)
         {
-            laad_regels();
+            Laad_regels();
         }
 
-        public void laad_regels()
+        public void Laad_regels()
         {
             try
             {
-                regel_list = Query.Inladen_regels(gameId);
+                regel_list = Query.Inladen_regels();
                 if (regel_list.Count > 0)
                 {
                     foreach (Class_regels class_regels in regel_list)
@@ -48,7 +46,7 @@ namespace Pool
             }
         }
 
-        private void Lb_naamregel_SelectedIndexChanged(object sender, EventArgs e)
+        private void Lb_Naamregel_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
             {
@@ -75,6 +73,11 @@ namespace Pool
         private void Btn_Terug_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void Lb_naamregel_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
