@@ -12,37 +12,35 @@ namespace Pool
 {
     public partial class Ingelogd : UserControl
     {
+        bool nineball;
+        bool eightball;
         public Ingelogd()
         {
             InitializeComponent();
         }
         private void Btn_Verder_Click(object sender, EventArgs e)
         {
-            if (Rbtn_9ball.Checked || Rbtn_8ball.Checked)
+            if (Rbtn_9ball.Checked)
             {
-                if (Rbtn_Toernooi.Checked || Rbtn_Duel.Checked)
+                nineball = true;
+                eightball = false;
+                if (Rbtn_Toernooi.Checked)
                 {
-                    if (Rbtn_Duel.Checked)
-                    {
-                        Uc_Duel duel = new Uc_Duel();
-                        Controls.Add(duel);
-                        duel.BringToFront();
-                    }
-                    if (Rbtn_Toernooi.Checked)
-                    {
-                        Toernooi toernooi = new Toernooi();
-                        Controls.Add(toernooi);
-                        toernooi.BringToFront();
-                    }
+                    Toernooi toernooi = new Toernooi();
+                    Controls.Add(toernooi);
+                    toernooi.BringToFront();
                 }
-                else
+                else if (Rbtn_Duel.Checked)
                 {
-                    MessageBox.Show("selecteer wel een speltype voor je kan beginnen");
+                    Uc_Duel duel = new Uc_Duel();
+                    Controls.Add(duel);
+                    duel.BringToFront();
                 }
             }
-            else
+            else if (Rbtn_8ball.Checked)
             {
-                MessageBox.Show("Selecteer ook of je toernooi of duel wil");
+                eightball = true;
+                nineball = false;
             }
         }
         private void Btn_Regels_Click(object sender, EventArgs e)
