@@ -33,7 +33,7 @@ namespace Pool.Usercontrols
         }
         private void DrawBracket (Label VariabeleLabel1, Label VariabeleLabel2, Label VariabeleLabel3, PaintEventArgs e)
         {
-            Pen BracketLine = new Pen(Color.Black, 5);
+            Pen BracketLine = new Pen(Color.White, 5);
             int X1;
             int X2;
             int X3;
@@ -77,7 +77,7 @@ namespace Pool.Usercontrols
         {
             // Ronde 1
             DrawBracket(Lb_6Speler_Ronde1_Speler1, Lb_6Speler_Ronde1_Speler2, Lb_6Speler_Ronde2_Speler1, e);
-            DrawBracket(Lb_6Speler_Ronde1_Speler3, Lb_6Speler_Ronde1_Speler4, Lb_6Speler_Ronde2_Speler3, e);
+            DrawBracket(Lb_6Speler_Ronde1_Speler3, Lb_6Speler_Ronde1_Speler4, Lb_6Speler_Ronde2_Speler4, e);
             // Ronde 2
             DrawBracket(Lb_6Speler_Ronde2_Speler1, Lb_6Speler_Ronde2_Speler2, Lb_6Speler_Ronde3_Speler1, e);
             DrawBracket(Lb_6Speler_Ronde2_Speler3, Lb_6Speler_Ronde2_Speler4, Lb_6Speler_Ronde3_Speler2, e);
@@ -94,8 +94,8 @@ namespace Pool.Usercontrols
             // Ronde 2
             DrawBracket(Lb_8Speler_Ronde2_Speler1, Lb_8Speler_Ronde2_Speler2, Lb_8Speler_Ronde3_Speler1, e);
             DrawBracket(Lb_8Speler_Ronde2_Speler3, Lb_8Speler_Ronde2_Speler4, Lb_8Speler_Ronde3_Speler2, e);
-            // Ronde 4
-            Pen BracketLine = new Pen(Color.Black, 5);
+            // Ronde 3
+            Pen BracketLine = new Pen(Color.White, 5);
             e.Graphics.DrawLine
                 (BracketLine,
                 Lb_8Speler_Ronde3_Speler1.Location.X + Lb_8Speler_Ronde3_Speler1.Width, 
@@ -118,7 +118,7 @@ namespace Pool.Usercontrols
             // Ronde 3
             DrawBracket(Lb_10Speler_Ronde3_Speler1, Lb_10Speler_Ronde3_Speler2, Lb_10Speler_Ronde4_Speler1, e);
             // Ronde 4
-            Pen BracketLine = new Pen(Color.Black, 5);
+            Pen BracketLine = new Pen(Color.White, 5);
             e.Graphics.DrawLine
                 (BracketLine,
                 Lb_10Speler_Ronde4_Speler1.Location.X + Lb_10Speler_Ronde4_Speler1.Width,

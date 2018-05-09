@@ -41,7 +41,6 @@
             this.Btn_Terug = new System.Windows.Forms.Button();
             this.Btn_Verder = new System.Windows.Forms.Button();
             this.Tc_6Spelers = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
             this.Lb_6Speler_Winnaar = new System.Windows.Forms.Label();
             this.Lb_6Speler_Ronde3_Speler2 = new System.Windows.Forms.Label();
             this.Lb_6Speler_Ronde3_Speler1 = new System.Windows.Forms.Label();
@@ -111,7 +110,6 @@
             this.Tc_Eliminatiebracket.Controls.Add(this.Tc_8Spelers);
             this.Tc_Eliminatiebracket.Controls.Add(this.Tc_10Spelers);
             this.Tc_Eliminatiebracket.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Tc_Eliminatiebracket.Enabled = false;
             this.Tc_Eliminatiebracket.ItemSize = new System.Drawing.Size(1, 1);
             this.Tc_Eliminatiebracket.Location = new System.Drawing.Point(0, 0);
             this.Tc_Eliminatiebracket.Margin = new System.Windows.Forms.Padding(0);
@@ -136,6 +134,7 @@
             this.Tc_4Spelers.Controls.Add(this.Tb_Naam);
             this.Tc_4Spelers.Controls.Add(this.Btn_Terug);
             this.Tc_4Spelers.Controls.Add(this.Btn_Verder);
+            this.Tc_4Spelers.ForeColor = System.Drawing.Color.White;
             this.Tc_4Spelers.Location = new System.Drawing.Point(4, 4);
             this.Tc_4Spelers.Margin = new System.Windows.Forms.Padding(0);
             this.Tc_4Spelers.Name = "Tc_4Spelers";
@@ -251,7 +250,6 @@
             // Tc_6Spelers
             // 
             this.Tc_6Spelers.BackColor = System.Drawing.Color.RoyalBlue;
-            this.Tc_6Spelers.Controls.Add(this.label1);
             this.Tc_6Spelers.Controls.Add(this.Lb_6Speler_Winnaar);
             this.Tc_6Spelers.Controls.Add(this.Lb_6Speler_Ronde3_Speler2);
             this.Tc_6Spelers.Controls.Add(this.Lb_6Speler_Ronde3_Speler1);
@@ -266,22 +264,13 @@
             this.Tc_6Spelers.Controls.Add(this.Tb_Naam2);
             this.Tc_6Spelers.Controls.Add(this.Btn_Terug2);
             this.Tc_6Spelers.Controls.Add(this.Btn_Verder2);
+            this.Tc_6Spelers.ForeColor = System.Drawing.Color.White;
             this.Tc_6Spelers.Location = new System.Drawing.Point(4, 4);
             this.Tc_6Spelers.Margin = new System.Windows.Forms.Padding(0);
             this.Tc_6Spelers.Name = "Tc_6Spelers";
-            this.Tc_6Spelers.Size = new System.Drawing.Size(563, 341);
+            this.Tc_6Spelers.Size = new System.Drawing.Size(544, 312);
             this.Tc_6Spelers.TabIndex = 1;
             this.Tc_6Spelers.Paint += new System.Windows.Forms.PaintEventHandler(this.Tc_6Spelers_Paint);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(417, 177);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 17);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "PushTest";
             // 
             // Lb_6Speler_Winnaar
             // 
@@ -297,7 +286,7 @@
             // 
             this.Lb_6Speler_Ronde3_Speler2.AutoSize = true;
             this.Lb_6Speler_Ronde3_Speler2.ForeColor = System.Drawing.Color.White;
-            this.Lb_6Speler_Ronde3_Speler2.Location = new System.Drawing.Point(308, 162);
+            this.Lb_6Speler_Ronde3_Speler2.Location = new System.Drawing.Point(308, 181);
             this.Lb_6Speler_Ronde3_Speler2.Name = "Lb_6Speler_Ronde3_Speler2";
             this.Lb_6Speler_Ronde3_Speler2.Size = new System.Drawing.Size(54, 17);
             this.Lb_6Speler_Ronde3_Speler2.TabIndex = 15;
@@ -307,7 +296,7 @@
             // 
             this.Lb_6Speler_Ronde3_Speler1.AutoSize = true;
             this.Lb_6Speler_Ronde3_Speler1.ForeColor = System.Drawing.Color.White;
-            this.Lb_6Speler_Ronde3_Speler1.Location = new System.Drawing.Point(308, 97);
+            this.Lb_6Speler_Ronde3_Speler1.Location = new System.Drawing.Point(308, 77);
             this.Lb_6Speler_Ronde3_Speler1.Name = "Lb_6Speler_Ronde3_Speler1";
             this.Lb_6Speler_Ronde3_Speler1.Size = new System.Drawing.Size(46, 17);
             this.Lb_6Speler_Ronde3_Speler1.TabIndex = 14;
@@ -357,7 +346,7 @@
             // 
             this.Lb_6Speler_Ronde1_Speler4.AutoSize = true;
             this.Lb_6Speler_Ronde1_Speler4.ForeColor = System.Drawing.Color.White;
-            this.Lb_6Speler_Ronde1_Speler4.Location = new System.Drawing.Point(88, 222);
+            this.Lb_6Speler_Ronde1_Speler4.Location = new System.Drawing.Point(88, 211);
             this.Lb_6Speler_Ronde1_Speler4.Name = "Lb_6Speler_Ronde1_Speler4";
             this.Lb_6Speler_Ronde1_Speler4.Size = new System.Drawing.Size(46, 17);
             this.Lb_6Speler_Ronde1_Speler4.TabIndex = 9;
@@ -367,7 +356,7 @@
             // 
             this.Lb_6Speler_Ronde1_Speler3.AutoSize = true;
             this.Lb_6Speler_Ronde1_Speler3.ForeColor = System.Drawing.Color.White;
-            this.Lb_6Speler_Ronde1_Speler3.Location = new System.Drawing.Point(88, 192);
+            this.Lb_6Speler_Ronde1_Speler3.Location = new System.Drawing.Point(88, 181);
             this.Lb_6Speler_Ronde1_Speler3.Name = "Lb_6Speler_Ronde1_Speler3";
             this.Lb_6Speler_Ronde1_Speler3.Size = new System.Drawing.Size(46, 17);
             this.Lb_6Speler_Ronde1_Speler3.TabIndex = 8;
@@ -377,7 +366,7 @@
             // 
             this.Lb_6Speler_Ronde1_Speler2.AutoSize = true;
             this.Lb_6Speler_Ronde1_Speler2.ForeColor = System.Drawing.Color.White;
-            this.Lb_6Speler_Ronde1_Speler2.Location = new System.Drawing.Point(88, 64);
+            this.Lb_6Speler_Ronde1_Speler2.Location = new System.Drawing.Point(88, 77);
             this.Lb_6Speler_Ronde1_Speler2.Name = "Lb_6Speler_Ronde1_Speler2";
             this.Lb_6Speler_Ronde1_Speler2.Size = new System.Drawing.Size(46, 17);
             this.Lb_6Speler_Ronde1_Speler2.TabIndex = 7;
@@ -387,7 +376,7 @@
             // 
             this.Lb_6Speler_Ronde1_Speler1.AutoSize = true;
             this.Lb_6Speler_Ronde1_Speler1.ForeColor = System.Drawing.Color.White;
-            this.Lb_6Speler_Ronde1_Speler1.Location = new System.Drawing.Point(88, 36);
+            this.Lb_6Speler_Ronde1_Speler1.Location = new System.Drawing.Point(88, 49);
             this.Lb_6Speler_Ronde1_Speler1.Name = "Lb_6Speler_Ronde1_Speler1";
             this.Lb_6Speler_Ronde1_Speler1.Size = new System.Drawing.Size(46, 17);
             this.Lb_6Speler_Ronde1_Speler1.TabIndex = 6;
@@ -395,7 +384,7 @@
             // 
             // Tb_Naam2
             // 
-            this.Tb_Naam2.Location = new System.Drawing.Point(236, 287);
+            this.Tb_Naam2.Location = new System.Drawing.Point(235, 276);
             this.Tb_Naam2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Tb_Naam2.Name = "Tb_Naam2";
             this.Tb_Naam2.Size = new System.Drawing.Size(100, 22);
@@ -405,7 +394,7 @@
             // 
             this.Btn_Terug2.BackColor = System.Drawing.Color.Navy;
             this.Btn_Terug2.ForeColor = System.Drawing.Color.White;
-            this.Btn_Terug2.Location = new System.Drawing.Point(364, 287);
+            this.Btn_Terug2.Location = new System.Drawing.Point(363, 276);
             this.Btn_Terug2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_Terug2.Name = "Btn_Terug2";
             this.Btn_Terug2.Size = new System.Drawing.Size(75, 23);
@@ -418,7 +407,7 @@
             // 
             this.Btn_Verder2.BackColor = System.Drawing.Color.Navy;
             this.Btn_Verder2.ForeColor = System.Drawing.Color.White;
-            this.Btn_Verder2.Location = new System.Drawing.Point(133, 287);
+            this.Btn_Verder2.Location = new System.Drawing.Point(132, 276);
             this.Btn_Verder2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_Verder2.Name = "Btn_Verder2";
             this.Btn_Verder2.Size = new System.Drawing.Size(75, 23);
@@ -447,10 +436,11 @@
             this.Tc_8Spelers.Controls.Add(this.Tb_Naam3);
             this.Tc_8Spelers.Controls.Add(this.Btn_Terug3);
             this.Tc_8Spelers.Controls.Add(this.Btn_Verder3);
+            this.Tc_8Spelers.ForeColor = System.Drawing.Color.White;
             this.Tc_8Spelers.Location = new System.Drawing.Point(4, 4);
             this.Tc_8Spelers.Margin = new System.Windows.Forms.Padding(0);
             this.Tc_8Spelers.Name = "Tc_8Spelers";
-            this.Tc_8Spelers.Size = new System.Drawing.Size(563, 341);
+            this.Tc_8Spelers.Size = new System.Drawing.Size(544, 312);
             this.Tc_8Spelers.TabIndex = 3;
             this.Tc_8Spelers.Paint += new System.Windows.Forms.PaintEventHandler(this.Tc_8Spelers_Paint);
             // 
@@ -652,10 +642,11 @@
             this.Tc_10Spelers.Controls.Add(this.Tb_Naam4);
             this.Tc_10Spelers.Controls.Add(this.Btn_Terug4);
             this.Tc_10Spelers.Controls.Add(this.Btn_Verder4);
+            this.Tc_10Spelers.ForeColor = System.Drawing.Color.White;
             this.Tc_10Spelers.Location = new System.Drawing.Point(4, 4);
             this.Tc_10Spelers.Margin = new System.Windows.Forms.Padding(0);
             this.Tc_10Spelers.Name = "Tc_10Spelers";
-            this.Tc_10Spelers.Size = new System.Drawing.Size(563, 341);
+            this.Tc_10Spelers.Size = new System.Drawing.Size(544, 312);
             this.Tc_10Spelers.TabIndex = 4;
             this.Tc_10Spelers.Paint += new System.Windows.Forms.PaintEventHandler(this.Tc_10Spelers_Paint);
             // 
@@ -879,6 +870,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.Tc_Eliminatiebracket);
+            this.ForeColor = System.Drawing.Color.White;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "EliminatieBracket";
             this.Size = new System.Drawing.Size(552, 321);
@@ -964,6 +956,5 @@
         private System.Windows.Forms.TextBox Tb_Naam;
         private System.Windows.Forms.Button Btn_Terug;
         private System.Windows.Forms.Button Btn_Verder;
-        private System.Windows.Forms.Label label1;
     }
 }

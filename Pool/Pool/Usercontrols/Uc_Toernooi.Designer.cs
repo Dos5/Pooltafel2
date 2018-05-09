@@ -46,9 +46,9 @@
             this.Gbx_Spelers.Controls.Add(this.Rbtn_Vierspelers);
             this.Gbx_Spelers.ForeColor = System.Drawing.Color.White;
             this.Gbx_Spelers.Location = new System.Drawing.Point(87, 49);
-            this.Gbx_Spelers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Gbx_Spelers.Margin = new System.Windows.Forms.Padding(4);
             this.Gbx_Spelers.Name = "Gbx_Spelers";
-            this.Gbx_Spelers.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Gbx_Spelers.Padding = new System.Windows.Forms.Padding(4);
             this.Gbx_Spelers.Size = new System.Drawing.Size(321, 158);
             this.Gbx_Spelers.TabIndex = 0;
             this.Gbx_Spelers.TabStop = false;
@@ -58,7 +58,7 @@
             // 
             this.Rbtn_Achtspelers.AutoSize = true;
             this.Rbtn_Achtspelers.Location = new System.Drawing.Point(28, 92);
-            this.Rbtn_Achtspelers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Rbtn_Achtspelers.Margin = new System.Windows.Forms.Padding(4);
             this.Rbtn_Achtspelers.Name = "Rbtn_Achtspelers";
             this.Rbtn_Achtspelers.Size = new System.Drawing.Size(87, 21);
             this.Rbtn_Achtspelers.TabIndex = 3;
@@ -70,7 +70,7 @@
             // 
             this.Rbtn_Tienspelers.AutoSize = true;
             this.Rbtn_Tienspelers.Location = new System.Drawing.Point(180, 92);
-            this.Rbtn_Tienspelers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Rbtn_Tienspelers.Margin = new System.Windows.Forms.Padding(4);
             this.Rbtn_Tienspelers.Name = "Rbtn_Tienspelers";
             this.Rbtn_Tienspelers.Size = new System.Drawing.Size(95, 21);
             this.Rbtn_Tienspelers.TabIndex = 2;
@@ -82,7 +82,7 @@
             // 
             this.Rbtn_Zesspelers.AutoSize = true;
             this.Rbtn_Zesspelers.Location = new System.Drawing.Point(180, 30);
-            this.Rbtn_Zesspelers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Rbtn_Zesspelers.Margin = new System.Windows.Forms.Padding(4);
             this.Rbtn_Zesspelers.Name = "Rbtn_Zesspelers";
             this.Rbtn_Zesspelers.Size = new System.Drawing.Size(87, 21);
             this.Rbtn_Zesspelers.TabIndex = 1;
@@ -95,7 +95,7 @@
             this.Rbtn_Vierspelers.AutoSize = true;
             this.Rbtn_Vierspelers.Checked = true;
             this.Rbtn_Vierspelers.Location = new System.Drawing.Point(28, 30);
-            this.Rbtn_Vierspelers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Rbtn_Vierspelers.Margin = new System.Windows.Forms.Padding(4);
             this.Rbtn_Vierspelers.Name = "Rbtn_Vierspelers";
             this.Rbtn_Vierspelers.Size = new System.Drawing.Size(87, 21);
             this.Rbtn_Vierspelers.TabIndex = 0;
@@ -109,7 +109,7 @@
             this.Btn_Terug.BackColor = System.Drawing.Color.Navy;
             this.Btn_Terug.ForeColor = System.Drawing.Color.White;
             this.Btn_Terug.Location = new System.Drawing.Point(415, 262);
-            this.Btn_Terug.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Terug.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Terug.Name = "Btn_Terug";
             this.Btn_Terug.Size = new System.Drawing.Size(87, 48);
             this.Btn_Terug.TabIndex = 1;
@@ -122,7 +122,7 @@
             this.Btn_Verder.BackColor = System.Drawing.Color.Navy;
             this.Btn_Verder.ForeColor = System.Drawing.Color.White;
             this.Btn_Verder.Location = new System.Drawing.Point(50, 262);
-            this.Btn_Verder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Verder.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Verder.Name = "Btn_Verder";
             this.Btn_Verder.Size = new System.Drawing.Size(87, 48);
             this.Btn_Verder.TabIndex = 2;
@@ -139,7 +139,7 @@
             this.Controls.Add(this.Btn_Terug);
             this.Controls.Add(this.Gbx_Spelers);
             this.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Toernooi";
             this.Size = new System.Drawing.Size(552, 321);
             this.Gbx_Spelers.ResumeLayout(false);
