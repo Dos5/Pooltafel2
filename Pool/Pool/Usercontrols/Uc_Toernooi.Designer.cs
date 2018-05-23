@@ -64,7 +64,7 @@
             this.Rbtn_Achtspelers.TabIndex = 3;
             this.Rbtn_Achtspelers.Text = "8 spelers";
             this.Rbtn_Achtspelers.UseVisualStyleBackColor = true;
-            this.Rbtn_Achtspelers.CheckedChanged += new System.EventHandler(this.Rbtn_Achtspelers_CheckedChanged);
+            this.Rbtn_Achtspelers.VisibleChanged += new System.EventHandler(this.Rbtn_Achtspelers_VisibleChanged);
             // 
             // Rbtn_Tienspelers
             // 
@@ -76,7 +76,7 @@
             this.Rbtn_Tienspelers.TabIndex = 2;
             this.Rbtn_Tienspelers.Text = "10 spelers";
             this.Rbtn_Tienspelers.UseVisualStyleBackColor = true;
-            this.Rbtn_Tienspelers.CheckedChanged += new System.EventHandler(this.Rbtn_Tienspelers_CheckedChanged);
+            this.Rbtn_Tienspelers.VisibleChanged += new System.EventHandler(this.Rbtn_Tienspelers_VisibleChanged);
             // 
             // Rbtn_Zesspelers
             // 
@@ -88,12 +88,12 @@
             this.Rbtn_Zesspelers.TabIndex = 1;
             this.Rbtn_Zesspelers.Text = "6 spelers";
             this.Rbtn_Zesspelers.UseVisualStyleBackColor = true;
-            this.Rbtn_Zesspelers.CheckedChanged += new System.EventHandler(this.Rbtn_Zesspelers_CheckedChanged);
+            this.Rbtn_Zesspelers.VisibleChanged += new System.EventHandler(this.Rbtn_Zesspelers_VisibleChanged);
             // 
             // Rbtn_Vierspelers
             // 
             this.Rbtn_Vierspelers.AutoSize = true;
-            this.Rbtn_Vierspelers.Checked = true;
+            this.Rbtn_Vierspelers.Visible = true;
             this.Rbtn_Vierspelers.Location = new System.Drawing.Point(28, 30);
             this.Rbtn_Vierspelers.Margin = new System.Windows.Forms.Padding(4);
             this.Rbtn_Vierspelers.Name = "Rbtn_Vierspelers";
@@ -102,7 +102,7 @@
             this.Rbtn_Vierspelers.TabStop = true;
             this.Rbtn_Vierspelers.Text = "4 spelers";
             this.Rbtn_Vierspelers.UseVisualStyleBackColor = true;
-            this.Rbtn_Vierspelers.CheckedChanged += new System.EventHandler(this.Rbtn_Vierspelers_CheckedChanged);
+            this.Rbtn_Vierspelers.VisibleChanged += new System.EventHandler(this.Rbtn_Vierspelers_VisibleChanged);
             // 
             // Btn_Terug
             // 

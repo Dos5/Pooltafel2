@@ -27,19 +27,19 @@ namespace Pool
             Controls.Add(eliminatieBracket);
             eliminatieBracket.BringToFront();
         }
-        private void Rbtn_Vierspelers_CheckedChanged(object sender, EventArgs e)
+        private void Rbtn_Vierspelers_VisibleChanged(object sender, EventArgs e)
         {
             HoeveelheidSpelers = 4;
         }
-        private void Rbtn_Zesspelers_CheckedChanged(object sender, EventArgs e)
+        private void Rbtn_Zesspelers_VisibleChanged(object sender, EventArgs e)
         {
             HoeveelheidSpelers = 6;
         }
-        private void Rbtn_Achtspelers_CheckedChanged(object sender, EventArgs e)
+        private void Rbtn_Achtspelers_VisibleChanged(object sender, EventArgs e)
         {
             HoeveelheidSpelers = 8;
         }
-        private void Rbtn_Tienspelers_CheckedChanged(object sender, EventArgs e)
+        private void Rbtn_Tienspelers_VisibleChanged(object sender, EventArgs e)
         {
             HoeveelheidSpelers = 10;
         }

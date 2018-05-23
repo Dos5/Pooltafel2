@@ -109,7 +109,7 @@
             // Rbtn_8ball
             // 
             this.Rbtn_8ball.AutoSize = true;
-            this.Rbtn_8ball.Checked = true;
+            this.Rbtn_8ball.Visible = true;
             this.Rbtn_8ball.Location = new System.Drawing.Point(11, 30);
             this.Rbtn_8ball.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Rbtn_8ball.Name = "Rbtn_8ball";
@@ -147,7 +147,7 @@
             // Rbtn_Duel
             // 
             this.Rbtn_Duel.AutoSize = true;
-            this.Rbtn_Duel.Checked = true;
+            this.Rbtn_Duel.Visible = true;
             this.Rbtn_Duel.Location = new System.Drawing.Point(21, 30);
             this.Rbtn_Duel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Rbtn_Duel.Name = "Rbtn_Duel";

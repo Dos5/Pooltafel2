@@ -20,34 +20,34 @@ namespace Pool
         }
         private void Btn_Verder_Click(object sender, EventArgs e)
         {
-            if (Rbtn_9ball.Checked)
+            if (Rbtn_9ball.Visible)
             {
                 nineball = true;
                 eightball = false;
-                if (Rbtn_Toernooi.Checked)
+                if (Rbtn_Toernooi.Visible)
                 {
                     Toernooi toernooi = new Toernooi();
                     Controls.Add(toernooi);
                     toernooi.BringToFront();
                 }
-                else if (Rbtn_Duel.Checked)
+                else if (Rbtn_Duel.Visible)
                 {
                     Uc_Duel duel = new Uc_Duel();
                     Controls.Add(duel);
                     duel.BringToFront();
                 }
             }
-            else if (Rbtn_8ball.Checked)
+            else if (Rbtn_8ball.Visible)
             {
                 eightball = true;
                 nineball = false;
-                if (Rbtn_Toernooi.Checked)
+                if (Rbtn_Toernooi.Visible)
                 {
                     Toernooi toernooi = new Toernooi();
                     Controls.Add(toernooi);
                     toernooi.BringToFront();
                 }
-                else if (Rbtn_Duel.Checked)
+                else if (Rbtn_Duel.Visible)
                 {
                     Uc_Duel duel = new Uc_Duel();
                     Controls.Add(duel);
@@ -57,13 +57,13 @@ namespace Pool
         }
         private void Btn_Regels_Click(object sender, EventArgs e)
         {
-            if (Rbtn_8ball.Checked)
+            if (Rbtn_8ball.Visible)
             {
                 Regels regels = new Regels();
                 Controls.Add(regels);
                 regels.BringToFront();
             }
-            else if (Rbtn_9ball.Checked)
+            else if (Rbtn_9ball.Visible)
             {
                 Regels regels = new Regels();
                 Controls.Add(regels);

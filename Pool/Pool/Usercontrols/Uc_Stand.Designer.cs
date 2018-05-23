@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Uc_Stand));
             this.Pb_Bal8 = new System.Windows.Forms.PictureBox();
             this.Pb_Bal1 = new System.Windows.Forms.PictureBox();
@@ -39,13 +40,16 @@
             this.Gbx_SpelerLinks = new System.Windows.Forms.GroupBox();
             this.Pb_Bal7 = new System.Windows.Forms.PictureBox();
             this.Gbx_SpelerRechts = new System.Windows.Forms.GroupBox();
+            this.Pb_Bal15 = new System.Windows.Forms.PictureBox();
             this.Pb_Bal9 = new System.Windows.Forms.PictureBox();
             this.Pb_Bal14 = new System.Windows.Forms.PictureBox();
             this.Pb_Bal13 = new System.Windows.Forms.PictureBox();
             this.Pb_Bal11 = new System.Windows.Forms.PictureBox();
             this.Pb_Bal10 = new System.Windows.Forms.PictureBox();
             this.Pb_Bal12 = new System.Windows.Forms.PictureBox();
-            this.Pb_Bal15 = new System.Windows.Forms.PictureBox();
+            this.Timer = new System.Windows.Forms.Timer(this.components);
+            this.serialPort = new System.IO.Ports.SerialPort(this.components);
+            this.Btn_Start = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Pb_Bal8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pb_Bal1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pb_Bal2)).BeginInit();
@@ -56,13 +60,13 @@
             this.Gbx_SpelerLinks.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pb_Bal7)).BeginInit();
             this.Gbx_SpelerRechts.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Pb_Bal15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pb_Bal9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pb_Bal14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pb_Bal13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pb_Bal11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pb_Bal10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pb_Bal12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pb_Bal15)).BeginInit();
             this.SuspendLayout();
             // 
             // Pb_Bal8
@@ -178,6 +182,16 @@
             this.Gbx_SpelerRechts.TabStop = false;
             this.Gbx_SpelerRechts.Text = "Speler2";
             // 
+            // Pb_Bal15
+            // 
+            this.Pb_Bal15.Image = global::Pool.Properties.Resources.bal15;
+            this.Pb_Bal15.Location = new System.Drawing.Point(8, 216);
+            this.Pb_Bal15.Name = "Pb_Bal15";
+            this.Pb_Bal15.Size = new System.Drawing.Size(24, 24);
+            this.Pb_Bal15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Pb_Bal15.TabIndex = 7;
+            this.Pb_Bal15.TabStop = false;
+            // 
             // Pb_Bal9
             // 
             this.Pb_Bal9.Image = global::Pool.Properties.Resources.bal9;
@@ -238,21 +252,27 @@
             this.Pb_Bal12.TabIndex = 3;
             this.Pb_Bal12.TabStop = false;
             // 
-            // Pb_Bal15
+            // Timer
             // 
-            this.Pb_Bal15.Image = global::Pool.Properties.Resources.bal15;
-            this.Pb_Bal15.Location = new System.Drawing.Point(8, 216);
-            this.Pb_Bal15.Name = "Pb_Bal15";
-            this.Pb_Bal15.Size = new System.Drawing.Size(24, 24);
-            this.Pb_Bal15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Pb_Bal15.TabIndex = 7;
-            this.Pb_Bal15.TabStop = false;
+            this.Timer.Interval = 1000;
+            this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
+            // 
+            // Btn_Start
+            // 
+            this.Btn_Start.Location = new System.Drawing.Point(136, 224);
+            this.Btn_Start.Name = "Btn_Start";
+            this.Btn_Start.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Start.TabIndex = 9;
+            this.Btn_Start.Text = "Start";
+            this.Btn_Start.UseVisualStyleBackColor = true;
+            this.Btn_Start.Click += new System.EventHandler(this.Btn_Start_Click);
             // 
             // Uc_Stand
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Controls.Add(this.Btn_Start);
             this.Controls.Add(this.Gbx_SpelerRechts);
             this.Controls.Add(this.Gbx_SpelerLinks);
             this.Controls.Add(this.Pb_Bal8);
@@ -268,13 +288,13 @@
             this.Gbx_SpelerLinks.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Pb_Bal7)).EndInit();
             this.Gbx_SpelerRechts.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Pb_Bal15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pb_Bal9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pb_Bal14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pb_Bal13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pb_Bal11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pb_Bal10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pb_Bal12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pb_Bal15)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -298,5 +318,8 @@
         private System.Windows.Forms.PictureBox Pb_Bal12;
         private System.Windows.Forms.PictureBox Pb_Bal7;
         private System.Windows.Forms.PictureBox Pb_Bal15;
+        private System.Windows.Forms.Timer Timer;
+        private System.IO.Ports.SerialPort serialPort;
+        private System.Windows.Forms.Button Btn_Start;
     }
 }
