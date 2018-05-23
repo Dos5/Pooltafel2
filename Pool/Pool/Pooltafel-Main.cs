@@ -36,11 +36,7 @@ namespace Pool
         {      
             Settings settings = new Settings();
             Controls.Add(settings);
-            settings.BringToFront();
-            if (settings.Visible)
-            {
-                Btn_Settings.Enabled = false;
-            }
+            settings.BringToFront();       
         }
     }
 }

@@ -74,10 +74,5 @@ namespace Pool
         {
             this.Hide();
         }
-
-        private void Lb_naamregel_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

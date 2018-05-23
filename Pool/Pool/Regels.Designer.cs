@@ -36,22 +36,21 @@
             // Lb_Naamregel
             // 
             this.Lb_Naamregel.FormattingEnabled = true;
-            this.Lb_Naamregel.ItemHeight = 16;
-            this.Lb_Naamregel.Location = new System.Drawing.Point(50, 27);
-            this.Lb_Naamregel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Lb_Naamregel.Location = new System.Drawing.Point(38, 22);
+            this.Lb_Naamregel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Lb_Naamregel.Name = "Lb_Naamregel";
-            this.Lb_Naamregel.Size = new System.Drawing.Size(200, 212);
+            this.Lb_Naamregel.Size = new System.Drawing.Size(151, 173);
             this.Lb_Naamregel.TabIndex = 0;
-            this.Lb_Naamregel.SelectedIndexChanged += new System.EventHandler(this.Lb_naamregel_SelectedIndexChanged);
+            this.Lb_Naamregel.SelectedIndexChanged += new System.EventHandler(this.Lb_Naamregel_SelectedIndexChanged);
             // 
             // Btn_Terug
             // 
             this.Btn_Terug.BackColor = System.Drawing.Color.Navy;
             this.Btn_Terug.ForeColor = System.Drawing.Color.White;
-            this.Btn_Terug.Location = new System.Drawing.Point(415, 262);
-            this.Btn_Terug.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Btn_Terug.Location = new System.Drawing.Point(311, 213);
+            this.Btn_Terug.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Btn_Terug.Name = "Btn_Terug";
-            this.Btn_Terug.Size = new System.Drawing.Size(87, 48);
+            this.Btn_Terug.Size = new System.Drawing.Size(65, 39);
             this.Btn_Terug.TabIndex = 2;
             this.Btn_Terug.Text = "Terug";
             this.Btn_Terug.UseVisualStyleBackColor = false;
@@ -59,25 +58,24 @@
             // 
             // Rtb_Regel_Uitleg
             // 
-            this.Rtb_Regel_Uitleg.Location = new System.Drawing.Point(302, 27);
-            this.Rtb_Regel_Uitleg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Rtb_Regel_Uitleg.Location = new System.Drawing.Point(226, 22);
             this.Rtb_Regel_Uitleg.Name = "Rtb_Regel_Uitleg";
             this.Rtb_Regel_Uitleg.ReadOnly = true;
-            this.Rtb_Regel_Uitleg.Size = new System.Drawing.Size(200, 212);
+            this.Rtb_Regel_Uitleg.Size = new System.Drawing.Size(151, 173);
             this.Rtb_Regel_Uitleg.TabIndex = 3;
             this.Rtb_Regel_Uitleg.Text = "";
             // 
             // Regels
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
             this.Controls.Add(this.Rtb_Regel_Uitleg);
             this.Controls.Add(this.Btn_Terug);
             this.Controls.Add(this.Lb_Naamregel);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Regels";
-            this.Size = new System.Drawing.Size(552, 321);
+            this.Size = new System.Drawing.Size(414, 261);
             this.Load += new System.EventHandler(this.Regels_Load);
             this.ResumeLayout(false);
 
